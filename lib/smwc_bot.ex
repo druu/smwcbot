@@ -8,11 +8,14 @@ defmodule SMWCBot do
   @impl true
   def handle_message("!" <> command, sender, chat) do
     case search_hack(command) do
-      {text, href} ->
+      {:ok, text, href} ->
         TMI.message(chat, "Here #{sender}, #{text} @ #{href}")
 
-      nil ->
+      {:ok, nil} ->
         TMI.message(chat, "Sorry #{sender}, no results")
+
+      {:error, reason} ->
+        TMI.message(chat, "Sorry #{sender}, bot can't complete that search: #{reason}")
     end
   end
 

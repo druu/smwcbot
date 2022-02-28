@@ -8,7 +8,8 @@ defmodule SMWCBot.Search do
   @doc """
   Search for hack.
   """
-  @spec for({String.t(), String.t()}) :: {text :: String.t(), href :: String.t()} | nil
+  @spec for({String.t(), String.t()}) ::
+          {:ok, text :: String.t(), href :: String.t()} | {:ok, nil} | {:error, String.t()}
   def for({hack, waiting}) do
     base_uri = base_uri(waiting)
     filter = URI.encode_query(%{"f[name]" => hack})
@@ -16,33 +17,52 @@ defmodule SMWCBot.Search do
 
     Logger.debug("Uri = #{search_uri}")
 
-    result_page = HTTPoison.get!(search_uri)
+    case HTTPoison.get(search_uri) do
+      {:ok, %{status_code: 200, body: body}} ->
+        parse_body(body)
 
-    result_page.body
-    |> Floki.parse_document!()
-    |> Floki.find("div#list_content table tr")
-    |> parse_result_table()
+      {:ok, %{status_code: status, body: body}} ->
+        Logger.error("Error fetching page, status #{status}: #{inspect(body)}")
+        {:error, to_string(status)}
+
+      {:error, %{reason: reason}} ->
+        Logger.error("Error fetching page: #{inspect(reason)}")
+        {:error, inspect(reason)}
+    end
+  end
+
+  defp parse_body(body) do
+    case Floki.parse_document(body) do
+      {:ok, document} ->
+        document
+        |> Floki.find("div#list_content table tr")
+        |> parse_result_table()
+
+      {:error, error} ->
+        Logger.error("Error parsing page: #{error}")
+        {:error, "bad document"}
+    end
   end
 
   defp parse_result_table([_th, tr | _]) do
     case Floki.find(tr, "td.cell1 a") do
       [result | _] -> result_to_tuple(result)
-      [] -> nil
+      [] -> {:ok, nil}
     end
   end
 
   defp parse_result_table([_th]) do
     Logger.debug("Nothing")
-    nil
+    {:ok, nil}
   end
 
   defp parse_result_table(result) do
     Logger.warn("No table? #{inspect(result)}")
-    nil
+    {:ok, nil}
   end
 
   defp result_to_tuple(result) do
-    {Floki.text(result),
+    {:ok, Floki.text(result),
      result
      |> Floki.attribute("href")
      |> List.first()
