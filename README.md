@@ -1,21 +1,13 @@
 # SMWCBot
 
-**TODO: Add description**
+Twitch chat bot for searching SMW Central.
+### Running locally
 
-## Installation
+ * Copy `config/config.secret.example.exs` to `config/config.secret.exs`.
+ * Update the config file with your bot's config. Channel names should be lowercase.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `smwcbot` to your list of dependencies in `mix.exs`:
+    TMI_START=true iex -S mix
 
-```elixir
-def deps do
-  [
-    {:smwcbot, "~> 0.1.0"}
-  ]
-end
-```
+### Deploying
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/smwcbot>.
-
+*TODO* For now, try looking at `config/runtime.exs` and figuring the rest out on your own.
