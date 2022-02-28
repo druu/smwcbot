@@ -26,7 +26,7 @@ defmodule SMWCBot.MixProject do
       # HTML Parser
       {:floki, "~> 0.31.0"},
       # HTTP Client
-      {:httpoison, "~> 1.8"}
+      {:mojito, "~> 0.7.11"}
     ]
   end
 end

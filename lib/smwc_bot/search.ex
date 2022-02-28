@@ -17,7 +17,7 @@ defmodule SMWCBot.Search do
 
     Logger.debug("Uri = #{search_uri}")
 
-    case HTTPoison.get(search_uri) do
+    case Mojito.get(search_uri) do
       {:ok, %{status_code: 200, body: body}} ->
         body
         |> Floki.parse_document!()
@@ -28,9 +28,9 @@ defmodule SMWCBot.Search do
         Logger.error("Error fetching page, status #{status}: #{inspect(body)}")
         {:error, to_string(status)}
 
-      {:error, %{reason: reason}} ->
-        Logger.error("Error fetching page: #{inspect(reason)}")
-        {:error, inspect(reason)}
+      {:error, %{message: message}} ->
+        Logger.error("Error fetching page: #{message}")
+        {:error, message}
     end
   end
 
