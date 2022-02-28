@@ -27,3 +27,7 @@ smwcbot-*.tar
 
 # Secret config for prod or local dev-specific work not to be committed.
 config/*.secret.exs
+
+# Dialyzer
+/priv/plts/*.plt
+/priv/plts/*.plt.hash

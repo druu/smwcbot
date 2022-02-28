@@ -7,7 +7,10 @@ defmodule SMWCBot.MixProject do
       version: "0.1.0",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      dialyzer: [
+        plt_file: {:no_warn, "priv/plts/dialyzer.plt"}
+      ]
     ]
   end
 
@@ -27,7 +30,10 @@ defmodule SMWCBot.MixProject do
       # HTML Parser
       {:floki, "~> 0.31.0"},
       # HTTP Client
-      {:mojito, "~> 0.7.11"}
+      {:mojito, "~> 0.7.11"},
+      # Testing and static analysis
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
     ]
   end
 end
