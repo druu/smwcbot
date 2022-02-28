@@ -9,7 +9,7 @@ defmodule SMWCBot do
   def handle_message("!" <> command, sender, chat) do
     case search_hack(command) do
       {text, href} ->
-        TMI.message(chat, "Here #{sender}: #{text} @ #{href}")
+        TMI.message(chat, "Here #{sender}, #{text} @ #{href}")
 
       nil ->
         TMI.message(chat, "Sorry #{sender}, no results")

@@ -12,11 +12,11 @@ defmodule SMWCBot.Search do
   def for({hack, waiting}) do
     base_uri = base_uri(waiting)
     filter = URI.encode_query(%{"f[name]" => hack})
-    search_uri = "#{base_uri}#{filter}"
+    search_uri = base_uri <> filter
 
     Logger.debug("Uri = #{search_uri}")
 
-    result_page = HTTPoison.get!("#{base_uri}#{filter}")
+    result_page = HTTPoison.get!(search_uri)
 
     result_page.body
     |> Floki.parse_document!()
@@ -24,19 +24,20 @@ defmodule SMWCBot.Search do
     |> parse_result_table()
   end
 
-  defp parse_result_table([_, table]) do
-    case Floki.find(table, "td.cell1 a") do
+  defp parse_result_table([_th, tr | _]) do
+    case Floki.find(tr, "td.cell1 a") do
       [result | _] -> result_to_tuple(result)
       [] -> nil
     end
   end
 
-  defp parse_result_table([_]) do
-    Logger.debug('Nothing')
+  defp parse_result_table([_th]) do
+    Logger.debug("Nothing")
     nil
   end
 
-  defp parse_result_table(_) do
+  defp parse_result_table(result) do
+    Logger.warn("No table? #{inspect(result)}")
     nil
   end
 
