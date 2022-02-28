@@ -5,8 +5,10 @@ defmodule SMWCBot do
 
   require Logger
 
+  @command_prefix Application.compile_env(:smwcbot, :command_prefix, "!")
+
   @impl true
-  def handle_message("!" <> command, sender, chat) do
+  def handle_message(@command_prefix <> command, sender, chat) do
     case search_hack(command) do
       {:ok, text, href} ->
         TMI.message(chat, "Here #{sender}, #{text} @ #{href}")
