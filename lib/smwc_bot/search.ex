@@ -19,7 +19,10 @@ defmodule SMWCBot.Search do
 
     case HTTPoison.get(search_uri) do
       {:ok, %{status_code: 200, body: body}} ->
-        parse_body(body)
+        body
+        |> Floki.parse_document!()
+        |> Floki.find("div#list_content table tr")
+        |> parse_result_table()
 
       {:ok, %{status_code: status, body: body}} ->
         Logger.error("Error fetching page, status #{status}: #{inspect(body)}")
@@ -28,19 +31,6 @@ defmodule SMWCBot.Search do
       {:error, %{reason: reason}} ->
         Logger.error("Error fetching page: #{inspect(reason)}")
         {:error, inspect(reason)}
-    end
-  end
-
-  defp parse_body(body) do
-    case Floki.parse_document(body) do
-      {:ok, document} ->
-        document
-        |> Floki.find("div#list_content table tr")
-        |> parse_result_table()
-
-      {:error, error} ->
-        Logger.error("Error parsing page: #{error}")
-        {:error, "bad document"}
     end
   end
 
