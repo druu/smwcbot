@@ -34,6 +34,8 @@ defmodule SMWCBot.MixProject do
       {:tmi, "~> 0.3.0"},
       # HTML Parser
       {:floki, "~> 0.31.0"},
+      # Alternative DOM Parser for Floki
+      {:html5ever, "~> 0.11.0"},
       # HTTP Client
       {:mojito, "~> 0.7.11"},
       # Testing and static analysis
