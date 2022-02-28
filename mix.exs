@@ -6,6 +6,7 @@ defmodule SMWCBot.MixProject do
       app: :smwcbot,
       version: "0.1.0",
       elixir: "~> 1.13",
+      elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       dialyzer: [
@@ -22,6 +23,10 @@ defmodule SMWCBot.MixProject do
     ]
   end
 
+  # Specifies which paths to compile per environment.
+  defp elixirc_paths(:test), do: ["lib", "test/support"]
+  defp elixirc_paths(_), do: ["lib"]
+
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
@@ -33,7 +38,8 @@ defmodule SMWCBot.MixProject do
       {:mojito, "~> 0.7.11"},
       # Testing and static analysis
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
-      {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
+      {:mimic, "~> 1.5", only: [:test]}
     ]
   end
 end

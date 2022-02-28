@@ -1,4 +1,7 @@
 defmodule SMWCBot do
+  @moduledoc """
+  Main bot handler.
+  """
   use TMI.Handler
 
   alias SMWCBot.Search

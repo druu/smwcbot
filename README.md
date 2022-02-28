@@ -1,5 +1,7 @@
 # SMWCBot
 
+[![CI](https://github.com/druu/smwcbot/actions/workflows/ci.yml/badge.svg)](https://github.com/druu/smwcbot/actions/workflows/ci.yml)
+
 Twitch chat bot for searching SMW Central.
 ### Running locally
 
