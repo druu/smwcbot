@@ -24,3 +24,6 @@ smwcbot-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Secret config for prod or local dev-specific work not to be committed.
+config/*.secret.exs
