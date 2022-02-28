@@ -9,7 +9,7 @@ defmodule SMWCBot.Search do
   Search for hack.
   """
   @spec for({String.t(), String.t()}) ::
-          {:ok, text :: String.t(), href :: String.t()} | {:ok, nil} | {:error, String.t()}
+          {:ok, text :: String.t(), href :: String.t()} | {:ok, :multi} | {:ok, nil} | {:error, String.t()}
   def for({hack, waiting}) do
     base_uri = base_uri(waiting)
     filter = URI.encode_query(%{"f[name]" => hack})
@@ -34,9 +34,12 @@ defmodule SMWCBot.Search do
   defp parse_body(body) do
     case Floki.parse_document(body) do
       {:ok, document} ->
-        document
-        |> Floki.find("div#list_content table tr")
-        |> parse_result_table()
+        rows = Floki.find(document, "div#list_content table tr")
+        case length(rows) do
+          2 -> parse_result_table(rows)
+          1 -> {:ok, nil}
+          _ -> {:ok, :multi}
+        end
 
       {:error, error} ->
         Logger.error("Error parsing page: #{error}")
@@ -71,6 +74,12 @@ defmodule SMWCBot.Search do
 
   defp build_full_uri(result_href) do
     "https://www.smwcentral.net#{result_href}"
+  end
+
+  def build_search_uri({hack, waiting}) do
+    base_uri = base_uri(waiting)
+    filter = URI.encode_query(%{"f[name]" => hack})
+    _search_uri = base_uri <> filter
   end
 
   defp base_uri("waiting"), do: "https://www.smwcentral.net/?p=section&s=smwhacks&u=1&"
