@@ -21,9 +21,12 @@ defmodule SMWCBot.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:tmi, "~> 0.3.0"}, # Twitch Chat Bot
-      {:floki, "~> 0.31.0"}, # HTML Parser
-      {:httpoison, "~> 1.8"}, # HTTP Client
+      # Twitch Chat Bot
+      {:tmi, "~> 0.3.0"},
+      # HTML Parser
+      {:floki, "~> 0.31.0"},
+      # HTTP Client
+      {:httpoison, "~> 1.8"}
     ]
   end
 end

@@ -26,11 +26,8 @@ defmodule SMWCBot.Search do
 
   defp parse_result_table([_, table]) do
     case Floki.find(table, "td.cell1 a") do
-      [result | _] ->
-        {Floki.text(result), Floki.attribute(result, "href") |> List.first() |> build_full_uri()}
-
-      [] ->
-        nil
+      [result | _] -> result_to_tuple(result)
+      [] -> nil
     end
   end
 
@@ -41,6 +38,14 @@ defmodule SMWCBot.Search do
 
   defp parse_result_table(_) do
     nil
+  end
+
+  defp result_to_tuple(result) do
+    {Floki.text(result),
+     result
+     |> Floki.attribute("href")
+     |> List.first()
+     |> build_full_uri()}
   end
 
   defp build_full_uri(result_href) do
