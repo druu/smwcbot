@@ -1,6 +1,8 @@
 # COMPILE-TIME CONFIG
 import Config
 
+# We set the command prefix in compile-time config because we want to match in
+# function head, so we can't put it in runtime config.
 config :smwcbot,
   command_prefix: "!"
 
