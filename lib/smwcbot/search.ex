@@ -57,24 +57,23 @@ defmodule SMWCBot.Search do
           [col, dir] -> [{"o", col}, {"d", dir} | acc]
         end
 
-      {:author, name}, acc ->
-        [{"f[author]", name} | acc]
-
       {:first, true}, acc ->
         acc
+
+      {:author, name}, acc ->
+        [{"f[author]", name} | acc]
 
       invalid, _acc ->
         raise ArgumentError, message: "invalid filter: #{inspect(invalid)}"
     end)
   end
 
+  defp parser_from_resource(:asm), do: SMWCBot.UberASMParser
   defp parser_from_resource(:blocks), do: SMWCBot.BlocksParser
   defp parser_from_resource(:graphics), do: SMWCBot.GraphicsParser
   defp parser_from_resource(:hack), do: SMWCBot.HacksParser
   defp parser_from_resource(:music), do: SMWCBot.MusicParser
-  defp parser_from_resource(:sprites), do: SMWCBot.SpritesParser
   defp parser_from_resource(:patches), do: SMWCBot.PatchesParser
+  defp parser_from_resource(:sprites), do: SMWCBot.SpritesParser
   defp parser_from_resource(:uberasm), do: SMWCBot.UberASMParser
-  defp parser_from_resource(:asm), do: SMWCBot.UberASMParser
-
 end

@@ -53,16 +53,16 @@ defmodule SMWCBot do
     |> String.split(" ", trim: true)
     |> OptionParser.parse(
       strict: [
+        author: :string,
         first: :boolean,
         order: :string,
-        waiting: :boolean,
-        author: :string
+        waiting: :boolean
       ],
       aliases: [
+        a: :author,
         f: :first,
         o: :order,
-        w: :waiting,
-        a: :author
+        w: :waiting
       ]
     )
   end
