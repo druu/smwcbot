@@ -9,13 +9,14 @@ defmodule SMWCBot.Search do
 
   @base_uri "https://www.smwcentral.net"
 
+  @default_opts %{resource: :hack}
+
   @doc """
   Search for hack.
   """
   @spec for(String.t(), keyword()) :: Parser.parse_result()
   def for(query, opts \\ []) do
-    resource = Keyword.get(opts, :resource)
-    first? = Keyword.get(opts, :first, false)
+    opts = Enum.into(opts, @default_opts)
     filter_params = build_filter_params(query, opts) |> URI.encode_query()
     search_uri = "#{@base_uri}/?#{filter_params}"
 
@@ -23,9 +24,9 @@ defmodule SMWCBot.Search do
 
     case Mojito.get(search_uri) do
       {:ok, %{status_code: 200, body: body}} ->
-        resource
+        opts.resource
         |> parser_from_resource()
-        |> then(& &1.parse_body(body, search_uri, resource, first?))
+        |> then(& &1.parse_body(body, search_uri, opts))
 
       {:ok, %{status_code: status, body: body}} ->
         Logger.error("Error fetching page, status #{status}: #{inspect(body)}")
@@ -55,6 +56,8 @@ defmodule SMWCBot.Search do
           [col] -> [{"o", col}, {"d", "desc"} | acc]
           [col, dir] -> [{"o", col}, {"d", dir} | acc]
         end
+
+        {:first, true}, acc -> acc
 
       invalid, _acc ->
         raise ArgumentError, message: "invalid filter: #{inspect(invalid)}"

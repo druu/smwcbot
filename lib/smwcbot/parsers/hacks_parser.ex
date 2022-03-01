@@ -5,11 +5,12 @@ defmodule SMWCBot.HacksParser do
   require Logger
 
   @impl true
-  def parse_body(body, search_uri, _resource, _first?) do
+  def parse_body(body, search_uri, opts) do
     case Floki.parse_document(body) do
       {:ok, document} ->
         document
         |> Floki.find("div#list_content table tr")
+        |> apply_first(opts)
         |> parse_result_table(search_uri)
 
       {:error, error} ->
@@ -17,6 +18,9 @@ defmodule SMWCBot.HacksParser do
         {:error, "bad web page"}
     end
   end
+
+  defp apply_first([th, tr | _rest], %{first: true}), do: [th, tr]
+  defp apply_first(results, _opts), do: results
 
   defp parse_result_table([_th, tr], _search_uri) do
     case Floki.find(tr, "td.cell1 a") do

@@ -9,5 +9,5 @@ defmodule SMWCBot.Parser do
           | {:ok, nil}
           | {:error, String.t()}
 
-  @callback parse_body(String.t(), String.t(), atom(), boolean()) :: parse_result()
+  @callback parse_body(String.t(), String.t(), map()) :: parse_result()
 end
