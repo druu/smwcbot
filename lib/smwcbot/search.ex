@@ -5,7 +5,7 @@ defmodule SMWCBot.Search do
 
   require Logger
 
-  @base_uri "https://www.smwcentral.net/?p=section&s=smwhacks&"
+  @base_uri "https://www.smwcentral.net"
 
   @doc """
   Search for hack.
@@ -17,7 +17,7 @@ defmodule SMWCBot.Search do
           | {:error, String.t()}
   def for(query, opts \\ []) do
     filter_params = build_filter_params(query, opts) |> URI.encode_query()
-    search_uri = @base_uri <> filter_params
+    search_uri = "#{@base_uri}/?#{filter_params}"
 
     Logger.debug("Uri = #{search_uri}")
 
@@ -35,8 +35,14 @@ defmodule SMWCBot.Search do
     end
   end
 
-  defp build_filter_params(hack, opts) do
-    Enum.reduce(opts, [{"f[name]", hack}], fn
+  defp build_filter_params(query, opts) do
+    Enum.reduce(opts, [{"f[name]", query}], fn
+      {:resource, resource}, acc ->
+        case resource do
+          :hack -> [{"p", "section"}, {"s", "smwhacks"} | acc]
+          :music -> [{"p", "section"}, {"s", "smwmusic"} | acc]
+        end
+
       {:waiting, true}, acc ->
         [{"u", 1} | acc]
 

@@ -31,6 +31,6 @@ defmodule SMWCBot do
     Logger.debug("Message in #{chat} from #{sender}: #{message}")
   end
 
-  defp search_hack("hack waiting " <> rest), do: Search.for(rest, waiting: true)
-  defp search_hack("hack " <> rest), do: Search.for(rest)
+  defp search_hack("hack waiting " <> rest), do: Search.for(rest, resource: :hack, waiting: true)
+  defp search_hack("hack " <> rest), do: Search.for(rest, resource: :hack)
 end
