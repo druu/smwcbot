@@ -15,9 +15,9 @@ defmodule SMWCBot.Search do
           | {:ok, :multi, href :: String.t()}
           | {:ok, nil}
           | {:error, String.t()}
-  def for(hack, opts \\ []) do
-    filter_query = build_filter_query(hack, opts) |> URI.encode_query()
-    search_uri = @base_uri <> filter_query
+  def for(query, opts \\ []) do
+    filter_params = build_filter_params(query, opts) |> URI.encode_query()
+    search_uri = @base_uri <> filter_params
 
     Logger.debug("Uri = #{search_uri}")
 
@@ -35,7 +35,7 @@ defmodule SMWCBot.Search do
     end
   end
 
-  defp build_filter_query(hack, opts) do
+  defp build_filter_params(hack, opts) do
     Enum.reduce(opts, [{"f[name]", hack}], fn
       {:waiting, true}, acc ->
         [{"u", 1} | acc]
