@@ -5,6 +5,8 @@ defmodule SMWCBot.Search do
 
   require Logger
 
+  @base_uri "https://www.smwcentral.net/?p=section&s=smwhacks&"
+
   @doc """
   Search for hack.
   """
@@ -14,10 +16,8 @@ defmodule SMWCBot.Search do
           | {:ok, nil}
           | {:error, String.t()}
   def for(hack, opts \\ []) do
-    waiting = if Keyword.get(opts, :waiting), do: :waiting
-    base_uri = base_uri(waiting)
-    filter = URI.encode_query(%{"f[name]" => hack})
-    search_uri = base_uri <> filter
+    filter_query = build_filter_query(hack, opts) |> URI.encode_query()
+    search_uri = @base_uri <> filter_query
 
     Logger.debug("Uri = #{search_uri}")
 
@@ -33,6 +33,16 @@ defmodule SMWCBot.Search do
         Logger.error("Error fetching page: #{message}")
         {:error, message}
     end
+  end
+
+  defp build_filter_query(hack, opts) do
+    Enum.reduce(opts, [{"f[name]", hack}], fn
+      {:waiting, true}, acc ->
+        [{"u", 1} | acc]
+
+      invalid, _acc ->
+        raise ArgumentError, message: "invalid filter: #{inspect(invalid)}"
+    end)
   end
 
   defp parse_body(body, search_uri) do
@@ -80,7 +90,4 @@ defmodule SMWCBot.Search do
   defp build_full_uri(result_href) do
     "https://www.smwcentral.net#{result_href}"
   end
-
-  defp base_uri(:waiting), do: "https://www.smwcentral.net/?p=section&s=smwhacks&u=1&"
-  defp base_uri(_), do: "https://www.smwcentral.net/?p=section&s=smwhacks&"
 end
