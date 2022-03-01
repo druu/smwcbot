@@ -31,12 +31,6 @@ defmodule SMWCBot do
     Logger.debug("Message in #{chat} from #{sender}: #{message}")
   end
 
-  def search_hack(command) do
-    command
-    |> build_query()
-    |> Search.for()
-  end
-
-  defp build_query("hack waiting " <> rest), do: {rest, "waiting"}
-  defp build_query("hack " <> rest), do: {rest, ""}
+  defp search_hack("hack waiting " <> rest), do: Search.for(rest, waiting: true)
+  defp search_hack("hack " <> rest), do: Search.for(rest)
 end

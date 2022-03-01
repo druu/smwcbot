@@ -8,12 +8,13 @@ defmodule SMWCBot.Search do
   @doc """
   Search for hack.
   """
-  @spec for({String.t(), String.t()}) ::
+  @spec for(String.t(), keyword()) ::
           {:ok, text :: String.t(), href :: String.t()}
           | {:ok, :multi, href :: String.t()}
           | {:ok, nil}
           | {:error, String.t()}
-  def for({hack, waiting}) do
+  def for(hack, opts \\ []) do
+    waiting = if Keyword.get(opts, :waiting), do: :waiting
     base_uri = base_uri(waiting)
     filter = URI.encode_query(%{"f[name]" => hack})
     search_uri = base_uri <> filter
@@ -80,6 +81,6 @@ defmodule SMWCBot.Search do
     "https://www.smwcentral.net#{result_href}"
   end
 
-  defp base_uri("waiting"), do: "https://www.smwcentral.net/?p=section&s=smwhacks&u=1&"
+  defp base_uri(:waiting), do: "https://www.smwcentral.net/?p=section&s=smwhacks&u=1&"
   defp base_uri(_), do: "https://www.smwcentral.net/?p=section&s=smwhacks&"
 end
