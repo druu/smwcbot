@@ -3,8 +3,8 @@ defmodule SMWCBot.HTMLBodies do
   HTML page bodies.
   """
 
-  def smwc_results(amount) do
-    "./data/#{amount}-results.txt"
+  def smwc_results(resource, amount) do
+    "./data/#{resource}/#{amount}-results.txt"
     |> Path.expand(__DIR__)
     |> File.read!()
     |> Base.decode64!()
