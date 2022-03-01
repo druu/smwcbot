@@ -40,6 +40,12 @@ defmodule SMWCBot.Search do
       {:waiting, true}, acc ->
         [{"u", 1} | acc]
 
+      {:order_by, order}, acc ->
+        case String.split(order, ":", parts: 2, trim: true) do
+          [col] -> [{"o", col}, {"d", "desc"} | acc]
+          [col, dir] -> [{"o", col}, {"d", dir} | acc]
+        end
+
       invalid, _acc ->
         raise ArgumentError, message: "invalid filter: #{inspect(invalid)}"
     end)
