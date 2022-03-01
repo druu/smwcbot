@@ -9,7 +9,10 @@ defmodule SMWCBot.Search do
   Search for hack.
   """
   @spec for({String.t(), String.t()}) ::
-          {:ok, text :: String.t(), href :: String.t()} | {:ok, :multi} | {:ok, nil} | {:error, String.t()}
+          {:ok, text :: String.t(), href :: String.t()}
+          | {:ok, :multi, href :: String.t()}
+          | {:ok, nil}
+          | {:error, String.t()}
   def for({hack, waiting}) do
     base_uri = base_uri(waiting)
     filter = URI.encode_query(%{"f[name]" => hack})
@@ -19,7 +22,7 @@ defmodule SMWCBot.Search do
 
     case Mojito.get(search_uri) do
       {:ok, %{status_code: 200, body: body}} ->
-        parse_body(body)
+        parse_body(body, search_uri)
 
       {:ok, %{status_code: status, body: body}} ->
         Logger.error("Error fetching page, status #{status}: #{inspect(body)}")
@@ -31,15 +34,12 @@ defmodule SMWCBot.Search do
     end
   end
 
-  defp parse_body(body) do
+  defp parse_body(body, search_uri) do
     case Floki.parse_document(body) do
       {:ok, document} ->
-        rows = Floki.find(document, "div#list_content table tr")
-        case length(rows) do
-          2 -> parse_result_table(rows)
-          1 -> {:ok, nil}
-          _ -> {:ok, :multi}
-        end
+        document
+        |> Floki.find("div#list_content table tr")
+        |> parse_result_table(search_uri)
 
       {:error, error} ->
         Logger.error("Error parsing page: #{error}")
@@ -47,19 +47,23 @@ defmodule SMWCBot.Search do
     end
   end
 
-  defp parse_result_table([_th, tr | _]) do
+  defp parse_result_table([_th, tr], _search_uri) do
     case Floki.find(tr, "td.cell1 a") do
       [result | _] -> result_to_tuple(result)
       [] -> {:ok, nil}
     end
   end
 
-  defp parse_result_table([_th]) do
+  defp parse_result_table([_th, _tr | _], search_uri) do
+    {:ok, :multi, search_uri}
+  end
+
+  defp parse_result_table([_th], _seatch_uri) do
     Logger.debug("Nothing")
     {:ok, nil}
   end
 
-  defp parse_result_table(result) do
+  defp parse_result_table(result, _search_uri) do
     Logger.warn("No table? #{inspect(result)}")
     {:ok, nil}
   end
@@ -74,12 +78,6 @@ defmodule SMWCBot.Search do
 
   defp build_full_uri(result_href) do
     "https://www.smwcentral.net#{result_href}"
-  end
-
-  def build_search_uri({hack, waiting}) do
-    base_uri = base_uri(waiting)
-    filter = URI.encode_query(%{"f[name]" => hack})
-    _search_uri = base_uri <> filter
   end
 
   defp base_uri("waiting"), do: "https://www.smwcentral.net/?p=section&s=smwhacks&u=1&"

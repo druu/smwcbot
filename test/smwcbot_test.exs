@@ -50,9 +50,8 @@ defmodule SMWCBotTest do
     chat = "mychat"
     sender = "user-mcface"
 
-    expected_text = "Fast Food Kaizo"
-    expected_href = "https://www.smwcentral.net/?p=section&a=details&id=27706"
-    expected_message = "Here #{sender}, #{expected_text} @ #{expected_href}"
+    expected_href = "https://www.smwcentral.net/?p=section&s=smwhacks&f%5Bname%5D=foo"
+    expected_message = "Here #{sender}, I found multiple results @ #{expected_href}"
 
     expect(Mojito, :get, fn _uri ->
       {:ok, %{status_code: 200, body: HTMLBodies.smwc_results(2)}}
@@ -71,9 +70,8 @@ defmodule SMWCBotTest do
     chat = "mychat"
     sender = "user-mcface"
 
-    expected_text = "Mario Keymanship"
-    expected_href = "https://www.smwcentral.net/?p=section&a=details&id=29650"
-    expected_message = "Here #{sender}, #{expected_text} @ #{expected_href}"
+    expected_href = "https://www.smwcentral.net/?p=section&s=smwhacks&f%5Bname%5D=mario"
+    expected_message = "Here #{sender}, I found multiple results @ #{expected_href}"
 
     expect(Mojito, :get, fn _uri ->
       {:ok, %{status_code: 200, body: HTMLBodies.smwc_results("multi-page")}}

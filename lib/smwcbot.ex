@@ -13,12 +13,11 @@ defmodule SMWCBot do
   @impl true
   def handle_message(@command_prefix <> command, sender, chat) do
     case search_hack(command) do
+      {:ok, :multi, href} ->
+        TMI.message(chat, "Here #{sender}, I found multiple results @ #{href}")
+
       {:ok, text, href} ->
         TMI.message(chat, "Here #{sender}, #{text} @ #{href}")
-
-      {:ok, :multi} ->
-        href = get_search_uri(command)
-        TMI.message(chat, "Here #{sender}, I found multiple results @ #{href}")
 
       {:ok, nil} ->
         TMI.message(chat, "Sorry #{sender}, no results")
@@ -37,13 +36,6 @@ defmodule SMWCBot do
     |> build_query()
     |> Search.for()
   end
-
-  def get_search_uri(command) do
-    command
-    |> build_query()
-    |> Search.build_search_uri()
-  end
-
 
   defp build_query("hack waiting " <> rest), do: {rest, "waiting"}
   defp build_query("hack " <> rest), do: {rest, ""}
