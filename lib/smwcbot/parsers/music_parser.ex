@@ -2,6 +2,8 @@ defmodule SMWCBot.MusicParser do
   @moduledoc false
   @behaviour SMWCBot.Parser
 
+  require Logger
+
   @impl true
   def parse_body(body, search_uri, opts) do
     case Floki.parse_document(body) do
