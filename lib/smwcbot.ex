@@ -58,6 +58,7 @@ defmodule SMWCBot do
         waiting: :boolean
       ],
       aliases: [
+        f: :first,
         o: :order,
         w: :waiting
       ]
