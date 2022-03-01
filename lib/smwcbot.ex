@@ -12,7 +12,7 @@ defmodule SMWCBot do
 
   @impl true
   def handle_message(@command_prefix <> command, sender, chat) do
-    case search_resource(command) do
+    case execute(command) do
       {:ok, :multi, href} ->
         TMI.message(chat, "Here #{sender}, I found multiple results @ #{href}")
 
@@ -31,9 +31,35 @@ defmodule SMWCBot do
     Logger.debug("Message in #{chat} from #{sender}: #{message}")
   end
 
-  defp search_resource("graphics " <> rest), do: Search.for(rest, resource: :graphics)
-  defp search_resource("hack waiting " <> rest), do: Search.for(rest, resource: :hack, waiting: true)
-  defp search_resource("hack " <> rest), do: Search.for(rest, resource: :hack)
-  defp search_resource("music " <> rest), do: Search.for(rest, resource: :music)
-  defp search_resource("blocks " <> rest), do: Search.for(rest, resource: :blocks)
+  defp execute("blocks " <> rest), do: search(:blocks, rest)
+  defp execute("graphics " <> rest), do: search(:graphics, rest)
+  defp execute("hack " <> rest), do: search(:hack, rest)
+  defp execute("music " <> rest), do: search(:music, rest)
+
+  defp search(resource, command) do
+    case parse_command(command) do
+      {opts, args, []} ->
+        args
+        |> Enum.join(" ")
+        |> Search.for([{:resource, resource} | opts])
+
+      {_opts, _args, invalid} ->
+        {:error, "unrecognized options: #{inspect(invalid)}"}
+    end
+  end
+
+  defp parse_command(command) do
+    command
+    |> String.split(" ", trim: true)
+    |> OptionParser.parse(
+      strict: [
+        waiting: :boolean,
+        order: :string
+      ],
+      aliases: [
+        o: :order,
+        w: :waiting
+      ]
+    )
+  end
 end
