@@ -57,7 +57,8 @@ defmodule SMWCBot.Search do
           [col, dir] -> [{"o", col}, {"d", dir} | acc]
         end
 
-        {:first, true}, acc -> acc
+      {:first, true}, acc ->
+        acc
 
       invalid, _acc ->
         raise ArgumentError, message: "invalid filter: #{inspect(invalid)}"
