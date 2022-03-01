@@ -41,6 +41,8 @@ defmodule SMWCBot.Search do
         case resource do
           :hack -> [{"p", "section"}, {"s", "smwhacks"} | acc]
           :music -> [{"p", "section"}, {"s", "smwmusic"} | acc]
+          :graphics -> [{"p", "section"}, {"s", "smwgraphics"} | acc]
+          :blocks -> [{"p", "section"}, {"s", "smwblocks"} | acc]
         end
 
       {:waiting, true}, acc ->

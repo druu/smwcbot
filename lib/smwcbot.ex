@@ -12,7 +12,7 @@ defmodule SMWCBot do
 
   @impl true
   def handle_message(@command_prefix <> command, sender, chat) do
-    case search_hack(command) do
+    case search_resource(command) do
       {:ok, :multi, href} ->
         TMI.message(chat, "Here #{sender}, I found multiple results @ #{href}")
 
@@ -31,6 +31,9 @@ defmodule SMWCBot do
     Logger.debug("Message in #{chat} from #{sender}: #{message}")
   end
 
-  defp search_hack("hack waiting " <> rest), do: Search.for(rest, resource: :hack, waiting: true)
-  defp search_hack("hack " <> rest), do: Search.for(rest, resource: :hack)
+  defp search_resource("graphics " <> rest), do: Search.for(rest, resource: :graphics)
+  defp search_resource("hack waiting " <> rest), do: Search.for(rest, resource: :hack, waiting: true)
+  defp search_resource("hack " <> rest), do: Search.for(rest, resource: :hack)
+  defp search_resource("music " <> rest), do: Search.for(rest, resource: :music)
+  defp search_resource("blocks " <> rest), do: Search.for(rest, resource: :blocks)
 end
