@@ -55,12 +55,14 @@ defmodule SMWCBot do
       strict: [
         first: :boolean,
         order: :string,
-        waiting: :boolean
+        waiting: :boolean,
+        author: :string
       ],
       aliases: [
         f: :first,
         o: :order,
-        w: :waiting
+        w: :waiting,
+        a: :author
       ]
     )
   end

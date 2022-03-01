@@ -57,6 +57,9 @@ defmodule SMWCBot.Search do
           [col, dir] -> [{"o", col}, {"d", dir} | acc]
         end
 
+      {:author, name}, acc ->
+        [{"f[author]", name} | acc]
+
       {:first, true}, acc ->
         acc
 
