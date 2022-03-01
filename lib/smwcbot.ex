@@ -14,10 +14,10 @@ defmodule SMWCBot do
   def handle_message(@command_prefix <> command, sender, chat) do
     case execute(command) do
       {:ok, :multi, href} ->
-        TMI.message(chat, "Here #{sender}, I found multiple results @ #{href}")
+        TMI.message(chat, "#{sender}, I found multiple results @ #{href}")
 
       {:ok, text, href} ->
-        TMI.message(chat, "Here #{sender}, #{text} @ #{href}")
+        TMI.message(chat, "#{sender}, #{text} @ #{href}")
 
       {:ok, nil} ->
         TMI.message(chat, "Sorry #{sender}, no results")
