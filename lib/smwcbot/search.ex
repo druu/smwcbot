@@ -72,4 +72,9 @@ defmodule SMWCBot.Search do
   defp parser_from_resource(:graphics), do: SMWCBot.GraphicsParser
   defp parser_from_resource(:hack), do: SMWCBot.HacksParser
   defp parser_from_resource(:music), do: SMWCBot.MusicParser
+  defp parser_from_resource(:sprites), do: SMWCBot.SpritesParser
+  defp parser_from_resource(:patches), do: SMWCBot.PatchesParser
+  defp parser_from_resource(:uberasm), do: SMWCBot.UberASMParser
+  defp parser_from_resource(:asm), do: SMWCBot.UberASMParser
+
 end
