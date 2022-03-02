@@ -32,13 +32,13 @@ thebot> Here jim, Redeeming Peach @ https://www.smwcentral.net/?p=section&a=deta
 
 #### Available filters
 * `-a, --author` - Enables the search by author
- * `jim> !hack --author lush_50`
+  * `jim> !hack --author lush_50`
 * `-f, --first` - Returns the first result from multiple results
- * `jim> !hack -f mario`
+  * `jim> !hack -f mario`
 * `-o, --order \<field>:[asc|desc]` - Enables Result sorting(:asc, :desc), defaults to descending 
- * `jim> !hack -f -o rating:asc mario` will give you a hack with "mario" in its name and the lowest rating
+  * `jim> !hack -f -o rating:asc mario` will give you a hack with "mario" in its name and the lowest rating
 * `-w, -waiting`  searches the waiting list
- * `jim> !hack --waiting mario`
+  * `jim> !hack --waiting mario`
  
  
 ### Deploying
