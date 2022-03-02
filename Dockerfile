@@ -39,10 +39,10 @@ RUN mkdir config
 # copy compile-time config files before we compile dependencies
 # to ensure any relevant config change will trigger the dependencies
 # to be re-compiled.
-COPY config/config.exs config/${MIX_ENV}.exs config/
+# COPY config/config.exs config/${MIX_ENV}.exs config/
 RUN mix deps.compile
 
-COPY priv priv
+# COPY priv priv
 
 COPY lib lib
 
@@ -77,6 +77,7 @@ ENV MIX_ENV="prod"
 
 # Only copy the final release from the build stage
 COPY --from=builder --chown=nobody:root /app/_build/${MIX_ENV}/rel/smwcbot ./
+RUN chmod +x /app/bin/*
 
 USER nobody
 
