@@ -55,6 +55,9 @@ defmodule SMWC.MixProject do
       # Chat Bot (Twitch)
       {:tmi, "~> 0.3.0"},
 
+      # Crypto and Hashing
+      {:argon2_elixir, "~> 2.0"},
+
       # HTTP Client
       {:mojito, "~> 0.7.11"},
 
