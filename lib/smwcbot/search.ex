@@ -38,8 +38,21 @@ defmodule SMWCBot.Search do
     end
   end
 
+  # credo:disable-for-next-line Credo.Check.Refactor.CyclomaticComplexity
   defp build_filter_params(query, opts) do
     Enum.reduce(opts, [{"f[name]", query}], fn
+      {:author, name}, acc ->
+        [{"f[author]", name} | acc]
+
+      {:first, true}, acc ->
+        acc
+
+      {:order, order}, acc ->
+        case String.split(order, ":", parts: 2, trim: true) do
+          [col] -> [{"o", col}, {"d", "desc"} | acc]
+          [col, dir] -> [{"o", col}, {"d", dir} | acc]
+        end
+
       {:resource, resource}, acc ->
         case resource do
           :asm -> [{"p", "section"}, {"s", "uberasm"} | acc]
@@ -54,18 +67,6 @@ defmodule SMWCBot.Search do
 
       {:waiting, true}, acc ->
         [{"u", 1} | acc]
-
-      {:order, order}, acc ->
-        case String.split(order, ":", parts: 2, trim: true) do
-          [col] -> [{"o", col}, {"d", "desc"} | acc]
-          [col, dir] -> [{"o", col}, {"d", dir} | acc]
-        end
-
-      {:first, true}, acc ->
-        acc
-
-      {:author, name}, acc ->
-        [{"f[author]", name} | acc]
 
       invalid, _acc ->
         raise ArgumentError, message: "invalid filter: #{inspect(invalid)}"
