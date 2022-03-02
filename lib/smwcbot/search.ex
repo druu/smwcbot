@@ -38,7 +38,6 @@ defmodule SMWCBot.Search do
     end
   end
 
-  # credo:disable-for-next-line Credo.Check.Refactor.CyclomaticComplexity
   defp build_filter_params(query, opts) do
     Enum.reduce(opts, [{"f[name]", query}], fn
       {:author, name}, acc ->

@@ -3,6 +3,8 @@ defmodule SMWCBot.Parser do
   Parser behaviour and default implementations.
   """
 
+  require Logger
+
   @type parse_result ::
           {:ok, text :: String.t(), href :: String.t()}
           | {:ok, :multi, href :: String.t()}
@@ -10,8 +12,6 @@ defmodule SMWCBot.Parser do
           | {:error, String.t()}
 
   @callback parse_body(String.t(), String.t(), map()) :: parse_result()
-
-  require Logger
 
   defmacro __using__(_) do
     quote do
