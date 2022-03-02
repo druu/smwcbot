@@ -5,7 +5,7 @@
 Twitch chat bot for searching SMW Central.
 ### Running locally
 
- * Copy `config/config.secret.example.exs` to `config/config.secret.exs`.
+ * Copy `config/dev.secret.example.exs` to `config/dev.secret.exs`.
  * Update the config file with your bot's config. Channel names should be lowercase.
 
 ```sh

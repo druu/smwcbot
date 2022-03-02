@@ -1,5 +1,6 @@
-# COMPILE-TIME CONFIG
 import Config
+
+# Universal compile-time config.
 
 # We set the command prefix in compile-time config because we want to match in
 # function head, so we can't put it in runtime config.
@@ -14,6 +15,6 @@ if File.exists?("config/#{config_env()}.exs") do
 end
 
 # Import a secret config file, if it exists.
-if File.exists?("config/config.secret.exs") do
-  import_config "config.secret.exs"
+if File.exists?("config/#{config_env()}.secret.exs") do
+  import_config "#{config_env()}.secret.exs"
 end
