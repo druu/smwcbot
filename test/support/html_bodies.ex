@@ -1,4 +1,4 @@
-defmodule SMWCBot.HTMLBodies do
+defmodule SMWC.HTMLBodies do
   @moduledoc """
   HTML page bodies.
   """
