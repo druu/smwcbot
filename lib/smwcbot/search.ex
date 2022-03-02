@@ -42,10 +42,14 @@ defmodule SMWCBot.Search do
     Enum.reduce(opts, [{"f[name]", query}], fn
       {:resource, resource}, acc ->
         case resource do
+          :asm -> [{"p", "section"}, {"s", "uberasm"} | acc]
+          :blocks -> [{"p", "section"}, {"s", "smwblocks"} | acc]
+          :graphics -> [{"p", "section"}, {"s", "smwgraphics"} | acc]
           :hack -> [{"p", "section"}, {"s", "smwhacks"} | acc]
           :music -> [{"p", "section"}, {"s", "smwmusic"} | acc]
-          :graphics -> [{"p", "section"}, {"s", "smwgraphics"} | acc]
-          :blocks -> [{"p", "section"}, {"s", "smwblocks"} | acc]
+          :patches -> [{"p", "section"}, {"s", "smwpatches"} | acc]
+          :sprites -> [{"p", "section"}, {"s", "smwsprites"} | acc]
+          :uberasm -> [{"p", "section"}, {"s", "uberasm"} | acc]
         end
 
       {:waiting, true}, acc ->
