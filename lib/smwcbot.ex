@@ -12,7 +12,6 @@ defmodule SMWCBot do
 
   @impl true
   def handle_message(@command_prefix <> command, sender, chat) do
-    Logger.debug("Command: " <> command)
     case execute(command) do
       {:ok, :multi, href} ->
         TMI.message(chat, "#{sender}, I found multiple results @ #{href}")
