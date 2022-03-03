@@ -55,6 +55,7 @@ defmodule SMWCBot.Parser do
     end
   end
 
+  @spec default_parse_body(any, binary, any, any) :: any
   def default_parse_body(mod, body, search_uri, opts) do
     case Floki.parse_document(body) do
       {:ok, document} ->

@@ -12,6 +12,7 @@ defmodule SMWCBot do
 
   @impl true
   def handle_message(@command_prefix <> command, sender, chat) do
+    Logger.debug("Command: " <> command)
     case execute(command) do
       {:ok, :multi, href} ->
         TMI.message(chat, "#{sender}, I found multiple results @ #{href}")
@@ -31,10 +32,14 @@ defmodule SMWCBot do
     Logger.debug("Message in #{chat} from #{sender}: #{message}")
   end
 
+  defp execute("asm " <> rest), do: search(:uberasm, rest)
   defp execute("blocks " <> rest), do: search(:blocks, rest)
   defp execute("graphics " <> rest), do: search(:graphics, rest)
   defp execute("hack " <> rest), do: search(:hack, rest)
   defp execute("music " <> rest), do: search(:music, rest)
+  defp execute("patches " <> rest), do: search(:patches, rest)
+  defp execute("sprites " <> rest), do: search(:sprites, rest)
+  defp execute("uberasm " <> rest), do: search(:uberasm, rest)
 
   defp search(resource, command) do
     case parse_command(command) do
