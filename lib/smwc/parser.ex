@@ -64,7 +64,7 @@ defmodule SMWC.Parser do
         |> mod.parse_result_table(search_uri)
 
       {:error, error} ->
-        Logger.error("Error parsing page: #{error}")
+        Logger.error("[Parser] Error parsing page: #{error}")
         {:error, "bad web page"}
     end
   end
@@ -84,12 +84,12 @@ defmodule SMWC.Parser do
   end
 
   def default_parse_result_table(_mod, [_th], _seatch_uri) do
-    Logger.debug("Nothing")
+    Logger.debug("[Parser] Nothing")
     {:ok, nil}
   end
 
   def default_parse_result_table(_mod, result, _search_uri) do
-    Logger.warn("No table? #{inspect(result)}")
+    Logger.warn("[Parser] No table? #{inspect(result)}")
     {:ok, nil}
   end
 

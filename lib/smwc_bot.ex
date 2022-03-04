@@ -26,21 +26,21 @@ defmodule SMWCBot do
   def handle_message(@command_prefix <> command, sender, chat) do
     case execute(command) do
       {:ok, :multi, href} ->
-        TMI.message(chat, "#{sender}, I found multiple results @ #{href}")
+        send_message(chat, "#{sender}, I found multiple results @ #{href}")
 
       {:ok, text, href} ->
-        TMI.message(chat, "#{sender}, #{text} @ #{href}")
+        send_message(chat, "#{sender}, #{text} @ #{href}")
 
       {:ok, nil} ->
-        TMI.message(chat, "Sorry #{sender}, no results")
+        send_message(chat, "Sorry #{sender}, no results")
 
       {:error, reason} ->
-        TMI.message(chat, "Sorry #{sender}, bot can't complete that search: #{reason}")
+        send_message(chat, "Sorry #{sender}, bot can't complete that search: #{reason}")
     end
   end
 
   def handle_message(message, sender, chat) do
-    Logger.debug("Message in #{chat} from #{sender}: #{message}")
+    Logger.debug("[SMWCBot] Message in #{chat} from #{sender}: #{message}")
   end
 
   defp execute("blocks " <> rest), do: search(Resources.Block, rest)

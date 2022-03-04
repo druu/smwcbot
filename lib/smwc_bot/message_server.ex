@@ -19,7 +19,7 @@ defmodule SMWCBot.MessageServer do
   """
   @spec start_link(keyword()) :: GenServer.on_start()
   def start_link(opts) do
-    GenServer.start_link(__MODULE__, opts)
+    GenServer.start_link(__MODULE__, opts, name: __MODULE__)
   end
 
   @doc """
@@ -40,7 +40,7 @@ defmodule SMWCBot.MessageServer do
       queue: :queue.new()
     }
 
-    Logger.info("[MessageServer] starting with a message rate of #{state.rate}ms...")
+    Logger.info("[MessageServer] STARTING with a message rate of #{state.rate}ms...")
 
     {:ok, state}
   end
@@ -69,12 +69,12 @@ defmodule SMWCBot.MessageServer do
   defp send_and_schedule_next(state) do
     case :queue.out(state.queue) do
       {:empty, _} ->
-        Logger.debug("[MessageServer] No more messages to send: pausing")
+        Logger.debug("[MessageServer] no more messages to send: PAUSED")
         {:noreply, %{state | timer_ref: nil}}
 
       {{:value, {chat, message}}, rest} ->
         TMI.message(chat, message)
-        Logger.debug("[MessageServer] sent '#{message}' to '#{chat}'")
+        Logger.debug("[MessageServer] SENT #{chat}: #{message}")
         timer_ref = Process.send_after(self(), :send, state.rate)
         {:noreply, %{state | queue: rest, timer_ref: timer_ref}}
     end

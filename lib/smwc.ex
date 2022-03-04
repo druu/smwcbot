@@ -21,18 +21,18 @@ defmodule SMWC do
     filter_params = build_filter_params(query, opts) |> URI.encode_query()
     search_uri = "#{@base_uri}/?#{filter_params}"
 
-    Logger.debug("Uri = #{search_uri}")
+    Logger.debug("[SMWC] URI: #{search_uri}")
 
     case Mojito.get(search_uri) do
       {:ok, %{status_code: 200, body: body}} ->
         opts.resource.parse_body(body, search_uri, opts)
 
       {:ok, %{status_code: status, body: body}} ->
-        Logger.error("Error fetching page, status #{status}: #{inspect(body)}")
+        Logger.error("[SMWC] Error fetching page, status #{status}: #{inspect(body)}")
         {:error, to_string(status)}
 
       {:error, %{message: message}} ->
-        Logger.error("Error fetching page: #{message}")
+        Logger.error("[SMWC] Error fetching page: #{message}")
         {:error, message}
     end
   end

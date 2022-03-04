@@ -11,6 +11,9 @@ import Config
 # function head, so we can't put it in runtime config.
 config :smwc, SMWCBot, command_prefix: "!"
 
+# Set the default rate that messages will go out at.
+config :smwc, SMWCBot.MessageServer, rate: 5_000
+
 config :floki, :html_parser, Floki.HTMLParser.Html5ever
 
 config :smwc,
