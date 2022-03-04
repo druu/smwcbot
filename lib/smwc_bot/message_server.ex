@@ -7,9 +7,6 @@ defmodule SMWCBot.MessageServer do
    - `:rate` integer - The rate at which to send the messages. (one message per `rate`).
       Optional. Defaults to `30_000` ms.
 
-  - `:messages` [{string, string}] - A list of initial messages to start with. Optional.
-      Defaults to `[]`.
-
   """
   use GenServer
 
@@ -39,17 +36,13 @@ defmodule SMWCBot.MessageServer do
   def init(opts) do
     state = %{
       rate: Keyword.get(opts, :rate, @default_rate_ms),
-      queue: Keyword.get(opts, :messages, []) |> :queue.from_list()
+      timer_ref: nil,
+      queue: :queue.new()
     }
 
     Logger.info("[MessageServer] starting with a message rate of #{state.rate}ms...")
 
-    {:ok, state, {:continue, :send}}
-  end
-
-  @impl true
-  def handle_continue(:send, state) do
-    send_and_schedule_next(state)
+    {:ok, state}
   end
 
   @impl true
@@ -58,8 +51,16 @@ defmodule SMWCBot.MessageServer do
   end
 
   @impl true
-  def handle_cast({:add, {chat, message}}, state) do
-    {:noreply, %{state | queue: :queue.in({chat, message}, state.queue)}}
+  # If there is no timer_ref, then that means the queue was empty and paused, so
+  # we will add it to the queue and start it again.
+  def handle_cast({:add, chat_message}, %{timer_ref: nil} = state) do
+    send_and_schedule_next(%{state | queue: :queue.in(chat_message, state.queue)})
+  end
+
+  # The timer_ref was not empty so that means the queue is running, so we will
+  # just add the message to queue.
+  def handle_cast({:add, chat_message}, state) do
+    {:noreply, %{state | queue: :queue.in(chat_message, state.queue)}}
   end
 
   ## Internal API
@@ -68,13 +69,14 @@ defmodule SMWCBot.MessageServer do
   defp send_and_schedule_next(state) do
     case :queue.out(state.queue) do
       {:empty, _} ->
-        {:noreply, state}
+        Logger.debug("[MessageServer] No more messages to send: pausing")
+        {:noreply, %{state | timer_ref: nil}}
 
       {{:value, {chat, message}}, rest} ->
         TMI.message(chat, message)
         Logger.debug("[MessageServer] sent '#{message}' to '#{chat}'")
-        Process.send_after(self(), :send, state.rate)
-        {:noreply, %{state | queue: rest}}
+        timer_ref = Process.send_after(self(), :send, state.rate)
+        {:noreply, %{state | queue: rest, timer_ref: timer_ref}}
     end
   end
 end
