@@ -5,11 +5,22 @@ defmodule SMWCBot do
   use TMI.Handler
 
   alias SMWC.Resources
+  alias SMWCBot.MessageServer
 
   require Logger
 
   @compile_config Application.compile_env(:smwc, SMWCBot)
   @command_prefix Keyword.get(@compile_config, :command_prefix, "!")
+
+  @doc """
+  Adds a message to the outbound message queue.
+  """
+  @spec send_message(String.t(), String.t()) :: :ok
+  def send_message(chat, message) do
+    MessageServer.add_message(chat, message)
+  end
+
+  ## Callbacks
 
   @impl true
   def handle_message(@command_prefix <> command, sender, chat) do

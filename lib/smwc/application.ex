@@ -20,7 +20,9 @@ defmodule SMWC.Application do
         # Start the PubSub system
         {Phoenix.PubSub, name: SMWC.PubSub},
         # Start the Endpoint (http/https)
-        SMWCWeb.Endpoint
+        SMWCWeb.Endpoint,
+        # Dynamic supervisor, for one-off stuff.
+        {SMWCBot.MessageServer, module_config(SMWCBot.MessageServer)}
         # Start a worker by calling: SMWC.Worker.start_link(arg)
         # {SMWC.Worker, arg}
       ]
@@ -41,7 +43,7 @@ defmodule SMWC.Application do
   end
 
   defp add_tmi_childspec(children) do
-    tmi_config = Application.get_env(@app, TMI, [])
+    tmi_config = module_config(TMI)
     {start?, tmi_config} = Keyword.pop(tmi_config, :start?)
 
     if start? do
@@ -51,6 +53,15 @@ defmodule SMWC.Application do
       Logger.warn("[TMI] Skipping start of Twitch chat...")
       Logger.info("[TMI] To start Twitch chat use TMI_START=true")
       children
+    end
+  end
+
+  # Get the module config.
+  defp module_config(module, opts \\ []) do
+    if Keyword.get(opts, :required) do
+      Application.fetch_env!(@app, module)
+    else
+      Application.get_env(@app, module, [])
     end
   end
 end
