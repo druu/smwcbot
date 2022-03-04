@@ -181,7 +181,7 @@
           {Credo.Check.Refactor.IoPuts, []},
           {Credo.Check.Refactor.MapMap, []},
           # {Credo.Check.Refactor.ModuleDependencies, []},
-          {Credo.Check.Refactor.NegatedIsNil, []},
+          # {Credo.Check.Refactor.NegatedIsNil, []},
           # {Credo.Check.Refactor.PipeChainStart, []},
           {Credo.Check.Refactor.RejectFilter, []},
           # {Credo.Check.Refactor.VariableRebinding, []},
