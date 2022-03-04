@@ -7,6 +7,8 @@ defmodule SMWC do
 
   require Logger
 
+  alias SMWC.Resources
+
   @base_uri "https://www.smwcentral.net"
 
   @default_opts %{resource: :hack}
@@ -24,9 +26,7 @@ defmodule SMWC do
 
     case Mojito.get(search_uri) do
       {:ok, %{status_code: 200, body: body}} ->
-        opts.resource
-        |> parser_from_resource()
-        |> then(& &1.parse_body(body, search_uri, opts))
+        opts.resource.parse_body(body, search_uri, opts)
 
       {:ok, %{status_code: status, body: body}} ->
         Logger.error("Error fetching page, status #{status}: #{inspect(body)}")
@@ -54,14 +54,13 @@ defmodule SMWC do
 
       {:resource, resource}, acc ->
         case resource do
-          :asm -> [{"p", "section"}, {"s", "uberasm"} | acc]
-          :blocks -> [{"p", "section"}, {"s", "smwblocks"} | acc]
-          :graphics -> [{"p", "section"}, {"s", "smwgraphics"} | acc]
-          :hack -> [{"p", "section"}, {"s", "smwhacks"} | acc]
-          :music -> [{"p", "section"}, {"s", "smwmusic"} | acc]
-          :patches -> [{"p", "section"}, {"s", "smwpatches"} | acc]
-          :sprites -> [{"p", "section"}, {"s", "smwsprites"} | acc]
-          :uberasm -> [{"p", "section"}, {"s", "uberasm"} | acc]
+          Resources.Block -> [{"p", "section"}, {"s", "smwblocks"} | acc]
+          Resources.Graphics -> [{"p", "section"}, {"s", "smwgraphics"} | acc]
+          Resources.Hack -> [{"p", "section"}, {"s", "smwhacks"} | acc]
+          Resources.Music -> [{"p", "section"}, {"s", "smwmusic"} | acc]
+          Resources.Patch -> [{"p", "section"}, {"s", "smwpatches"} | acc]
+          Resources.Sprite -> [{"p", "section"}, {"s", "smwsprites"} | acc]
+          Resources.UberASM -> [{"p", "section"}, {"s", "uberasm"} | acc]
         end
 
       {:waiting, true}, acc ->
@@ -71,13 +70,4 @@ defmodule SMWC do
         raise ArgumentError, message: "invalid filter: #{inspect(invalid)}"
     end)
   end
-
-  defp parser_from_resource(:asm), do: SMWC.UberASMParser
-  defp parser_from_resource(:blocks), do: SMWC.BlocksParser
-  defp parser_from_resource(:graphics), do: SMWC.GraphicsParser
-  defp parser_from_resource(:hack), do: SMWC.HacksParser
-  defp parser_from_resource(:music), do: SMWC.MusicParser
-  defp parser_from_resource(:patches), do: SMWC.PatchesParser
-  defp parser_from_resource(:sprites), do: SMWC.SpritesParser
-  defp parser_from_resource(:uberasm), do: SMWC.UberASMParser
 end

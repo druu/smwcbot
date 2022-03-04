@@ -6,6 +6,8 @@ defmodule SMWCBot do
 
   require Logger
 
+  alias SMWC.Resources
+
   @compile_config Application.compile_env(:smwc, SMWCBot)
   @command_prefix Keyword.get(@compile_config, :command_prefix, "!")
 
@@ -30,10 +32,10 @@ defmodule SMWCBot do
     Logger.debug("Message in #{chat} from #{sender}: #{message}")
   end
 
-  defp execute("blocks " <> rest), do: search(:blocks, rest)
-  defp execute("graphics " <> rest), do: search(:graphics, rest)
-  defp execute("hack " <> rest), do: search(:hack, rest)
-  defp execute("music " <> rest), do: search(:music, rest)
+  defp execute("blocks " <> rest), do: search(Resources.Block, rest)
+  defp execute("graphics " <> rest), do: search(Resources.Graphics, rest)
+  defp execute("hack " <> rest), do: search(Resources.Hack, rest)
+  defp execute("music " <> rest), do: search(Resources.Music, rest)
 
   defp search(resource, command) do
     case parse_command(command) do
