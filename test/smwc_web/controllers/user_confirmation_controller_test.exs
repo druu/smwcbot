@@ -1,9 +1,9 @@
 defmodule SMWCWeb.UserConfirmationControllerTest do
   use SMWCWeb.ConnCase, async: true
 
+  import SMWC.AccountsFixtures
   alias SMWC.Accounts
   alias SMWC.Repo
-  import SMWC.AccountsFixtures
 
   setup do
     %{user: user_fixture()}
@@ -31,7 +31,9 @@ defmodule SMWCWeb.UserConfirmationControllerTest do
     end
 
     test "does not send confirmation token if User is confirmed", %{conn: conn, user: user} do
-      Repo.update!(Accounts.User.confirm_changeset(user))
+      user
+      |>Accounts.User.confirm_changeset()
+      |>Repo.update!()
 
       conn =
         post(conn, Routes.user_confirmation_path(conn, :create), %{

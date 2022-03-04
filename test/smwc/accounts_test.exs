@@ -1,9 +1,8 @@
 defmodule SMWC.AccountsTest do
   use SMWC.DataCase
 
-  alias SMWC.Accounts
-
   import SMWC.AccountsFixtures
+  alias SMWC.Accounts
   alias SMWC.Accounts.User
   alias SMWC.Accounts.UserToken
 

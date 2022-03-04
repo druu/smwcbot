@@ -1,4 +1,7 @@
 defmodule SMWC.Accounts.User do
+  @moduledoc """
+  The User context.
+  """
   use Ecto.Schema
 
   import Ecto.Changeset
@@ -77,10 +80,11 @@ defmodule SMWC.Accounts.User do
   It requires the email to change otherwise an error is added.
   """
   def email_changeset(user, attrs) do
-    user
+    result = user
     |> cast(attrs, [:email])
     |> validate_email()
-    |> case do
+
+    case result do
       %{changes: %{email: _}} = changeset -> changeset
       %{} = changeset -> add_error(changeset, :email, "did not change")
     end

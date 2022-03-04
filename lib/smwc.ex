@@ -4,10 +4,9 @@ defmodule SMWC do
   """
 
   alias SMWC.Parser
+  alias SMWC.Resources
 
   require Logger
-
-  alias SMWC.Resources
 
   @base_uri "https://www.smwcentral.net"
 

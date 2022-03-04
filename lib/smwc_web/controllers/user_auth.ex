@@ -1,4 +1,7 @@
 defmodule SMWCWeb.UserAuth do
+  @moduledoc """
+  The User Auth context.
+  """
   import Plug.Conn
   import Phoenix.Controller
 

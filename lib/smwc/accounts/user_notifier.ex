@@ -1,4 +1,7 @@
 defmodule SMWC.Accounts.UserNotifier do
+  @moduledoc """
+  The User Notifier context.
+  """
   import Swoosh.Email
 
   alias SMWC.Mailer

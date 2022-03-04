@@ -1,8 +1,8 @@
 defmodule SMWCWeb.UserSettingsControllerTest do
   use SMWCWeb.ConnCase, async: true
 
-  alias SMWC.Accounts
   import SMWC.AccountsFixtures
+  alias SMWC.Accounts
 
   setup :register_and_log_in_user
 

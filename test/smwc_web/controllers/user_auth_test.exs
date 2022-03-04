@@ -1,9 +1,9 @@
 defmodule SMWCWeb.UserAuthTest do
   use SMWCWeb.ConnCase, async: true
 
+  import SMWC.AccountsFixtures
   alias SMWC.Accounts
   alias SMWCWeb.UserAuth
-  import SMWC.AccountsFixtures
 
   @remember_me_cookie "_smwc_web_user_remember_me"
 

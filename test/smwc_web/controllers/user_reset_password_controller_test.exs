@@ -1,9 +1,9 @@
 defmodule SMWCWeb.UserResetPasswordControllerTest do
   use SMWCWeb.ConnCase, async: true
 
+  import SMWC.AccountsFixtures
   alias SMWC.Accounts
   alias SMWC.Repo
-  import SMWC.AccountsFixtures
 
   setup do
     %{user: user_fixture()}

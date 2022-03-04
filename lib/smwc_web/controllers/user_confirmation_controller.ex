@@ -1,4 +1,7 @@
 defmodule SMWCWeb.UserConfirmationController do
+  @moduledoc """
+  The User Confirmation controller.
+  """
   use SMWCWeb, :controller
 
   alias SMWC.Accounts

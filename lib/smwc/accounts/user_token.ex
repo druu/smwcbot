@@ -1,5 +1,8 @@
 defmodule SMWC.Accounts.UserToken do
-  use Ecto.Schema
+  @moduledoc """
+  The User Token context.
+  """
+use Ecto.Schema
 
   import Ecto.Query
 

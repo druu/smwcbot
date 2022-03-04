@@ -4,11 +4,12 @@ defmodule SMWC.Accounts do
   """
 
   import Ecto.Query, warn: false
-  alias SMWC.Repo
 
   alias SMWC.Accounts.User
-  alias SMWC.Accounts.UserToken
   alias SMWC.Accounts.UserNotifier
+  alias SMWC.Accounts.UserToken
+
+  alias SMWC.Repo
 
   ## Database getters
 
@@ -207,11 +208,12 @@ defmodule SMWC.Accounts do
       |> User.password_changeset(attrs)
       |> User.validate_current_password(password)
 
-    Ecto.Multi.new()
+    result = Ecto.Multi.new()
     |> Ecto.Multi.update(:user, changeset)
     |> Ecto.Multi.delete_all(:tokens, UserToken.user_and_contexts_query(user, :all))
     |> Repo.transaction()
-    |> case do
+
+    case result do
       {:ok, %{user: user}} -> {:ok, user}
       {:error, :user, changeset, _} -> {:error, changeset}
     end
@@ -240,7 +242,8 @@ defmodule SMWC.Accounts do
   Deletes the signed token with the given context.
   """
   def delete_session_token(token) do
-    Repo.delete_all(UserToken.token_and_context_query(token, "session"))
+    UserToken.token_and_context_query(token, "session")
+    |> Repo.delete_all()
     :ok
   end
 
@@ -343,11 +346,12 @@ defmodule SMWC.Accounts do
 
   """
   def reset_user_password(user, attrs) do
-    Ecto.Multi.new()
+    result = Ecto.Multi.new()
     |> Ecto.Multi.update(:user, User.password_changeset(user, attrs))
     |> Ecto.Multi.delete_all(:tokens, UserToken.user_and_contexts_query(user, :all))
     |> Repo.transaction()
-    |> case do
+
+    case result do
       {:ok, %{user: user}} -> {:ok, user}
       {:error, :user, changeset, _} -> {:error, changeset}
     end

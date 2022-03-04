@@ -4,9 +4,9 @@ defmodule SMWCBot do
   """
   use TMI.Handler
 
-  require Logger
-
   alias SMWC.Resources
+
+  require Logger
 
   @compile_config Application.compile_env(:smwc, SMWCBot)
   @command_prefix Keyword.get(@compile_config, :command_prefix, "!")
