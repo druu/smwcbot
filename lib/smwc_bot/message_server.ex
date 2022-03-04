@@ -11,7 +11,7 @@ defmodule SMWCBot.MessageServer do
       Defaults to `[]`.
 
   """
-  use GenServer, restart: :transient
+  use GenServer
 
   require Logger
 
