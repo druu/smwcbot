@@ -5,6 +5,7 @@ defmodule SMWCBotHackTest do
   import ExUnit.CaptureLog
 
   alias SMWC.HTMLBodies
+  alias SMWCBot.MessageServer
 
   describe "Hack search" do
     test "returns first result to user with 0 results" do
@@ -17,7 +18,7 @@ defmodule SMWCBotHackTest do
         {:ok, %{status_code: 200, body: HTMLBodies.smwc_results(:hacks, 0)}}
       end)
 
-      expect(TMI, :message, fn actual_chat, actual_message ->
+      expect(MessageServer, :add_message, fn actual_chat, actual_message ->
         assert actual_chat == chat
         assert actual_message == expected_message
         :ok
@@ -38,7 +39,7 @@ defmodule SMWCBotHackTest do
         {:ok, %{status_code: 200, body: HTMLBodies.smwc_results(:hacks, 1)}}
       end)
 
-      expect(TMI, :message, fn actual_chat, actual_message ->
+      expect(MessageServer, :add_message, fn actual_chat, actual_message ->
         assert actual_chat == chat
         assert actual_message == expected_message
         :ok
@@ -58,7 +59,7 @@ defmodule SMWCBotHackTest do
         {:ok, %{status_code: 200, body: HTMLBodies.smwc_results(:hacks, 2)}}
       end)
 
-      expect(TMI, :message, fn actual_chat, actual_message ->
+      expect(MessageServer, :add_message, fn actual_chat, actual_message ->
         assert actual_chat == chat
         assert actual_message == expected_message
         :ok
@@ -78,7 +79,7 @@ defmodule SMWCBotHackTest do
         {:ok, %{status_code: 200, body: HTMLBodies.smwc_results(:hacks, "multi-page")}}
       end)
 
-      expect(TMI, :message, fn actual_chat, actual_message ->
+      expect(MessageServer, :add_message, fn actual_chat, actual_message ->
         assert actual_chat == chat
         assert actual_message == expected_message
         :ok
@@ -99,7 +100,7 @@ defmodule SMWCBotHackTest do
         {:ok, %{status_code: status_code, body: body}}
       end)
 
-      expect(TMI, :message, fn actual_chat, actual_message ->
+      expect(MessageServer, :add_message, fn actual_chat, actual_message ->
         assert actual_chat == chat
         assert actual_message == expected_message
         :ok
@@ -124,7 +125,7 @@ defmodule SMWCBotHackTest do
         {:error, %{reason: :whatever, message: error}}
       end)
 
-      expect(TMI, :message, fn actual_chat, actual_message ->
+      expect(MessageServer, :add_message, fn actual_chat, actual_message ->
         assert actual_chat == chat
         assert actual_message == expected_message
         :ok
