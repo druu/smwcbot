@@ -46,11 +46,6 @@ defmodule SMWCBot.MessageServer do
   end
 
   @impl true
-  def handle_info(:send, state) do
-    send_and_schedule_next(state)
-  end
-
-  @impl true
   # If there is no timer_ref, then that means the queue was empty and paused, so
   # we will add it to the queue and start it again.
   def handle_cast({:add, chat_message}, %{timer_ref: nil} = state) do
@@ -61,6 +56,11 @@ defmodule SMWCBot.MessageServer do
   # just add the message to queue.
   def handle_cast({:add, chat_message}, state) do
     {:noreply, %{state | queue: :queue.in(chat_message, state.queue)}}
+  end
+
+  @impl true
+  def handle_info(:send, state) do
+    send_and_schedule_next(state)
   end
 
   ## Internal API
