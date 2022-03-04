@@ -6,7 +6,9 @@ defmodule SMWC.Accounts do
   import Ecto.Query, warn: false
   alias SMWC.Repo
 
-  alias SMWC.Accounts.{User, UserToken, UserNotifier}
+  alias SMWC.Accounts.User
+  alias SMWC.Accounts.UserToken
+  alias SMWC.Accounts.UserNotifier
 
   ## Database getters
 
