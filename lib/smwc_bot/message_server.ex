@@ -15,7 +15,7 @@ defmodule SMWCBot.MessageServer do
   @default_rate_ms 30_000
 
   @doc """
-  Start the message broadcaster.
+  Start the message server.
   """
   @spec start_link(keyword()) :: GenServer.on_start()
   def start_link(opts) do
