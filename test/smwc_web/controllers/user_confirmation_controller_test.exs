@@ -32,8 +32,8 @@ defmodule SMWCWeb.UserConfirmationControllerTest do
 
     test "does not send confirmation token if User is confirmed", %{conn: conn, user: user} do
       user
-      |>Accounts.User.confirm_changeset()
-      |>Repo.update!()
+      |> Accounts.User.confirm_changeset()
+      |> Repo.update!()
 
       conn =
         post(conn, Routes.user_confirmation_path(conn, :create), %{

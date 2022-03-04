@@ -208,10 +208,11 @@ defmodule SMWC.Accounts do
       |> User.password_changeset(attrs)
       |> User.validate_current_password(password)
 
-    result = Ecto.Multi.new()
-    |> Ecto.Multi.update(:user, changeset)
-    |> Ecto.Multi.delete_all(:tokens, UserToken.user_and_contexts_query(user, :all))
-    |> Repo.transaction()
+    result =
+      Ecto.Multi.new()
+      |> Ecto.Multi.update(:user, changeset)
+      |> Ecto.Multi.delete_all(:tokens, UserToken.user_and_contexts_query(user, :all))
+      |> Repo.transaction()
 
     case result do
       {:ok, %{user: user}} -> {:ok, user}
@@ -244,6 +245,7 @@ defmodule SMWC.Accounts do
   def delete_session_token(token) do
     UserToken.token_and_context_query(token, "session")
     |> Repo.delete_all()
+
     :ok
   end
 
@@ -346,10 +348,11 @@ defmodule SMWC.Accounts do
 
   """
   def reset_user_password(user, attrs) do
-    result = Ecto.Multi.new()
-    |> Ecto.Multi.update(:user, User.password_changeset(user, attrs))
-    |> Ecto.Multi.delete_all(:tokens, UserToken.user_and_contexts_query(user, :all))
-    |> Repo.transaction()
+    result =
+      Ecto.Multi.new()
+      |> Ecto.Multi.update(:user, User.password_changeset(user, attrs))
+      |> Ecto.Multi.delete_all(:tokens, UserToken.user_and_contexts_query(user, :all))
+      |> Repo.transaction()
 
     case result do
       {:ok, %{user: user}} -> {:ok, user}

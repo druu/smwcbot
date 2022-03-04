@@ -80,9 +80,10 @@ defmodule SMWC.Accounts.User do
   It requires the email to change otherwise an error is added.
   """
   def email_changeset(user, attrs) do
-    result = user
-    |> cast(attrs, [:email])
-    |> validate_email()
+    result =
+      user
+      |> cast(attrs, [:email])
+      |> validate_email()
 
     case result do
       %{changes: %{email: _}} = changeset -> changeset
