@@ -31,6 +31,11 @@ if config_env() == :prod do
       capabilities: ['membership']
   end
 
+  # Set the rate that Twitch messages will go out at. This will vary based on
+  # whether or not you are the broadcaster, are a mod, or have a verified bot.
+  config :smwc, SMWCBot.MessageServer,
+    rate: System.get_env("TWITCH_MSG_RATE", "1500") |> String.to_integer()
+
   database_url =
     System.get_env("DATABASE_URL") ||
       raise """

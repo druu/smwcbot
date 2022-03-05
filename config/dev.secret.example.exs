@@ -1,7 +1,7 @@
 import Config
 
 # Set the default rate that messages will go out at for DEV.
-config :smwc, SMWCBot.MessageServer, rate: 5_000
+config :smwc, SMWCBot.MessageServer, rate: 5000
 
 # Get a token for your bot from: https://twitchapps.com/tmi/
 config :smwc, TMI,
