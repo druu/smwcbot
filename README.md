@@ -40,6 +40,10 @@ thebot> Here jim, Redeeming Peach @ https://www.smwcentral.net/?p=section&a=deta
 * `-w, -waiting`  searches the waiting list
   * `jim> !hack --waiting mario`
  
+
+#### Showcase
+![SMWCSearch Showcase](https://i.imgur.com/7Ur1O6Z.png)
+ 
  
 ### Deploying
 
