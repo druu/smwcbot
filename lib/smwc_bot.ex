@@ -2,7 +2,7 @@ defmodule SMWCBot do
   @moduledoc """
   Main bot handler.
   """
-  use TMI.Handler
+  use TMI
 
   alias SMWC.Resources
   alias SMWCBot.MessageServer
@@ -22,20 +22,20 @@ defmodule SMWCBot do
 
   ## Callbacks
 
-  @impl true
+  @impl TMI.Handler
   def handle_message(@command_prefix <> command, sender, chat) do
     case execute(command) do
       {:ok, :multi, href} ->
-        send_message(chat, "#{sender}, I found multiple results @ #{href}")
+        say(chat, "#{sender}, I found multiple results @ #{href}")
 
       {:ok, text, href} ->
-        send_message(chat, "#{sender}, #{text} @ #{href}")
+        say(chat, "#{sender}, #{text} @ #{href}")
 
       {:ok, nil} ->
-        send_message(chat, "Sorry #{sender}, no results")
+        say(chat, "Sorry #{sender}, no results")
 
       {:error, reason} ->
-        send_message(chat, "Sorry #{sender}, bot can't complete that search: #{reason}")
+        say(chat, "Sorry #{sender}, bot can't complete that search: #{reason}")
     end
   end
 

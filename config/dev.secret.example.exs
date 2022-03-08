@@ -5,8 +5,8 @@ config :smwc, SMWCBot.MessageServer, rate: 5000
 
 # Get a token for your bot from: https://twitchapps.com/tmi/
 config :smwc, TMI,
+  bot: SMWCBot,
   user: "mybotusername",
   pass: "oauth:mybotoauthtoken",
-  chats: ["mychat"],
-  handler: SMWCBot,
+  channels: ["mychat"],
   capabilities: ['membership']
