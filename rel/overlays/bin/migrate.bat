@@ -1,0 +1,1 @@
+call "%~dp0\smwc" eval SMWC.Release.migrate

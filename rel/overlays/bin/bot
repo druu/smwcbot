@@ -1,3 +1,3 @@
 #!/bin/sh
 cd -P -- "$(dirname -- "$0")"
-TMI_START=true exec ./smwcbot start
+TMI_START=true exec ./smwc start

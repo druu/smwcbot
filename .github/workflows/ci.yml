@@ -14,6 +14,19 @@ jobs:
         elixir: ['1.13.x']
         otp: ['24.x']
 
+    services:
+      postgres:
+        image: postgres:13
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     steps:
       - uses: actions/checkout@v2
 
@@ -31,7 +44,6 @@ jobs:
           key: build-${{ matrix.os }}-${{ matrix.elixir }}-${{ matrix.otp }}-${{ hashFiles('lib/**/*.ex*') }}
           restore-keys: |
             build-${{ matrix.os }}-${{ matrix.elixir }}-${{ matrix.otp }}-${{ hashFiles('lib/**/*.ex*') }}
-            build-${{ matrix.os }}-${{ matrix.elixir }}-${{ matrix.otp }}-
 
       - name: Dependencies cache
         uses: actions/cache@v2
@@ -40,14 +52,15 @@ jobs:
           key: mix-${{ matrix.os }}-${{ matrix.elixir }}-${{ matrix.otp }}-${{ hashFiles(format('{0}{1}', github.workspace, '/mix.lock')) }}
           restore-keys: |
             mix-${{ matrix.os }}-${{ matrix.elixir }}-${{ matrix.otp }}-${{ hashFiles(format('{0}{1}', github.workspace, '/mix.lock')) }}
-            mix-${{ matrix.os }}-${{ matrix.elixir }}-${{ matrix.otp }}-
-
-      - name: Check formatting
-        run: mix format --check-formatted
 
       - run: mix deps.get
 
       - run: mix deps.compile
+
+      - run: MIX_ENV=test mix deps.compile
+
+      - name: Check formatting
+        run: mix format --check-formatted
 
       - name: Compile dev
         run: mix compile --warnings-as-errors

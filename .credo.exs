@@ -31,7 +31,7 @@
           "apps/*/test/",
           "apps/*/web/"
         ],
-        excluded: [~r"/_build/", ~r"/deps/", ~r"/node_modules/"]
+        excluded: [~r"/_build/", ~r"/deps/", ~r"/node_modules/", ~r"/test/support/"]
       },
       #
       # Load and configure plugins here:
@@ -160,10 +160,10 @@
 
           # Controversial & Experimental
           {Credo.Check.Consistency.MultiAliasImportRequireUse, []},
-          {Credo.Check.Consistency.UnusedVariableNames, []},
+          # {Credo.Check.Consistency.UnusedVariableNames, []},
           {Credo.Check.Design.DuplicatedCode, []},
           {Credo.Check.Design.SkipTestWithoutComment, []},
-          {Credo.Check.Readability.AliasAs, []},
+          # {Credo.Check.Readability.AliasAs, []},
           {Credo.Check.Readability.BlockPipe, []},
           # {Credo.Check.Readability.ImplTrue, []},
           {Credo.Check.Readability.MultiAlias, []},
@@ -181,7 +181,7 @@
           {Credo.Check.Refactor.IoPuts, []},
           {Credo.Check.Refactor.MapMap, []},
           # {Credo.Check.Refactor.ModuleDependencies, []},
-          {Credo.Check.Refactor.NegatedIsNil, []},
+          # {Credo.Check.Refactor.NegatedIsNil, []},
           # {Credo.Check.Refactor.PipeChainStart, []},
           {Credo.Check.Refactor.RejectFilter, []},
           # {Credo.Check.Refactor.VariableRebinding, []},

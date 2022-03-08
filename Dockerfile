@@ -42,11 +42,20 @@ RUN mkdir config
 COPY config/config.exs config/${MIX_ENV}.exs config/
 RUN mix deps.compile
 
-# COPY priv priv
+COPY priv priv
 
-COPY lib lib
+# note: if your project uses a tool like https://purgecss.com/,
+# which customizes asset compilation based on what it finds in
+# your Elixir templates, you will need to move the asset compilation
+# step down so that `lib` is available.
+COPY assets assets
+
+# compile assets
+RUN mix assets.deploy
 
 # Compile the release
+COPY lib lib
+
 RUN mix compile
 
 # Changes to config/runtime.exs don't require recompiling the code
@@ -72,12 +81,8 @@ ENV LC_ALL en_US.UTF-8
 WORKDIR "/app"
 RUN chown nobody /app
 
-# set runner ENV
-ENV MIX_ENV="prod"
-
 # Only copy the final release from the build stage
-COPY --from=builder --chown=nobody:root /app/_build/${MIX_ENV}/rel/smwcbot ./
-RUN chmod +x /app/bin/*
+COPY --from=builder --chown=nobody:root /app/_build/prod/rel/smwc ./
 
 USER nobody
 
