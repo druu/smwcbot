@@ -43,10 +43,14 @@ defmodule SMWCBot do
     Logger.debug("[SMWCBot] Message in #{chat} from #{sender}: #{message}")
   end
 
-  defp execute("blocks " <> rest), do: search(Resources.Block, rest)
+  defp execute("asm " <> rest), do: search(Resources.UberASM, rest)
+  defp execute("blocks " <> rest), do: search(Resources.Blocks, rest)
   defp execute("graphics " <> rest), do: search(Resources.Graphics, rest)
   defp execute("hack " <> rest), do: search(Resources.Hack, rest)
   defp execute("music " <> rest), do: search(Resources.Music, rest)
+  defp execute("patches " <> rest), do: search(Resources.Patches, rest)
+  defp execute("sprites " <> rest), do: search(Resources.Sprites, rest)
+  defp execute("uberasm " <> rest), do: search(Resources.UberASM, rest)
 
   defp search(resource, command) do
     case parse_command(command) do

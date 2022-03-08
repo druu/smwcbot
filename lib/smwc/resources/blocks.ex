@@ -1,4 +1,4 @@
-defmodule SMWC.Resources.Patch do
+defmodule SMWC.Resources.Blocks do
   @moduledoc false
   use SMWC.Parser
 end

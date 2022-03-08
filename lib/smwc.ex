@@ -53,12 +53,12 @@ defmodule SMWC do
 
       {:resource, resource}, acc ->
         case resource do
-          Resources.Block -> [{"p", "section"}, {"s", "smwblocks"} | acc]
+          Resources.Blocks -> [{"p", "section"}, {"s", "smwblocks"} | acc]
           Resources.Graphics -> [{"p", "section"}, {"s", "smwgraphics"} | acc]
           Resources.Hack -> [{"p", "section"}, {"s", "smwhacks"} | acc]
           Resources.Music -> [{"p", "section"}, {"s", "smwmusic"} | acc]
-          Resources.Patch -> [{"p", "section"}, {"s", "smwpatches"} | acc]
-          Resources.Sprite -> [{"p", "section"}, {"s", "smwsprites"} | acc]
+          Resources.Patches -> [{"p", "section"}, {"s", "smwpatches"} | acc]
+          Resources.Sprites -> [{"p", "section"}, {"s", "smwsprites"} | acc]
           Resources.UberASM -> [{"p", "section"}, {"s", "uberasm"} | acc]
         end
 
