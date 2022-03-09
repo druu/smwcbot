@@ -23,11 +23,11 @@ if config_env() == :prod do
     config :smwc, TMI,
       user: System.fetch_env!("TWITCH_USER"),
       pass: System.fetch_env!("TWITCH_TOKEN"),
-      chats:
-        System.fetch_env!("TWITCH_CHATS")
+      channels:
+        System.fetch_env!("TWITCH_CHANNELS")
         |> String.split(~r/,\s*/, trim: true)
         |> Enum.map(&String.downcase/1),
-      handler: SMWCBot,
+      bot: SMWCBot,
       capabilities: ['membership']
   end
 

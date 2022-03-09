@@ -86,4 +86,4 @@ COPY --from=builder --chown=nobody:root /app/_build/prod/rel/smwc ./
 
 USER nobody
 
-CMD ["/app/bin/bot"]
+CMD ["/app/bin/bot_and_server"]
