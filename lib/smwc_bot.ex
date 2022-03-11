@@ -23,7 +23,7 @@ defmodule SMWCBot do
   ## Callbacks
 
   @impl TMI.Handler
-  def handle_message(@command_prefix <> command, sender, chat) do
+  def handle_message(@command_prefix <> command, sender, chat, _tags) do
     case execute(command) do
       {:ok, :multi, href} ->
         say(chat, "#{sender}, I found multiple results @ #{href}")
@@ -39,7 +39,7 @@ defmodule SMWCBot do
     end
   end
 
-  def handle_message(message, sender, chat) do
+  def handle_message(message, sender, chat, _tags) do
     Logger.debug("[SMWCBot] Message in #{chat} from #{sender}: #{message}")
   end
 

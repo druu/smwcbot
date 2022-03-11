@@ -47,6 +47,6 @@
   "telemetry": {:hex, :telemetry, "1.0.0", "0f453a102cdf13d506b7c0ab158324c337c41f1cc7548f0bc0e130bbf0ae9452", [:rebar3], [], "hexpm", "73bc09fa59b4a0284efb4624335583c528e07ec9ae76aca96ea0673850aec57a"},
   "telemetry_metrics": {:hex, :telemetry_metrics, "0.6.1", "315d9163a1d4660aedc3fee73f33f1d355dcc76c5c3ab3d59e76e3edf80eef1f", [:mix], [{:telemetry, "~> 0.4 or ~> 1.0", [hex: :telemetry, repo: "hexpm", optional: false]}], "hexpm", "7be9e0871c41732c233be71e4be11b96e56177bf15dde64a8ac9ce72ac9834c6"},
   "telemetry_poller": {:hex, :telemetry_poller, "1.0.0", "db91bb424e07f2bb6e73926fcafbfcbcb295f0193e0a00e825e589a0a47e8453", [:rebar3], [{:telemetry, "~> 1.0", [hex: :telemetry, repo: "hexpm", optional: false]}], "hexpm", "b3a24eafd66c3f42da30fc3ca7dda1e9d546c12250a2d60d7b81d264fbec4f6e"},
-  "tmi": {:hex, :tmi, "0.4.0", "f9a287fcef4d24950af5835739abe915e658a5fadb5241f35c853f81eb4aeb13", [:mix], [{:exirc, "~> 2.0", [hex: :exirc, repo: "hexpm", optional: false]}], "hexpm", "754b79cd37f9e542502cd49fe159bdf286e06287bd17a8e7a63c5a470d2e8435"},
+  "tmi": {:hex, :tmi, "0.5.0", "42644145a0a922c51acd2c3e1a72980e314d2712b6b493f9c0de4a07a03c2ccd", [:mix], [{:exirc, "~> 2.0", [hex: :exirc, repo: "hexpm", optional: false]}], "hexpm", "95b6a1a7202e0d649f3115f0bd192ed147cede7bfb30ccbc69b59e0a704d117e"},
   "toml": {:hex, :toml, "0.5.2", "e471388a8726d1ce51a6b32f864b8228a1eb8edc907a0edf2bb50eab9321b526", [:mix], [], "hexpm", "f1e3dabef71fb510d015fad18c0e05e7c57281001141504c6b69d94e99750a07"},
 }

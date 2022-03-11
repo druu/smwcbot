@@ -53,7 +53,7 @@ defmodule SMWC.MixProject do
       {:plug_cowboy, "~> 2.5"},
 
       # Chat Bot (Twitch)
-      {:tmi, "~> 0.4.0"},
+      {:tmi, "~> 0.5.0"},
 
       # Crypto and Hashing
       {:argon2_elixir, "~> 2.0"},
