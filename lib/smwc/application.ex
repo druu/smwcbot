@@ -22,7 +22,9 @@ defmodule SMWC.Application do
         # Start the Endpoint (http/https)
         SMWCWeb.Endpoint,
         # Dynamic supervisor, for one-off stuff.
-        {SMWCBot.MessageServer, module_config(SMWCBot.MessageServer)}
+        {SMWCBot.MessageServer, module_config(SMWCBot.MessageServer)},
+        # Cooldown Queue
+        {SMWCBot.Fridge, %{}}
         # Start a worker by calling: SMWC.Worker.start_link(arg)
         # {SMWC.Worker, arg}
       ]
