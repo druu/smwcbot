@@ -9,7 +9,6 @@ defmodule SMWCBot.Fridge do
 
   @ttl_seconds 60
 
-
   @spec start_link(keyword()) :: GenServer.on_start()
   def start_link(opts) do
     GenServer.start_link(__MODULE__, opts, name: __MODULE__)
@@ -59,7 +58,7 @@ defmodule SMWCBot.Fridge do
     |> NaiveDateTime.diff(NaiveDateTime.utc_now())
   end
 
-  def get_contents() do
+  def get_contents do
     GenServer.call(__MODULE__, :contents)
   end
 
@@ -86,7 +85,6 @@ defmodule SMWCBot.Fridge do
     |> Base.encode16(case: :lower)
   end
 
-
   ## Server Callbacks
   @impl true
   def init(contents) do
@@ -108,6 +106,5 @@ defmodule SMWCBot.Fridge do
   def handle_call({:delete, hash}, _from, contents) do
     {:reply, Map.fetch(contents, hash), Map.delete(contents, hash)}
   end
-
 
 end
