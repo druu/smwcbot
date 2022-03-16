@@ -71,22 +71,19 @@ defmodule SMWCBot.Fridge do
   def remove(hash) when is_bitstring(hash) do
     if Map.has_key?(get_contents(), hash) do
       GenServer.call(__MODULE__, {:delete, hash})
-    else
-      true
     end
   end
 
   defp map_to_sha256(map) do
     map
-    |> Map.to_list()
-    |> Enum.reduce("", fn {k,v}, acc -> "#{k}#{v}" <> acc end)
+    |> Enum.map(fn {k, v} -> [to_string(k), to_string(v)] end)
+    |> IO.iodata_to_binary()
     |> string_to_sha256()
   end
 
   defp string_to_sha256(str) do
     :crypto.hash(:sha256, str)
-    |> Base.encode16()
-    |> String.downcase()
+    |> Base.encode16(case: :lower)
   end
 
 
