@@ -20,7 +20,7 @@ defmodule SMWCBot.Fridge do
   end
 
   def insert(hash) when is_bitstring(hash) do
-    GenServer.cast(__MODULE__, {:insert, %{:key => hash, :val => NaiveDateTime.utc_now() }})
+    GenServer.cast(__MODULE__, {:insert, %{:key => hash, :val => NaiveDateTime.utc_now()}})
   end
 
   def upsert(map) when is_map(map) do
@@ -106,5 +106,4 @@ defmodule SMWCBot.Fridge do
   def handle_call({:delete, hash}, _from, contents) do
     {:reply, Map.fetch(contents, hash), Map.delete(contents, hash)}
   end
-
 end
