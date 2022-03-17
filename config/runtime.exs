@@ -28,7 +28,7 @@ if config_env() == :prod do
         |> String.split(~r/,\s*/, trim: true)
         |> Enum.map(&String.downcase/1),
       bot: SMWCBot,
-      capabilities: ['membership','commands','tags']
+      capabilities: ['membership', 'commands', 'tags']
   end
 
   # Set the rate that Twitch messages will go out at. This will vary based on

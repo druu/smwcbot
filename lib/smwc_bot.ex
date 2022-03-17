@@ -5,6 +5,7 @@ defmodule SMWCBot do
   use TMI
 
   alias SMWC.Resources
+  alias SMWCBot.Fridge
   alias SMWCBot.MessageServer
 
   require Logger
@@ -24,18 +25,24 @@ defmodule SMWCBot do
 
   @impl TMI.Handler
   def handle_message(@command_prefix <> command, sender, chat, _tags) do
-    case execute(command) do
-      {:ok, :multi, href} ->
-        say(chat, "#{sender}, I found multiple results @ #{href}")
+    if Fridge.is_expired?(%{c: command, s: sender, ch: chat}) do
+      Fridge.upsert(%{c: command, s: sender, ch: chat})
 
-      {:ok, text, href} ->
-        say(chat, "#{sender}, #{text} @ #{href}")
+      case execute(command) do
+        {:ok, :multi, href} ->
+          say(chat, "#{sender}, I found multiple results @ #{href}")
 
-      {:ok, nil} ->
-        say(chat, "Sorry #{sender}, no results")
+        {:ok, text, href} ->
+          say(chat, "#{sender}, #{text} @ #{href}")
 
-      {:error, reason} ->
-        say(chat, "Sorry #{sender}, bot can't complete that search: #{reason}")
+        {:ok, nil} ->
+          say(chat, "Sorry #{sender}, no results")
+
+        {:error, reason} ->
+          say(chat, "Sorry #{sender}, bot can't complete that search: #{reason}")
+      end
+    else
+      :ok
     end
   end
 
