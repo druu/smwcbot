@@ -60,7 +60,7 @@ defmodule SMWC.Parser do
     case Floki.parse_document(body) do
       {:ok, document} ->
         document
-        |> Floki.find("div#list_content table tr")
+        |> Floki.find("div#list-content table tbody tr")
         |> mod.apply_first(opts)
         |> mod.parse_result_table(search_uri)
 
@@ -70,21 +70,22 @@ defmodule SMWC.Parser do
     end
   end
 
-  def default_apply_first([th, tr | _rest], %{first: true}), do: [th, tr]
+  def default_apply_first([tr | _rest], %{first: true}), do: [tr]
   def default_apply_first(results, _opts), do: results
 
-  def default_parse_result_table(mod, [_th, tr], _search_uri) do
+  def default_parse_result_table(mod, [tr], _search_uri) do
+    Logger.debug("[Parser] Single hit")
     case mod.find_result(tr) do
       [result | _] -> mod.result_to_tuple(result)
       [] -> {:ok, nil}
     end
   end
 
-  def default_parse_result_table(_mod, [_th, _tr | _], search_uri) do
+  def default_parse_result_table(_mod, [_tr | _], search_uri) do
     {:ok, :multi, search_uri}
   end
 
-  def default_parse_result_table(_mod, [_th], _seatch_uri) do
+  def default_parse_result_table(_mod, [], _seatch_uri) do
     Logger.debug("[Parser] Nothing")
     {:ok, nil}
   end
@@ -95,7 +96,7 @@ defmodule SMWC.Parser do
   end
 
   def default_find_result(_mod, result) do
-    Floki.find(result, "td.cell1 a")
+    Floki.find(result, "td.text a")
   end
 
   def default_result_to_tuple(mod, result) do
