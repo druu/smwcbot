@@ -17,8 +17,8 @@ erl_crash.dump
 # Static artifacts
 node_modules
 
-# Secret config for prod or local dev-specific work not to be committed.
-config/*.secret.exs
+# Secret config for dev-specific work not to be committed.
+config/dev.secret.exs
 
 # Dialyzer
 /priv/plts/*.plt

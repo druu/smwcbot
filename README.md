@@ -14,7 +14,9 @@ TMI_START=true iex -S mix
 
 ### Twitch chat examples
 
-*The following assumes default command prefix of `!`.*
+*The following assumes default command prefix of `!`.*  
+*The default admin command prefix is `!$`.*  
+*Admin commands can only be performed by the user specified as `admin_user` in the config*
 
 ```
 jim> !hack redeeming peach
@@ -29,6 +31,9 @@ thebot> Here jim, Redeeming Peach @ https://www.smwcentral.net/?p=section&a=deta
 * !music \<name>
 * !patches \<name>
 * !uberasm \<name> or !asm \<name>
+* !$join \<channel>
+* !$part \<channel>
+
 
 #### Available filters
 * `-a, --author` - Enables the search by author

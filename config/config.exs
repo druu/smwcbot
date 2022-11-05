@@ -10,6 +10,8 @@ import Config
 # We set the command prefix in compile-time config because we want to match in
 # function head, so we can't put it in runtime config.
 config :smwc, SMWCBot, command_prefix: "!"
+config :smwc, SMWCBot, admin_command_prefix: "!$"
+config :smwc, SMWCBot, admin_user: "***"
 
 config :floki, :html_parser, Floki.HTMLParser.Html5ever
 

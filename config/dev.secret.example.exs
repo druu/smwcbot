@@ -9,4 +9,7 @@ config :smwc, TMI,
   user: "mybotusername",
   pass: "oauth:mybotoauthtoken",
   channels: ["mychat"],
-  capabilities: ['membership']
+  capabilities: ['membership', 'commands', 'tags']
+
+config :smwc, SMWCBot,
+  admin_user: "yournamehere"

@@ -12,6 +12,8 @@ defmodule SMWCBot do
 
   @compile_config Application.compile_env(:smwc, SMWCBot)
   @command_prefix Keyword.get(@compile_config, :command_prefix, "!")
+  @admin_command_prefix Keyword.get(@compile_config, :admin_command_prefix, "!$")
+  @admin_user Keyword.get(@compile_config, :admin_user, "***")
 
   @doc """
   Adds a message to the outbound message queue.
@@ -22,6 +24,13 @@ defmodule SMWCBot do
   end
 
   ## Callbacks
+
+  @impl TMI.Handler
+  def handle_message(@admin_command_prefix <> command, sender, chat, _tags) when sender == @admin_user do
+    case admin_execute(command) do
+      :ok -> say(chat, "@#{sender}, done and dusted")
+    end
+  end
 
   @impl TMI.Handler
   def handle_message(@command_prefix <> command, sender, chat, _tags) do
@@ -58,6 +67,10 @@ defmodule SMWCBot do
   defp execute("patches " <> rest), do: search(Resources.Patches, rest)
   defp execute("sprites " <> rest), do: search(Resources.Sprites, rest)
   defp execute("uberasm " <> rest), do: search(Resources.UberASM, rest)
+
+  defp admin_execute("join " <> channel), do: join(channel)
+  defp admin_execute("part " <> channel), do: part(channel)
+
 
   defp search(resource, command) do
     case parse_command(command) do

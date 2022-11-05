@@ -29,6 +29,9 @@ if config_env() == :prod do
         |> Enum.map(&String.downcase/1),
       bot: SMWCBot,
       capabilities: ['membership', 'commands', 'tags']
+
+    config :smwc, SMWCBot,
+      admin_user: System.fetch_env!("TWITCH_ADMIN_USER")
   end
 
   # Set the rate that Twitch messages will go out at. This will vary based on
