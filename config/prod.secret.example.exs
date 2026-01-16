@@ -1,4 +1,3 @@
 import Config
 
-config :smwc, SMWCBot,
-  admin_user: "yournamehere"
+config :smwc, SMWCBot, admin_user: "yournamehere"

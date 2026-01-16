@@ -19,21 +19,20 @@ defmodule SMWCWeb.ConnCase do
 
   using do
     quote do
+      # The default endpoint for testing
+      @endpoint SMWCWeb.Endpoint
+
+      use SMWCWeb, :verified_routes
+
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
       import SMWCWeb.ConnCase
-
-      alias SMWCWeb.Router.Helpers, as: Routes
-
-      # The default endpoint for testing
-      @endpoint SMWCWeb.Endpoint
     end
   end
 
   setup tags do
-    pid = Ecto.Adapters.SQL.Sandbox.start_owner!(SMWC.Repo, shared: not tags[:async])
-    on_exit(fn -> Ecto.Adapters.SQL.Sandbox.stop_owner(pid) end)
+    SMWC.DataCase.setup_sandbox(tags)
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end
 
@@ -45,9 +44,16 @@ defmodule SMWCWeb.ConnCase do
   It stores an updated connection and a registered user in the
   test context.
   """
-  def register_and_log_in_user(%{conn: conn}) do
-    user = SMWC.AccountsFixtures.user_fixture()
-    %{conn: log_in_user(conn, user), user: user}
+  def register_and_log_in_user(%{conn: conn} = context) do
+    user = SMWC.AccountFixtures.user_fixture()
+    scope = SMWC.Accounts.Scope.for_user(user)
+
+    opts =
+      context
+      |> Map.take([:token_authenticated_at])
+      |> Enum.into([])
+
+    %{conn: log_in_user(conn, user, opts), user: user, scope: scope}
   end
 
   @doc """
@@ -55,11 +61,19 @@ defmodule SMWCWeb.ConnCase do
 
   It returns an updated `conn`.
   """
-  def log_in_user(conn, user) do
+  def log_in_user(conn, user, opts \\ []) do
     token = SMWC.Accounts.generate_user_session_token(user)
+
+    maybe_set_token_authenticated_at(token, opts[:token_authenticated_at])
 
     conn
     |> Phoenix.ConnTest.init_test_session(%{})
     |> Plug.Conn.put_session(:user_token, token)
+  end
+
+  defp maybe_set_token_authenticated_at(_token, nil), do: nil
+
+  defp maybe_set_token_authenticated_at(token, authenticated_at) do
+    SMWC.AccountFixtures.override_token_authenticated_at(token, authenticated_at)
   end
 end
