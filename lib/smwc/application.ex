@@ -7,26 +7,22 @@ defmodule SMWC.Application do
 
   require Logger
 
-  @app :smwc
-
   @impl true
   def start(_type, _args) do
     children =
       [
-        # Start the Ecto repository
-        SMWC.Repo,
-        # Start the Telemetry supervisor
         SMWCWeb.Telemetry,
-        # Start the PubSub system
+        SMWC.Repo,
+        {DNSCluster, query: Application.get_env(:smwc, :dns_cluster_query) || :ignore},
         {Phoenix.PubSub, name: SMWC.PubSub},
-        # Start the Endpoint (http/https)
+        # Start a worker by calling: SMWC.Worker.start_link(arg)
+        # {SMWC.Worker, arg},
+        # Start to serve requests, typically the last entry
         SMWCWeb.Endpoint,
         # Dynamic supervisor, for one-off stuff.
         {SMWCBot.MessageServer, module_config(SMWCBot.MessageServer)},
         # Cooldown Queue
         {SMWCBot.Fridge, %{}}
-        # Start a worker by calling: SMWC.Worker.start_link(arg)
-        # {SMWC.Worker, arg}
       ]
       |> add_tmi_childspec()
 
@@ -52,7 +48,7 @@ defmodule SMWC.Application do
       Logger.info("[TMI] Starting Twitch chat connection...")
       [{TMI.Supervisor, tmi_config} | children]
     else
-      Logger.warn("[TMI] Skipping start of Twitch chat...")
+      Logger.warning("[TMI] Skipping start of Twitch chat...")
       Logger.info("[TMI] To start Twitch chat use TMI_START=true")
       children
     end

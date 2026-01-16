@@ -13,3 +13,4 @@ config :smwc, TMI,
 
 config :smwc, SMWCBot,
   admin_user: "yournamehere"
+
