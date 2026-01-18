@@ -71,15 +71,6 @@ defmodule SMWC.MixProject do
       # Chat Bot (Twitch)
       {:tmi, "~> 0.5.0"},
 
-      # HTTP Client
-      # TODO: Remove and use req, already included by default.
-      {:mojito, "~> 0.7.11"},
-
-      # HTML Parser
-      # TODO: Remove and use lazy_html, already included by default.
-      {:floki, "~> 0.32"},
-      {:html5ever, "~> 0.11.0"},
-
       # Testing and static analysis
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},

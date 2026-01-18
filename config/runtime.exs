@@ -16,7 +16,18 @@ start_server? = System.get_env("PHX_SERVER", "") == "true"
 #
 #     $ TMI_START=true iex -S mix
 #
-config :smwc, TMI, start?: start_bot?
+config :smwc, TMI,
+  start?: start_bot?,
+  bot: SMWCBot
+
+# Add dummy user/pass for dev/test mode to satisfy TMI requirements
+if config_env() == :dev or config_env() == :test do
+  config :smwc, TMI,
+    user: "dev_user",
+    pass: "dev_token",
+    channels: ["#dev"],
+    capabilities: [~c'membership', ~c'commands', ~c'tags']
+end
 
 # ## Using releases
 #

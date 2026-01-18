@@ -48,7 +48,7 @@ defmodule SMWCBot.MessageServer do
   """
   @spec add_message(String.t(), String.t()) :: :ok
   def add_message(chat, message) do
-    GenServer.cast(__MODULE__, {:add, {chat, message}})
+    TMI.MessageServer.add_command(SMWCBot, chat, message)
   end
 
   ## Callbacks
@@ -94,11 +94,10 @@ defmodule SMWCBot.MessageServer do
         {:noreply, %{state | timer_ref: nil}}
 
       {{:value, {chat, message}}, rest} ->
-        TMI.message(chat, message)
+        TMI.MessageServer.add_command(SMWCBot, chat, message)
         Logger.debug("[MessageServer] SENT #{chat}: #{message}")
         timer_ref = Process.send_after(self(), :send, state.rate)
         {:noreply, %{state | queue: rest, timer_ref: timer_ref}}
     end
   end
 end
-

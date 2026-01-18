@@ -113,7 +113,7 @@ defmodule SMWCBotGraphicsTest do
   #     assert log =~ "Error fetching page, status #{status_code}: \"#{body}\""
   #   end
 
-  #   test "returns error when mojito returns an error" do
+  #   test "returns error when req returns an error" do
   #     chat = "mychat"
   #     sender = "user-mcface"
   #     error = "This is error"

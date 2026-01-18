@@ -4,7 +4,7 @@ defmodule SMWCBotHackTest do
 
   import ExUnit.CaptureLog
 
-  alias SMWC.HTMLBodies
+  alias SMWC.JSONResponses
   alias SMWCBot.MessageServer
 
   describe "Hack search" do
@@ -14,8 +14,9 @@ defmodule SMWCBotHackTest do
 
       expected_message = "Sorry #{sender}, no results"
 
-      expect(Mojito, :get, fn _uri ->
-        {:ok, %{status_code: 200, body: HTMLBodies.smwc_results(:hacks, 0)}}
+      expect(Req, :get, fn _uri ->
+        json = %{"data" => [], "total" => 0, "per_page" => 50}
+        {:ok, %{status: 200, body: Jason.encode!(json)}}
       end)
 
       expect(MessageServer, :add_message, fn actual_chat, actual_message ->
@@ -31,12 +32,13 @@ defmodule SMWCBotHackTest do
       chat = "mychat"
       sender = "user-mcface"
 
-      expected_text = "Redeeming Peach"
-      expected_href = "https://www.smwcentral.net/?p=section&a=details&id=10173"
+      expected_text = "Tis A Silly Place"
+      expected_id = 41390
+      expected_href = "https://www.smwcentral.net/?p=section&a=details&id=#{expected_id}"
       expected_message = "#{sender}, #{expected_text} @ #{expected_href}"
 
-      expect(Mojito, :get, fn _uri ->
-        {:ok, %{status_code: 200, body: HTMLBodies.smwc_results(:hacks, 1)}}
+      expect(Req, :get, fn _uri ->
+        {:ok, %{status: 200, body: Jason.encode!(JSONResponses.single_result())}}
       end)
 
       expect(MessageServer, :add_message, fn actual_chat, actual_message ->
@@ -45,18 +47,27 @@ defmodule SMWCBotHackTest do
         :ok
       end)
 
-      assert :ok = SMWCBot.handle_message("!hack redeeming peach", sender, chat)
+      assert :ok = SMWCBot.handle_message("!hack silly", sender, chat)
     end
 
     test "returns first result to user with 2 results" do
       chat = "mychat"
       sender = "user-mcface"
 
-      expected_href = "https://www.smwcentral.net/?p=section&s=smwhacks&f%5Bname%5D=foo"
+      json = %{
+        "data" => [
+          %{"id" => 1, "name" => "First Result"},
+          %{"id" => 2, "name" => "Second Result"}
+        ],
+        "total" => 2,
+        "per_page" => 50
+      }
+
+      expected_href = "https://www.smwcentral.net/?p=section&s=smwhacks&f%5Bname%5D=foo&o=date&d=desc"
       expected_message = "#{sender}, I found multiple results @ #{expected_href}"
 
-      expect(Mojito, :get, fn _uri ->
-        {:ok, %{status_code: 200, body: HTMLBodies.smwc_results(:hacks, 2)}}
+      expect(Req, :get, fn _uri ->
+        {:ok, %{status: 200, body: Jason.encode!(json)}}
       end)
 
       expect(MessageServer, :add_message, fn actual_chat, actual_message ->
@@ -72,11 +83,11 @@ defmodule SMWCBotHackTest do
       chat = "mychat"
       sender = "user-mcface"
 
-      expected_href = "https://www.smwcentral.net/?p=section&s=smwhacks&f%5Bname%5D=mario"
+      expected_href = "https://www.smwcentral.net/?p=section&s=smwhacks&f%5Bname%5D=mario&o=date&d=desc"
       expected_message = "#{sender}, I found multiple results @ #{expected_href}"
 
-      expect(Mojito, :get, fn _uri ->
-        {:ok, %{status_code: 200, body: HTMLBodies.smwc_results(:hacks, "multi-page")}}
+      expect(Req, :get, fn _uri ->
+        {:ok, %{status: 200, body: Jason.encode!(JSONResponses.multiple_results())}}
       end)
 
       expect(MessageServer, :add_message, fn actual_chat, actual_message ->
@@ -88,6 +99,28 @@ defmodule SMWCBotHackTest do
       assert :ok = SMWCBot.handle_message("!hack mario", sender, chat)
     end
 
+    test "returns first result with --first flag" do
+      chat = "mychat"
+      sender = "user-mcface"
+
+      expected_text = "MARIO EN BUSCA DE LA MASTER EMERALD (DEMO WORLD 2)"
+      expected_id = 41397
+      expected_href = "https://www.smwcentral.net/?p=section&a=details&id=#{expected_id}"
+      expected_message = "#{sender}, #{expected_text} @ #{expected_href}"
+
+      expect(Req, :get, fn _uri ->
+        {:ok, %{status: 200, body: Jason.encode!(JSONResponses.multiple_results())}}
+      end)
+
+      expect(MessageServer, :add_message, fn actual_chat, actual_message ->
+        assert actual_chat == chat
+        assert actual_message == expected_message
+        :ok
+      end)
+
+      assert :ok = SMWCBot.handle_message("!hack -f mario", sender, chat)
+    end
+
     test "returns error when smwcentral.net returns a non-200 status code" do
       chat = "mychat"
       sender = "user-mcface"
@@ -96,8 +129,8 @@ defmodule SMWCBotHackTest do
 
       expected_message = "Sorry #{sender}, bot can't complete that search: #{status_code}"
 
-      expect(Mojito, :get, fn _uri ->
-        {:ok, %{status_code: status_code, body: body}}
+      expect(Req, :get, fn _uri ->
+        {:ok, %{status: status_code, body: body}}
       end)
 
       expect(MessageServer, :add_message, fn actual_chat, actual_message ->
@@ -114,15 +147,15 @@ defmodule SMWCBotHackTest do
       assert log =~ "Error fetching page, status #{status_code}: \"#{body}\""
     end
 
-    test "returns error when mojito returns an error" do
+    test "returns error when Req returns an error" do
       chat = "mychat"
       sender = "user-mcface"
       error = "This is error"
 
-      expected_message = "Sorry #{sender}, bot can't complete that search: #{error}"
+      expected_message = "Sorry #{sender}, bot can't complete that search: #{inspect(error)}"
 
-      expect(Mojito, :get, fn _uri ->
-        {:error, %{reason: :whatever, message: error}}
+      expect(Req, :get, fn _uri ->
+        {:error, error}
       end)
 
       expect(MessageServer, :add_message, fn actual_chat, actual_message ->
@@ -136,7 +169,7 @@ defmodule SMWCBotHackTest do
           assert :ok = SMWCBot.handle_message("!hack mario", sender, chat)
         end)
 
-      assert log =~ "Error fetching page: #{error}"
+      assert log =~ "Error fetching page: #{inspect(error)}"
     end
   end
 end

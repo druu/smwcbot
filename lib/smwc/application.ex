@@ -5,6 +5,8 @@ defmodule SMWC.Application do
 
   use Application
 
+  @app :smwc
+
   require Logger
 
   @impl true
@@ -32,7 +34,7 @@ defmodule SMWC.Application do
     Supervisor.start_link(children, opts)
   end
 
-  # Tell Phoenix to update the endpoint configuration
+  # Tell Phoenix to update to endpoint configuration
   # whenever the application is updated.
   @impl true
   def config_change(changed, _new, removed) do
@@ -41,12 +43,9 @@ defmodule SMWC.Application do
   end
 
   defp add_tmi_childspec(children) do
-    tmi_config = module_config(TMI)
-    {start?, tmi_config} = Keyword.pop(tmi_config, :start?)
-
-    if start? do
+    if tmi_start?() do
       Logger.info("[TMI] Starting Twitch chat connection...")
-      [{TMI.Supervisor, tmi_config} | children]
+      [{TMI.Supervisor, module_config(TMI)} | children]
     else
       Logger.warning("[TMI] Skipping start of Twitch chat...")
       Logger.info("[TMI] To start Twitch chat use TMI_START=true")
@@ -54,7 +53,13 @@ defmodule SMWC.Application do
     end
   end
 
-  # Get the module config.
+  # Get the start? flag from TMI config to decide whether to start TMI
+  defp tmi_start? do
+    tmi_config = Application.get_env(:smwc, TMI, [])
+    Keyword.get(tmi_config, :start?, false)
+  end
+
+  # Get module config.
   defp module_config(module, opts \\ []) do
     if Keyword.get(opts, :required) do
       Application.fetch_env!(@app, module)

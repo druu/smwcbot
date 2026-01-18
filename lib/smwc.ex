@@ -8,7 +8,8 @@ defmodule SMWC do
 
   require Logger
 
-  @base_uri "https://www.smwcentral.net"
+  @base_api_uri "https://www.smwcentral.net/ajax.php?a=getsectionlist"
+  @base_search_uri "https://www.smwcentral.net/?p=section"
 
   @default_opts %{resource: :hack}
 
@@ -18,26 +19,34 @@ defmodule SMWC do
   @spec search(String.t(), keyword()) :: Parser.parse_result()
   def search(query, opts \\ []) do
     opts = Enum.into(opts, @default_opts)
-    filter_params = build_filter_params(query, opts) |> URI.encode_query()
-    search_uri = "#{@base_uri}/?#{filter_params}"
+    filter_params = build_filter_params(query, opts)
+    api_uri = "#{@base_api_uri}&#{filter_params}"
+    search_uri = build_search_page_url(query, opts)
 
-    Logger.debug("[SMWC] URI: #{search_uri}")
+    Logger.debug("[SMWC] API URI: #{api_uri}")
+    Logger.debug("[SMWC] Search URI: #{search_uri}")
 
-    case Mojito.get(search_uri) do
-      {:ok, %{status_code: 200, body: body}} ->
-        opts.resource.parse_body(body, search_uri, opts)
+    case Req.get(api_uri) do
+      {:ok, %{status: 200, body: body}} ->
+        json = Jason.decode!(body)
+        opts.resource.parse_json_body(json, search_uri, opts)
 
-      {:ok, %{status_code: status, body: body}} ->
+      {:ok, %{status: status, body: body}} ->
         Logger.error("[SMWC] Error fetching page, status #{status}: #{inspect(body)}")
         {:error, to_string(status)}
 
-      {:error, %{message: message}} ->
-        Logger.error("[SMWC] Error fetching page: #{message}")
-        {:error, message}
+      {:error, reason} ->
+        Logger.error("[SMWC] Error fetching page: #{inspect(reason)}")
+        {:error, inspect(reason)}
     end
   end
 
-  defp build_filter_params(query, opts) do
+  def build_search_page_url(query, opts) do
+    params = build_search_params(query, opts)
+    "#{@base_search_uri}&#{params}"
+  end
+
+  defp build_search_params(query, opts) do
     Enum.reduce(opts, [{"f[name]", query}], fn
       {:author, name}, acc ->
         [{"f[author]", name} | acc]
@@ -53,13 +62,13 @@ defmodule SMWC do
 
       {:resource, resource}, acc ->
         case resource do
-          Resources.Blocks -> [{"p", "section"}, {"s", "smwblocks"} | acc]
-          Resources.Graphics -> [{"p", "section"}, {"s", "smwgraphics"} | acc]
-          Resources.Hack -> [{"p", "section"}, {"s", "smwhacks"} | acc]
-          Resources.Music -> [{"p", "section"}, {"s", "smwmusic"} | acc]
-          Resources.Patches -> [{"p", "section"}, {"s", "smwpatches"} | acc]
-          Resources.Sprites -> [{"p", "section"}, {"s", "smwsprites"} | acc]
-          Resources.UberASM -> [{"p", "section"}, {"s", "uberasm"} | acc]
+          Resources.Blocks -> [{"s", "smwblocks"} | acc]
+          Resources.Graphics -> [{"s", "smwgraphics"} | acc]
+          Resources.Hack -> [{"s", "smwhacks"} | acc]
+          Resources.Music -> [{"s", "smwmusic"} | acc]
+          Resources.Patches -> [{"s", "smwpatches"} | acc]
+          Resources.Sprites -> [{"s", "smwsprites"} | acc]
+          Resources.UberASM -> [{"s", "uberasm"} | acc]
         end
 
       {:waiting, true}, acc ->
@@ -68,5 +77,42 @@ defmodule SMWC do
       invalid, _acc ->
         raise ArgumentError, message: "invalid filter: #{inspect(invalid)}"
     end)
+    |> Enum.reverse()
+    |> URI.encode_query()
+  end
+
+  defp build_filter_params(query, opts) do
+    Enum.reduce(opts, [{"f[name]", query}, {"u", 0}, {"n", 1}, {"o", "date"}, {"d", "desc"}], fn
+      {:author, name}, acc ->
+        [{"f[author]", name} | acc]
+
+      {:first, true}, acc ->
+        acc
+
+      {:order, order}, acc ->
+        case String.split(order, ":", parts: 2, trim: true) do
+          [col] -> [{"o", col}, {"d", "desc"} | acc]
+          [col, dir] -> [{"o", col}, {"d", dir} | acc]
+        end
+
+      {:resource, resource}, acc ->
+        case resource do
+          Resources.Blocks -> [{"s", "smwblocks"} | acc]
+          Resources.Graphics -> [{"s", "smwgraphics"} | acc]
+          Resources.Hack -> [{"s", "smwhacks"} | acc]
+          Resources.Music -> [{"s", "smwmusic"} | acc]
+          Resources.Patches -> [{"s", "smwpatches"} | acc]
+          Resources.Sprites -> [{"s", "smwsprites"} | acc]
+          Resources.UberASM -> [{"s", "uberasm"} | acc]
+        end
+
+      {:waiting, true}, acc ->
+        [{"u", 1} | acc]
+
+      invalid, _acc ->
+        raise ArgumentError, message: "invalid filter: #{inspect(invalid)}"
+    end)
+    |> Enum.reverse()
+    |> URI.encode_query()
   end
 end

@@ -1,4 +1,4 @@
-Mimic.copy(Mojito)
+Mimic.copy(Req)
 Mimic.copy(TMI)
 
 Mimic.copy(SMWCBot.MessageServer)

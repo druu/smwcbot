@@ -1,0 +1,3228 @@
+{
+    "total": 709,
+    "per_page": 50,
+    "current_page": 1,
+    "last_page": 15,
+    "first_page_url": "https://www.smwcentral.net/ajax.php?a=getsectionlist&s=smwhacks&u=0&f%5Bname%5D=mario&n=1&o=date&d=desc",
+    "last_page_url": "https://www.smwcentral.net/ajax.php?a=getsectionlist&s=smwhacks&u=0&f%5Bname%5D=mario&n=15&o=date&d=desc",
+    "next_page_url": "https://www.smwcentral.net/ajax.php?a=getsectionlist&s=smwhacks&u=0&f%5Bname%5D=mario&n=2&o=date&d=desc",
+    "prev_page_url": null,
+    "from": 1,
+    "to": 50,
+    "data": [
+        {
+            "id": 41397,
+            "section": "smwhacks",
+            "name": "MARIO EN BUSCA DE LA MASTER EMERALD (DEMO WORLD 2)",
+            "time": 1768355649,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 72678,
+                    "name": "Reynner Game Arcade"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "abilities",
+                "custom gfx",
+                "custom music",
+                "demo",
+                "hdma",
+                "knuckles",
+                "lorom",
+                "nintendo",
+                "parallax",
+                "sega",
+                "smw beta",
+                "sonic"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/120777.png",
+                "https://dl.smwcentral.net/image/120778.png",
+                "https://dl.smwcentral.net/image/120779.png",
+                "https://dl.smwcentral.net/image/120780.png"
+            ],
+            "rating": 0,
+            "size": 894758,
+            "downloads": 92,
+            "download_url": "https://dl.smwcentral.net/41397/MARIO.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "12 exit(s)",
+                "demo": "Yes",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "This game will also be in English, but in later versions; this is just a demo."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 12,
+                "demo": true,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "This game will also be in English, but in later versions; this is just a demo."
+            }
+        },
+        {
+            "id": 41381,
+            "section": "smwhacks",
+            "name": "Sauna Mario World 2",
+            "time": 1767918581,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 49139,
+                    "name": "pnaha"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "exgfx",
+                "hdma",
+                "music",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/120717.png",
+                "https://dl.smwcentral.net/image/120718.png",
+                "https://dl.smwcentral.net/image/120719.png",
+                "https://dl.smwcentral.net/image/120720.png",
+                "https://dl.smwcentral.net/image/120721.png",
+                "https://dl.smwcentral.net/image/120722.png",
+                "https://dl.smwcentral.net/image/120723.png",
+                "https://dl.smwcentral.net/image/120724.png"
+            ],
+            "rating": 5,
+            "size": 2083985,
+            "downloads": 2462,
+            "download_url": "https://dl.smwcentral.net/41381/Sauna%20Mario%20World%202%20v1.3.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "21 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Expert",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "Sauna is back! Compared to my first hack this one has more levels, more chocolate, more secrets, more silliness, and it’s probably a bit more difficult. My goal was similar: to keep levels intuitive and fun, but I let myself get a bit crazier with level themes and ideas.<br>\r\n<br>\r\nThere are some secret exits with hints that will guide you in the right direction, though they aren’t that hard to find even without the hints. Also, portrait rooms are back for people who enjoy looking around for secrets.<br>\r\n<br>\r\nGet comfortable, grab your chilled beverage of choice, and get ready for löyly. I hope you’ll have a good time!<br>\r\n<br>\r\nCover art made by Dangil, tracklist and changelog are included.<br>\r\nSNES Classic compatibility version is available in my filebin.<br>\r\n<br>\r\nVersion 1.0 - November 30th, 2024<br>\r\nVersion 1.1 - February 5th, 2025<br>\r\nVersion 1.2 - February 25th, 2025<br>\r\nVersion 1.3 - January 5th, 2026"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 21,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_5",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "Sauna is back! Compared to my first hack this one has more levels, more chocolate, more secrets, more silliness, and it’s probably a bit more difficult. My goal was similar: to keep levels intuitive and fun, but I let myself get a bit crazier with level themes and ideas.\r\n\r\nThere are some secret exits with hints that will guide you in the right direction, though they aren’t that hard to find even without the hints. Also, portrait rooms are back for people who enjoy looking around for secrets.\r\n\r\nGet comfortable, grab your chilled beverage of choice, and get ready for löyly. I hope you’ll have a good time!\r\n\r\nCover art made by Dangil, tracklist and changelog are included.\r\nSNES Classic compatibility version is available in my filebin.\r\n\r\nVersion 1.0 - November 30th, 2024\r\nVersion 1.1 - February 5th, 2025\r\nVersion 1.2 - February 25th, 2025\r\nVersion 1.3 - January 5th, 2026"
+            }
+        },
+        {
+            "id": 41279,
+            "section": "smwhacks",
+            "name": "Mario's Misadventures 2: The Black Hole Bomb",
+            "time": 1767373646,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 58714,
+                    "name": "signature_steve"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "less efgfx",
+                "music",
+                "story",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/120281.png",
+                "https://dl.smwcentral.net/image/120282.png",
+                "https://dl.smwcentral.net/image/120283.png",
+                "https://dl.smwcentral.net/image/120284.png",
+                "https://dl.smwcentral.net/image/120285.png",
+                "https://dl.smwcentral.net/image/120286.png",
+                "https://dl.smwcentral.net/image/120287.png",
+                "https://dl.smwcentral.net/image/120288.png",
+                "https://dl.smwcentral.net/image/120289.png",
+                "https://dl.smwcentral.net/image/120290.png",
+                "https://dl.smwcentral.net/image/120291.png"
+            ],
+            "rating": 5,
+            "size": 695560,
+            "downloads": 2004,
+            "download_url": "https://dl.smwcentral.net/41279/MariosMisadventures2%20v1.2.5.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "98 exit(s)",
+                "demo": "No",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "Following from Mario's Misadventures: The Secret of The 11 Gems, Mario enters the black hole to stop the explosive device, discovering a strange new world inside. What is going on here? Where is the explosive device? As he explores the black hole, he starts to find clues about Bowser's whereabouts and a few artifacts from the Aquarians. Why did Bowser go to war with the Aquarians? Who else could he be working with? Can our hero locate and defuse the bomb before it goes off and destroys everything?<br>\r\n<br>\r\nv1.0.5:<br>\r\nFixed the softlock in Idyllic Island 3 and Bowser's Tower<br>\r\nReassigned castles 6 and 7 to their correct levels<br>\r\nFixed the pathing issues with Rugged Ruins 4's secret exit<br>\r\nGraphical and quality of life improvements<br>\r\nFixed a graphical glitch with the message box in the Sanctum of Sorrow<br>\r\nResolved issues with sprites in certain levels<br>\r\nAdded a midway tape to the Blue Shrine<br>\r\n<br>\r\nv1.1:<br>\r\nFixed a few graphical errors in Bowser's Fortress and Bowser's Bulwark 4<br>\r\nMade some changes to the overworld map<br>\r\nAdded a text document that explains some important information about the submission<br>\r\n<br>\r\nv1.2.5: <br>\r\nAdded a dragon coin to Mystic Meadow 3 <br>\r\nFixed a potential softlock in Mystic Meadow 4 Resolved an issue with the camera in the Switch Palaces <br>\r\nChanged the music in Idyllic Island 5’s sublevel Fixed a graphical glitch in Ludwig’s Castle <br>\r\nFixed some grammatical errors in the message boxes <br>\r\nBug fixes and difficulty rebalancing<br>\r\nFixed the issue with the door to Rugged Ruins 4's secret exit<br>\r\nMade a few changes to the cutscene in Rugged Ruins 4<br>\r\nChanged the background in Mystic Meadow 4<br>\r\nQuality of life fixes in various sublevels<br>\r\nChanged the background in Dire Depot 1 and 2"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 98,
+                "demo": false,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "Following from Mario's Misadventures: The Secret of The 11 Gems, Mario enters the black hole to stop the explosive device, discovering a strange new world inside. What is going on here? Where is the explosive device? As he explores the black hole, he starts to find clues about Bowser's whereabouts and a few artifacts from the Aquarians. Why did Bowser go to war with the Aquarians? Who else could he be working with? Can our hero locate and defuse the bomb before it goes off and destroys everything?\r\n\r\nv1.0.5:\r\nFixed the softlock in Idyllic Island 3 and Bowser's Tower\r\nReassigned castles 6 and 7 to their correct levels\r\nFixed the pathing issues with Rugged Ruins 4's secret exit\r\nGraphical and quality of life improvements\r\nFixed a graphical glitch with the message box in the Sanctum of Sorrow\r\nResolved issues with sprites in certain levels\r\nAdded a midway tape to the Blue Shrine\r\n\r\nv1.1:\r\nFixed a few graphical errors in Bowser's Fortress and Bowser's Bulwark 4\r\nMade some changes to the overworld map\r\nAdded a text document that explains some important information about the submission\r\n\r\nv1.2.5: \r\nAdded a dragon coin to Mystic Meadow 3 \r\nFixed a potential softlock in Mystic Meadow 4 Resolved an issue with the camera in the Switch Palaces \r\nChanged the music in Idyllic Island 5’s sublevel Fixed a graphical glitch in Ludwig’s Castle \r\nFixed some grammatical errors in the message boxes \r\nBug fixes and difficulty rebalancing\r\nFixed the issue with the door to Rugged Ruins 4's secret exit\r\nMade a few changes to the cutscene in Rugged Ruins 4\r\nChanged the background in Mystic Meadow 4\r\nQuality of life fixes in various sublevels\r\nChanged the background in Dire Depot 1 and 2"
+            }
+        },
+        {
+            "id": 41292,
+            "section": "smwhacks",
+            "name": "Super Mario Makers' Holiday Extravaganza",
+            "time": 1767205480,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 48182,
+                    "name": "Brakkie"
+                },
+                {
+                    "id": 55838,
+                    "name": "Buflen"
+                },
+                {
+                    "id": 48966,
+                    "name": "Donkeymint"
+                },
+                {
+                    "id": 50670,
+                    "name": "JeepySol"
+                },
+                {
+                    "id": 35216,
+                    "name": "NewPointless"
+                },
+                {
+                    "id": 50287,
+                    "name": "Scags"
+                },
+                {
+                    "id": 52857,
+                    "name": "mmmdoggy"
+                },
+                {
+                    "id": 52959,
+                    "name": "revolug"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "custom music",
+                "gimmick",
+                "holiday"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/120351.png",
+                "https://dl.smwcentral.net/image/120352.png",
+                "https://dl.smwcentral.net/image/120353.png",
+                "https://dl.smwcentral.net/image/120354.png",
+                "https://dl.smwcentral.net/image/120355.png",
+                "https://dl.smwcentral.net/image/120356.png",
+                "https://dl.smwcentral.net/image/120357.png",
+                "https://dl.smwcentral.net/image/120358.png",
+                "https://dl.smwcentral.net/image/120359.png",
+                "https://dl.smwcentral.net/image/120360.png"
+            ],
+            "rating": 5,
+            "size": 921555,
+            "downloads": 374,
+            "download_url": "https://dl.smwcentral.net/41292/SuperMarioMakersHolidayExtravaganza1_0.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "21 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "Yes",
+                "difficulty": "Expert",
+                "type": "Standard, Kaizo",
+                "warnings": "",
+                "description": "The Super Mario Makers have returned with a hack for the holidays! This is no \"Santas and mangers\" affair. We wanted to explore the spirit of friendship and gift-giving, so we made a collaborative Secret Santa hack. Creators submitted a wishlist of prompts, and then surprised each other with hand-crafted artisanal Mario levels.<br>\r\n<br>\r\nThis may include:<br>\r\nKaizo<br>\r\nStandard<br>\r\nKaizo with a mushroom<br>\r\nJolly little trolls<br>\r\nSports<br>\r\n<br>\r\nRead about the song list and some of the relevant patches <a href=\"https://bin.smwcentral.net/u/35216/Readme-SuperMarioMakersHolidayExtravaganza.txt\" rel=\"nofollow\">HERE</a>."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 21,
+                "demo": false,
+                "sa1": false,
+                "collab": true,
+                "difficulty": "diff_5",
+                "type": [
+                    "standard",
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "The Super Mario Makers have returned with a hack for the holidays! This is no \"Santas and mangers\" affair. We wanted to explore the spirit of friendship and gift-giving, so we made a collaborative Secret Santa hack. Creators submitted a wishlist of prompts, and then surprised each other with hand-crafted artisanal Mario levels.\r\n\r\nThis may include:\r\nKaizo\r\nStandard\r\nKaizo with a mushroom\r\nJolly little trolls\r\nSports\r\n\r\nRead about the song list and some of the relevant patches [url=https://bin.smwcentral.net/u/35216/Readme-SuperMarioMakersHolidayExtravaganza.txt]HERE[/url]."
+            }
+        },
+        {
+            "id": 41188,
+            "section": "smwhacks",
+            "name": "Super Mario DX",
+            "time": 1766586863,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 72678,
+                    "name": "Reynner Game Arcade"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "custom powerups",
+                "deluxe",
+                "fixed",
+                "hack",
+                "lx5",
+                "mario",
+                "sa1",
+                "sa1rom"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/119964.png",
+                "https://dl.smwcentral.net/image/119965.png",
+                "https://dl.smwcentral.net/image/119966.png",
+                "https://dl.smwcentral.net/image/119968.png",
+                "https://dl.smwcentral.net/image/119969.png",
+                "https://dl.smwcentral.net/image/119970.png",
+                "https://dl.smwcentral.net/image/120223.png"
+            ],
+            "rating": 5,
+            "size": 1679172,
+            "downloads": 755,
+            "download_url": "https://dl.smwcentral.net/41188/Super%20Mario%20DX.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "48 exit(s)",
+                "demo": "No",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "Changelog:<br>\r\n<br>\r\n- Added credits<br>\r\n- Title screen fix<br>\r\n- Updated levels with more original content<br>\r\n- Bug fixes <br>\r\n- Palette changes<br>\r\n<br>\r\n"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 48,
+                "demo": false,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "Changelog:\r\n\r\n- Added credits\r\n- Title screen fix\r\n- Updated levels with more original content\r\n- Bug fixes \r\n- Palette changes\r\n\r\n"
+            }
+        },
+        {
+            "id": 41121,
+            "section": "smwhacks",
+            "name": "Mario Quits 2",
+            "time": 1764513346,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 42872,
+                    "name": "DasFueller"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "bosses",
+                "exgfx",
+                "hdma",
+                "music"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/119782.png",
+                "https://dl.smwcentral.net/image/119783.png",
+                "https://dl.smwcentral.net/image/119784.png",
+                "https://dl.smwcentral.net/image/119785.png",
+                "https://dl.smwcentral.net/image/119786.png",
+                "https://dl.smwcentral.net/image/119787.png",
+                "https://dl.smwcentral.net/image/119788.png",
+                "https://dl.smwcentral.net/image/119789.png",
+                "https://dl.smwcentral.net/image/119790.png",
+                "https://dl.smwcentral.net/image/119791.png",
+                "https://dl.smwcentral.net/image/119792.png",
+                "https://dl.smwcentral.net/image/119793.png"
+            ],
+            "rating": 5,
+            "size": 1300173,
+            "downloads": 1104,
+            "download_url": "https://dl.smwcentral.net/41121/MQ2_v1_2.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "16 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Expert",
+                "type": "Kaizo",
+                "warnings": "Crude Content or Language",
+                "description": "After the events of Mario Quits, Peach and Mario live the perfect life at Peach’s Castle, but Mario feels there is something wrong. Follow him on his search for truth.<br>\r\n<br>\r\nMario Quits 2, like its predecessor, is a hack full of action, tight platforming and precision elements. It features fresh set-ups, inventive as well as classic levels, beautiful graphics and a ton of pixel art to tell an epic story.<br>\r\n<br>\r\nThe difficulty is definitely in the higher intermediate range. This game is difficult, but sections are relatively short.<br>\r\n<br>\r\n27NOV2025 - v1.2<br>\r\nChanged a lot in the second section of \"Turtle Timing Torture\". It was too much torture. Some more indication. Corrected a typo or two.<br>\r\n<br>\r\n21AUG2025 - v1.1<br>\r\nSince all hacks are getting remoderated at the moment, I take the chance and provide an update to MQ2. I nerfed some of the most difficult setups and added some indicators here and there. I explicitly want to mention that I nerfed the very first obstacle. So, a few people might want to try again."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 16,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_5",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [
+                    "crude_content"
+                ],
+                "description": "After the events of Mario Quits, Peach and Mario live the perfect life at Peach’s Castle, but Mario feels there is something wrong. Follow him on his search for truth.\r\n\r\nMario Quits 2, like its predecessor, is a hack full of action, tight platforming and precision elements. It features fresh set-ups, inventive as well as classic levels, beautiful graphics and a ton of pixel art to tell an epic story.\r\n\r\nThe difficulty is definitely in the higher intermediate range. This game is difficult, but sections are relatively short.\r\n\r\n27NOV2025 - v1.2\r\nChanged a lot in the second section of \"Turtle Timing Torture\". It was too much torture. Some more indication. Corrected a typo or two.\r\n\r\n21AUG2025 - v1.1\r\nSince all hacks are getting remoderated at the moment, I take the chance and provide an update to MQ2. I nerfed some of the most difficult setups and added some indicators here and there. I explicitly want to mention that I nerfed the very first obstacle. So, a few people might want to try again."
+            }
+        },
+        {
+            "id": 41143,
+            "section": "smwhacks",
+            "name": "Marios Christmas Adventure 2",
+            "time": 1764456314,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 55551,
+                    "name": "Saphros"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "custom music",
+                "holiday",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/119842.png",
+                "https://dl.smwcentral.net/image/119843.png",
+                "https://dl.smwcentral.net/image/119844.png",
+                "https://dl.smwcentral.net/image/119845.png",
+                "https://dl.smwcentral.net/image/119846.png",
+                "https://dl.smwcentral.net/image/119847.png"
+            ],
+            "rating": 5,
+            "size": 595530,
+            "downloads": 881,
+            "download_url": "https://dl.smwcentral.net/41143/Marios_Christmas_Adventure_2.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "5 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "Celebrate the season with Marios Christmas Adventure 2, a Beginner Kaizo hack that serves as a platforming Advent calendar. There are five levels in total, marking the four Advents and the Grand Finale on Christmas Day.<br>\r\n<br>\r\nThe difficulty is tailored to be beginner-friendly, focusing on fun platforming rather than frustration. You will encounter classic winter tropes mixed with creative setups, taking you from the bottom of a snow-covered plain all the way up to a frantic toy factory. Grab your controller and enjoy this festive treat!"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 5,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "Celebrate the season with Marios Christmas Adventure 2, a Beginner Kaizo hack that serves as a platforming Advent calendar. There are five levels in total, marking the four Advents and the Grand Finale on Christmas Day.\r\n\r\nThe difficulty is tailored to be beginner-friendly, focusing on fun platforming rather than frustration. You will encounter classic winter tropes mixed with creative setups, taking you from the bottom of a snow-covered plain all the way up to a frantic toy factory. Grab your controller and enjoy this festive treat!"
+            }
+        },
+        {
+            "id": 41047,
+            "section": "smwhacks",
+            "name": "Super Mario Super Quest (demo)",
+            "time": 1763578299,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 72663,
+                    "name": "Greeeen"
+                }
+            ],
+            "submitter": null,
+            "tags": [],
+            "images": [
+                "https://dl.smwcentral.net/image/119603.png",
+                "https://dl.smwcentral.net/image/119604.png",
+                "https://dl.smwcentral.net/image/119605.png"
+            ],
+            "rating": 5,
+            "size": 449683,
+            "downloads": 564,
+            "download_url": "https://dl.smwcentral.net/41047/SMSQ%20demo.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "20 exit(s)",
+                "demo": "Yes",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "Super Mario Super Quest is a romhack based in the original Super Mario Bros<br>\r\nThe text of the cutscenes are still the original (still to change)<br>\r\nIm a spanish user, sorry if my english is not perfect <br>\r\nAll feedback is wellcome"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 20,
+                "demo": true,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "Super Mario Super Quest is a romhack based in the original Super Mario Bros\r\nThe text of the cutscenes are still the original (still to change)\r\nIm a spanish user, sorry if my english is not perfect \r\nAll feedback is wellcome"
+            }
+        },
+        {
+            "id": 40735,
+            "section": "smwhacks",
+            "name": "Mario Mario's Superior Platforming Physics Challenge",
+            "time": 1759966208,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 36349,
+                    "name": "Jamie"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "altered physics",
+                "bosses",
+                "crude language",
+                "custom music"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/118557.png",
+                "https://dl.smwcentral.net/image/118558.png",
+                "https://dl.smwcentral.net/image/118559.png",
+                "https://dl.smwcentral.net/image/118560.png",
+                "https://dl.smwcentral.net/image/118561.png"
+            ],
+            "rating": 5,
+            "size": 462524,
+            "downloads": 364,
+            "download_url": "https://dl.smwcentral.net/40735/MMSPPC.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "4 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Advanced",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "Mario breaks into your house and invades your personal space and challenges you to his \"Superior Platforming Physics Challenge\".<br>\r\n<br>\r\n4 Exits, \"Superior Platforming Physics\", and one really, REALLY angry plumber."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 4,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_4",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "Mario breaks into your house and invades your personal space and challenges you to his \"Superior Platforming Physics Challenge\".\r\n\r\n4 Exits, \"Superior Platforming Physics\", and one really, REALLY angry plumber."
+            }
+        },
+        {
+            "id": 40597,
+            "section": "smwhacks",
+            "name": "Super Mario World Mix",
+            "time": 1758934158,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 64208,
+                    "name": "Steven Atauchi C."
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "abilities",
+                "asm",
+                "beta v1",
+                "boss",
+                "gfx",
+                "graphics",
+                "luigi",
+                "mix",
+                "music",
+                "needs remoderation",
+                "powerups",
+                "sprites",
+                "variety"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/118122.png",
+                "https://dl.smwcentral.net/image/118123.png",
+                "https://dl.smwcentral.net/image/118124.png",
+                "https://dl.smwcentral.net/image/118125.png",
+                "https://dl.smwcentral.net/image/118126.png",
+                "https://dl.smwcentral.net/image/118127.png",
+                "https://dl.smwcentral.net/image/118128.png",
+                "https://dl.smwcentral.net/image/118129.png",
+                "https://dl.smwcentral.net/image/118130.png",
+                "https://dl.smwcentral.net/image/118131.png",
+                "https://dl.smwcentral.net/image/118132.png"
+            ],
+            "rating": 4.75,
+            "size": 1270208,
+            "downloads": 6215,
+            "download_url": "https://dl.smwcentral.net/40597/SMW_MIX_BETA2.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "29 exit(s)",
+                "demo": "Yes",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Standard",
+                "warnings": "",
+                "description": "This is the 2.0 beta of SMW Mix. This adventure brings us many Mario titles, both past and present, while respecting the graphic style of Super Mario World. An adventure filled with new power-ups that will give you tons of fun in each level, bosses from different installments, and beautiful graphics.<br>\r\n<br>\r\nThis beta is a showcase of all my work to date, with four open worlds and levels for you to freely explore. This hack is only available because it's a beta; everything will be locked in the final version. The hack is currently in Spanish; an English version will be available soon. If you find any bugs, please let me know so I can try to fix them.<br>\r\n<br>\r\nThat's all, have fun!"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 29,
+                "demo": true,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "This is the 2.0 beta of SMW Mix. This adventure brings us many Mario titles, both past and present, while respecting the graphic style of Super Mario World. An adventure filled with new power-ups that will give you tons of fun in each level, bosses from different installments, and beautiful graphics.\r\n\r\nThis beta is a showcase of all my work to date, with four open worlds and levels for you to freely explore. This hack is only available because it's a beta; everything will be locked in the final version. The hack is currently in Spanish; an English version will be available soon. If you find any bugs, please let me know so I can try to fix them.\r\n\r\nThat's all, have fun!"
+            }
+        },
+        {
+            "id": 40129,
+            "section": "smwhacks",
+            "name": "Super Mario World-3",
+            "time": 1756220522,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 51716,
+                    "name": "Easy Difficulty"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "bosses",
+                "gimmick",
+                "hdma",
+                "music",
+                "variety"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/116791.png",
+                "https://dl.smwcentral.net/image/116792.png",
+                "https://dl.smwcentral.net/image/116793.png",
+                "https://dl.smwcentral.net/image/116794.png",
+                "https://dl.smwcentral.net/image/116795.png",
+                "https://dl.smwcentral.net/image/116796.png",
+                "https://dl.smwcentral.net/image/116797.png",
+                "https://dl.smwcentral.net/image/116798.png",
+                "https://dl.smwcentral.net/image/116799.png",
+                "https://dl.smwcentral.net/image/116800.png",
+                "https://dl.smwcentral.net/image/116801.png",
+                "https://dl.smwcentral.net/image/116802.png",
+                "https://dl.smwcentral.net/image/116803.png",
+                "https://dl.smwcentral.net/image/116804.png",
+                "https://dl.smwcentral.net/image/116805.png",
+                "https://dl.smwcentral.net/image/116806.png",
+                "https://dl.smwcentral.net/image/116807.png",
+                "https://dl.smwcentral.net/image/116808.png",
+                "https://dl.smwcentral.net/image/116809.png"
+            ],
+            "rating": 4.6,
+            "size": 2534922,
+            "downloads": 1855,
+            "download_url": "https://dl.smwcentral.net/40129/SMW-3%20v1.1.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "111 exit(s)",
+                "demo": "No",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Expert",
+                "type": "Standard",
+                "warnings": "Crude Content or Language",
+                "description": "This hack is sort of a tribute to JUMP, and other JUMP Team hacks. It's mostly standard with a bunch of gimmicks and ASM things. Collecting Dragon Coins and 3-UP Moons will unlock some extra levels. Some levels may be considered somewhat kaizo, as this hack also draws inspiration from some of Morsel's hacks (there are a few required enemy bounces and unforgiving obstacles). A few puzzles will also be present that may require slightly advanced knowledge of game mechanics. Several of the more difficult levels will use the Retry system.<br>\r\n<br>\r\nUpdate v1.1 as of 2025-07-17:<br>\r\n- Fixed the alternating blocks<br>\r\n- Fixed some other jank<br>\r\nread changelog.txt for all changes."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 111,
+                "demo": false,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_5",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [
+                    "crude_content"
+                ],
+                "description": "This hack is sort of a tribute to JUMP, and other JUMP Team hacks. It's mostly standard with a bunch of gimmicks and ASM things. Collecting Dragon Coins and 3-UP Moons will unlock some extra levels. Some levels may be considered somewhat kaizo, as this hack also draws inspiration from some of Morsel's hacks (there are a few required enemy bounces and unforgiving obstacles). A few puzzles will also be present that may require slightly advanced knowledge of game mechanics. Several of the more difficult levels will use the Retry system.\r\n\r\nUpdate v1.1 as of 2025-07-17:\r\n- Fixed the alternating blocks\r\n- Fixed some other jank\r\nread changelog.txt for all changes."
+            }
+        },
+        {
+            "id": 40321,
+            "section": "smwhacks",
+            "name": "Super Mario World: Adventure in Forest Land",
+            "time": 1755887039,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 27645,
+                    "name": "Green Jerry"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "bosses",
+                "hdma",
+                "less exgfx",
+                "music",
+                "portuguese",
+                "traditional",
+                "vanilla"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/117432.png",
+                "https://dl.smwcentral.net/image/117433.png",
+                "https://dl.smwcentral.net/image/117434.png",
+                "https://dl.smwcentral.net/image/117435.png",
+                "https://dl.smwcentral.net/image/117436.png",
+                "https://dl.smwcentral.net/image/117437.png",
+                "https://dl.smwcentral.net/image/117438.png",
+                "https://dl.smwcentral.net/image/117439.png",
+                "https://dl.smwcentral.net/image/117440.png",
+                "https://dl.smwcentral.net/image/117441.png",
+                "https://dl.smwcentral.net/image/117442.png",
+                "https://dl.smwcentral.net/image/117443.png",
+                "https://dl.smwcentral.net/image/117444.png",
+                "https://dl.smwcentral.net/image/117445.png",
+                "https://dl.smwcentral.net/image/117446.png",
+                "https://dl.smwcentral.net/image/117447.png",
+                "https://dl.smwcentral.net/image/117448.png",
+                "https://dl.smwcentral.net/image/117449.png",
+                "https://dl.smwcentral.net/image/117450.png"
+            ],
+            "rating": 4.3333,
+            "size": 675739,
+            "downloads": 1632,
+            "download_url": "https://dl.smwcentral.net/40321/Super%20Mario%20World%20-%20Adventure%20in%20Forest%20Land%20v1.0.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "34 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Standard",
+                "warnings": "",
+                "description": "This is a new hack that I started working after Super Mario World: The 4 Magic Wands was accepted.<br>\r\n<br>\r\n<b>Story:</b><br>\r\nOh no! Bowser has kidnapped Mario, and now he's lost in Forest Land! Mario must defeat Bowser and escape from this land!<br>\r\n<br>\r\nThe hack has 2 versions: an English version and a Brazilian Portuguese version."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 34,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "This is a new hack that I started working after Super Mario World: The 4 Magic Wands was accepted.\r\n\r\n[b]Story:[/b]\r\nOh no! Bowser has kidnapped Mario, and now he's lost in Forest Land! Mario must defeat Bowser and escape from this land!\r\n\r\nThe hack has 2 versions: an English version and a Brazilian Portuguese version."
+            }
+        },
+        {
+            "id": 40193,
+            "section": "smwhacks",
+            "name": "Marios Pizza Party 3",
+            "time": 1753993114,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 55551,
+                    "name": "Saphros"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "custom music",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/117066.png",
+                "https://dl.smwcentral.net/image/117067.png",
+                "https://dl.smwcentral.net/image/117068.png",
+                "https://dl.smwcentral.net/image/117069.png",
+                "https://dl.smwcentral.net/image/117070.png",
+                "https://dl.smwcentral.net/image/117071.png"
+            ],
+            "rating": 5,
+            "size": 623850,
+            "downloads": 1446,
+            "download_url": "https://dl.smwcentral.net/40193/Marios%20Pizza%20Party%203%20-%201.1.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "13 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "Join Mario on another Kaizo Pizza adventure through a colorful and varied world. Experience classic Kaizo platforming with a hint of culinary features. You start in easy levels and experience increasingly difficult levels to find your beloved pizza at the end.<br>\r\n<br>\r\nPizza Party 3 ranks between Pizza Party 1 and 2 in terms of difficulty.<br>\r\n<br>\r\n- No cape level<br>\r\n- No water level<br>\r\n- 1 Shell Jump<br>\r\n<br>\r\n---<br>\r\nv1.1:<br>\r\nAdded some bugfixes and a few smaller nerfs <br>\r\n<br>\r\n(thanks for all your hints! &lt;3)"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 13,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "Join Mario on another Kaizo Pizza adventure through a colorful and varied world. Experience classic Kaizo platforming with a hint of culinary features. You start in easy levels and experience increasingly difficult levels to find your beloved pizza at the end.\r\n\r\nPizza Party 3 ranks between Pizza Party 1 and 2 in terms of difficulty.\r\n\r\n- No cape level\r\n- No water level\r\n- 1 Shell Jump\r\n\r\n---\r\nv1.1:\r\nAdded some bugfixes and a few smaller nerfs \r\n\r\n(thanks for all your hints! <3)"
+            }
+        },
+        {
+            "id": 40105,
+            "section": "smwhacks",
+            "name": "Very Hard Mario",
+            "time": 1752617524,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 9852,
+                    "name": "lolyoshi"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "less exgfx",
+                "precision",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/116659.png",
+                "https://dl.smwcentral.net/image/116660.png",
+                "https://dl.smwcentral.net/image/116661.png",
+                "https://dl.smwcentral.net/image/116662.png",
+                "https://dl.smwcentral.net/image/116663.png"
+            ],
+            "rating": 5,
+            "size": 171477,
+            "downloads": 697,
+            "download_url": "https://dl.smwcentral.net/40105/veryhard.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "13 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Master",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "v1.03<br>\r\nA mix of unused kaizo levels dating back to 2015 with newer ones made relatively recently."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 13,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_6",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "v1.03\r\nA mix of unused kaizo levels dating back to 2015 with newer ones made relatively recently."
+            }
+        },
+        {
+            "id": 40092,
+            "section": "smwhacks",
+            "name": "Mario and Luigi in an Unknown Island",
+            "time": 1752443385,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 41863,
+                    "name": "MirrorReflect"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "bosses",
+                "custom music",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/116615.png",
+                "https://dl.smwcentral.net/image/116616.png",
+                "https://dl.smwcentral.net/image/116617.png",
+                "https://dl.smwcentral.net/image/116618.png",
+                "https://dl.smwcentral.net/image/116619.png",
+                "https://dl.smwcentral.net/image/116620.png",
+                "https://dl.smwcentral.net/image/116621.png",
+                "https://dl.smwcentral.net/image/116622.png",
+                "https://dl.smwcentral.net/image/116623.png",
+                "https://dl.smwcentral.net/image/116624.png",
+                "https://dl.smwcentral.net/image/116625.png",
+                "https://dl.smwcentral.net/image/116626.png",
+                "https://dl.smwcentral.net/image/116627.png",
+                "https://dl.smwcentral.net/image/116628.png"
+            ],
+            "rating": 5,
+            "size": 557523,
+            "downloads": 1231,
+            "download_url": "https://dl.smwcentral.net/40092/M%26L%20UI.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "40 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Standard",
+                "warnings": "Suggestive Content or Language",
+                "description": "Finally, after 5 years of having the pending to finish this project, I can say that I am happy to have finished and uploaded this project.<br>\r\nThe story is the same but the ending is something that I did not raise at the time of starting, I simply had the consideration that the protagonists reach an end point without further ado, but in the development I decided to leave a doubt in the events, but that is not resolved at this time.<br>\r\nThere have been some changes in aesthetics and gameplay:<br>\r\n*I have incorporated bosses in each final castle, I had the idea of not having them, but that decision was an act of laziness.<br>\r\n*I have modified the behavior of some sprites to enrich the game.<br>\r\n*The messages that were given in each level in the message boxes were a funny decision since most of them were not useful and also silly since in the beginning of the project I didn't think seriously about the story, in the last parts of the game the messages would be more formal and even something suggestive, but that's a secret surprise of the final story.<br>\r\n*Some decisions about the colors and graphics may be diverse and shocking, but this project did not have a consecutive follow-up and my skills were changing over time.<br>\r\nI must also say that I never planned to finish but I got motivated at the last moment because I didn't want to leave one of several pending I have.<br>\r\nI hope you like it."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 40,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [
+                    "suggestive_content"
+                ],
+                "description": "Finally, after 5 years of having the pending to finish this project, I can say that I am happy to have finished and uploaded this project.\r\nThe story is the same but the ending is something that I did not raise at the time of starting, I simply had the consideration that the protagonists reach an end point without further ado, but in the development I decided to leave a doubt in the events, but that is not resolved at this time.\r\nThere have been some changes in aesthetics and gameplay:\r\n*I have incorporated bosses in each final castle, I had the idea of not having them, but that decision was an act of laziness.\r\n*I have modified the behavior of some sprites to enrich the game.\r\n*The messages that were given in each level in the message boxes were a funny decision since most of them were not useful and also silly since in the beginning of the project I didn't think seriously about the story, in the last parts of the game the messages would be more formal and even something suggestive, but that's a secret surprise of the final story.\r\n*Some decisions about the colors and graphics may be diverse and shocking, but this project did not have a consecutive follow-up and my skills were changing over time.\r\nI must also say that I never planned to finish but I got motivated at the last moment because I didn't want to leave one of several pending I have.\r\nI hope you like it."
+            }
+        },
+        {
+            "id": 40065,
+            "section": "smwhacks",
+            "name": "Mario goes on an adventure for apparently no reason",
+            "time": 1752136330,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 53764,
+                    "name": "Alfombra de madera"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "game modes",
+                "hdma",
+                "original graphics"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/116515.png",
+                "https://dl.smwcentral.net/image/116516.png",
+                "https://dl.smwcentral.net/image/116517.png",
+                "https://dl.smwcentral.net/image/116518.png",
+                "https://dl.smwcentral.net/image/116519.png",
+                "https://dl.smwcentral.net/image/116520.png",
+                "https://dl.smwcentral.net/image/116521.png",
+                "https://dl.smwcentral.net/image/116522.png",
+                "https://dl.smwcentral.net/image/116523.png",
+                "https://dl.smwcentral.net/image/116524.png",
+                "https://dl.smwcentral.net/image/116525.png",
+                "https://dl.smwcentral.net/image/116526.png",
+                "https://dl.smwcentral.net/image/116527.png"
+            ],
+            "rating": 5,
+            "size": 1142569,
+            "downloads": 4033,
+            "download_url": "https://dl.smwcentral.net/40065/MGOAAFANR%20demo%201.51.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "18 exit(s)",
+                "demo": "Yes",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "WHAT!! you are reading this!!! How!!!<br>\r\n<br>\r\nwell let's talk about this hack.<br>\r\n<br>\r\nAll the sprites were made based on the original smw sprites and some based on the smb3 ones and I made them all myself.<br>\r\nThis is my first hack and this hack have a lot of HDMA effects, custom tiles and that kind of things :)<br>\r\n<br>\r\nThis Demo have two worlds and 5 hidden levels.<br>\r\n<br>\r\n1.5 changes:<br>\r\n-Added expert mode<br>\r\n-Redesign of some levels<br>\r\n-Redesign of colors, tiles and graphics (again)<br>\r\n* Every level in expert mode will have different layout, colors and even in some levels different music or graphics.<br>\r\n<br>\r\nThe password of the \"secret zip\" is \"Idk_the_password\"<br>\r\nwell enjoy it and remember to leave me a coment... please...<br>\r\n<br>\r\n<br>\r\nIMPORTANT (JUST IN THIS VERSION!!)<br>\r\nthe jungle and the sunset levels DON'T HAVE AN EXPERT MODE VERSION<br>\r\nThis is just in this version, I'll add them in a future!"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 18,
+                "demo": true,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "WHAT!! you are reading this!!! How!!!\r\n\r\nwell let's talk about this hack.\r\n\r\nAll the sprites were made based on the original smw sprites and some based on the smb3 ones and I made them all myself.\r\nThis is my first hack and this hack have a lot of HDMA effects, custom tiles and that kind of things :)\r\n\r\nThis Demo have two worlds and 5 hidden levels.\r\n\r\n1.5 changes:\r\n-Added expert mode\r\n-Redesign of some levels\r\n-Redesign of colors, tiles and graphics (again)\r\n* Every level in expert mode will have different layout, colors and even in some levels different music or graphics.\r\n\r\nThe password of the \"secret zip\" is \"Idk_the_password\"\r\nwell enjoy it and remember to leave me a coment... please...\r\n\r\n\r\nIMPORTANT (JUST IN THIS VERSION!!)\r\nthe jungle and the sunset levels DON'T HAVE AN EXPERT MODE VERSION\r\nThis is just in this version, I'll add them in a future!"
+            }
+        },
+        {
+            "id": 39962,
+            "section": "smwhacks",
+            "name": "Super Mario World: Legend of the Four Keys",
+            "time": 1752129226,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 13617,
+                    "name": "Gamma V"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "exgfx",
+                "hdma",
+                "music",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/116148.png",
+                "https://dl.smwcentral.net/image/116149.png",
+                "https://dl.smwcentral.net/image/116150.png",
+                "https://dl.smwcentral.net/image/116151.png",
+                "https://dl.smwcentral.net/image/116152.png",
+                "https://dl.smwcentral.net/image/116153.png",
+                "https://dl.smwcentral.net/image/116154.png",
+                "https://dl.smwcentral.net/image/116155.png",
+                "https://dl.smwcentral.net/image/116156.png",
+                "https://dl.smwcentral.net/image/116157.png",
+                "https://dl.smwcentral.net/image/116158.png",
+                "https://dl.smwcentral.net/image/116159.png",
+                "https://dl.smwcentral.net/image/116160.png",
+                "https://dl.smwcentral.net/image/116161.png",
+                "https://dl.smwcentral.net/image/116162.png"
+            ],
+            "rating": 4.4444,
+            "size": 580028,
+            "downloads": 2598,
+            "download_url": "https://dl.smwcentral.net/39962/L4K%201.4.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "43 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "An all-consuming void threatens to destroy the Mushroom World.  Only 4 Legendary Keys have the power to stop it.  It's up to Mario and Luigi to find these Keys before the world is destroyed.<br>\r\n<br>\r\nIn this hack, there are four themed Zones which you can play in any order a la Super Mario Land 2.  Difficulty should be comparable to official Mario games (aside from Lost Levels).<br>\r\n<br>\r\nUPDATE: I added a wall to the leftmost side of room 2 in the final level and placed the Yoshi at Mario's spawn point rather than in a ? Block."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 43,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "An all-consuming void threatens to destroy the Mushroom World.  Only 4 Legendary Keys have the power to stop it.  It's up to Mario and Luigi to find these Keys before the world is destroyed.\r\n\r\nIn this hack, there are four themed Zones which you can play in any order a la Super Mario Land 2.  Difficulty should be comparable to official Mario games (aside from Lost Levels).\r\n\r\nUPDATE: I added a wall to the leftmost side of room 2 in the final level and placed the Yoshi at Mario's spawn point rather than in a ? Block."
+            }
+        },
+        {
+            "id": 39995,
+            "section": "smwhacks",
+            "name": "Mario Goes To The Store",
+            "time": 1750400253,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 35207,
+                    "name": "eltiolavara9"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "less exgfx",
+                "music",
+                "needs remoderation",
+                "variety"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/116293.png",
+                "https://dl.smwcentral.net/image/116294.png",
+                "https://dl.smwcentral.net/image/116295.png",
+                "https://dl.smwcentral.net/image/116296.png",
+                "https://dl.smwcentral.net/image/116297.png",
+                "https://dl.smwcentral.net/image/116298.png",
+                "https://dl.smwcentral.net/image/116299.png",
+                "https://dl.smwcentral.net/image/116300.png",
+                "https://dl.smwcentral.net/image/116301.png",
+                "https://dl.smwcentral.net/image/116302.png",
+                "https://dl.smwcentral.net/image/116303.png",
+                "https://dl.smwcentral.net/image/116304.png",
+                "https://dl.smwcentral.net/image/116305.png"
+            ],
+            "rating": 4.875,
+            "size": 5285735,
+            "downloads": 2699,
+            "download_url": "https://dl.smwcentral.net/39995/mario%20goes%20to%20the%20store.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "56 exit(s)",
+                "demo": "No",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Standard",
+                "warnings": "Crude Content or Language",
+                "description": "This is a hack vaguely inspired by Nonsense and by the completely insane stories that game mods usually come up with to justify the plot.<br>\r\nIt features a lot of custom sprites & blocks (thanks to the BLDC2 baserom) and short-ish levels and worlds, as well as a more forgiving system for taking damage. <br>\r\n(There's a \"hard mode\" patch included that makes the hit system work like normal SMW, too)<br>\r\nI had lots of fun making this hack, and hope it's as fun to play!<br>\r\n<br>\r\nAlso it's been updated to 1.1.1 now, fixing some minor but very visible oversights.<br>\r\n<br>\r\n-plot-<br>\r\nMario wants to go to the store. <br>\r\nHowever, he doesn't know that he's going to go through Heaven and Hell, the top of the tallest mountain, the depths of the sea, and the fifth dimension. And also prevent the end of the world as foretold by the Mayan prophecy of 2012."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 56,
+                "demo": false,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [
+                    "crude_content"
+                ],
+                "description": "This is a hack vaguely inspired by Nonsense and by the completely insane stories that game mods usually come up with to justify the plot.\r\nIt features a lot of custom sprites & blocks (thanks to the BLDC2 baserom) and short-ish levels and worlds, as well as a more forgiving system for taking damage. \r\n(There's a \"hard mode\" patch included that makes the hit system work like normal SMW, too)\r\nI had lots of fun making this hack, and hope it's as fun to play!\r\n\r\nAlso it's been updated to 1.1.1 now, fixing some minor but very visible oversights.\r\n\r\n-plot-\r\nMario wants to go to the store. \r\nHowever, he doesn't know that he's going to go through Heaven and Hell, the top of the tallest mountain, the depths of the sea, and the fifth dimension. And also prevent the end of the world as foretold by the Mayan prophecy of 2012."
+            }
+        },
+        {
+            "id": 39904,
+            "section": "smwhacks",
+            "name": "It's another hack with Mario in it! Yay!",
+            "time": 1748557364,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 5029,
+                    "name": "Burst Man"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "less exgfx",
+                "music",
+                "needs remoderation",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/115989.png",
+                "https://dl.smwcentral.net/image/115990.png",
+                "https://dl.smwcentral.net/image/115991.png",
+                "https://dl.smwcentral.net/image/115992.png",
+                "https://dl.smwcentral.net/image/115993.png",
+                "https://dl.smwcentral.net/image/115994.png",
+                "https://dl.smwcentral.net/image/115995.png",
+                "https://dl.smwcentral.net/image/115996.png",
+                "https://dl.smwcentral.net/image/115997.png",
+                "https://dl.smwcentral.net/image/115998.png",
+                "https://dl.smwcentral.net/image/115999.png",
+                "https://dl.smwcentral.net/image/116000.png",
+                "https://dl.smwcentral.net/image/116001.png",
+                "https://dl.smwcentral.net/image/116002.png",
+                "https://dl.smwcentral.net/image/116003.png",
+                "https://dl.smwcentral.net/image/116004.png",
+                "https://dl.smwcentral.net/image/116005.png",
+                "https://dl.smwcentral.net/image/116006.png",
+                "https://dl.smwcentral.net/image/116007.png"
+            ],
+            "rating": 4,
+            "size": 205557,
+            "downloads": 4119,
+            "download_url": "https://dl.smwcentral.net/39904/IahwMiiY%20Demo%20v0.2.2.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "41 exit(s)",
+                "demo": "Yes",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "Help Mario jump over Koopas and stuff! Oh, and save some baby Yoshi eggs too.<br>\r\n<br>\r\n\"It's another hack with Mario in it! Yay!\" was a 2011 traditional ROM hack with a focus on gameplay and level design, and the prototype for \"Adventure in Gemstone Islands.\"<br>\r\nv0.2.2 is a long-overdue update that addresses sound, graphics and overworld path issues, and also tweaks the difficulty of a few stages.<br>\r\n<br>\r\nThis demo contains 4 worlds and 41 available exits in their 2011 incarnations."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 41,
+                "demo": true,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "Help Mario jump over Koopas and stuff! Oh, and save some baby Yoshi eggs too.\r\n\r\n\"It's another hack with Mario in it! Yay!\" was a 2011 traditional ROM hack with a focus on gameplay and level design, and the prototype for \"Adventure in Gemstone Islands.\"\r\nv0.2.2 is a long-overdue update that addresses sound, graphics and overworld path issues, and also tweaks the difficulty of a few stages.\r\n\r\nThis demo contains 4 worlds and 41 available exits in their 2011 incarnations."
+            }
+        },
+        {
+            "id": 39344,
+            "section": "smwhacks",
+            "name": "Super Mario 16: The Fall of Yoshi",
+            "time": 1747102319,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 812,
+                    "name": "Alex No"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "classic",
+                "needs remoderation",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/114062.png",
+                "https://dl.smwcentral.net/image/114063.png",
+                "https://dl.smwcentral.net/image/114064.png",
+                "https://dl.smwcentral.net/image/114065.png",
+                "https://dl.smwcentral.net/image/114066.png",
+                "https://dl.smwcentral.net/image/114067.png",
+                "https://dl.smwcentral.net/image/114068.png",
+                "https://dl.smwcentral.net/image/114069.png",
+                "https://dl.smwcentral.net/image/114070.png",
+                "https://dl.smwcentral.net/image/114071.png",
+                "https://dl.smwcentral.net/image/114072.png",
+                "https://dl.smwcentral.net/image/114073.png",
+                "https://dl.smwcentral.net/image/114074.png",
+                "https://dl.smwcentral.net/image/114075.png",
+                "https://dl.smwcentral.net/image/114076.png",
+                "https://dl.smwcentral.net/image/114077.png",
+                "https://dl.smwcentral.net/image/114078.png",
+                "https://dl.smwcentral.net/image/114079.png"
+            ],
+            "rating": 4.6,
+            "size": 1537613,
+            "downloads": 3503,
+            "download_url": "https://dl.smwcentral.net/39344/Super%20Mario%2016%20The%20Fall%20of%20Yoshi%20v1.54.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "77 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "Super Mario 16: The Fall of Yoshi 1.54<br>\r\n<br>\r\nPlot Overview:<br>\r\nThe peaceful world of the Yoshis is in grave danger. Bowser has discovered the secret location of the last Yoshi egg, which contains the final Yoshi capable of saving their species from extinction. To prevent this, Mario must embark on a daring adventure across new lands, battling Bowser’s minions and solving puzzles to retrieve the egg before it’s too late.<br>\r\n<br>\r\nStory Setup:<br>\r\nThe Yoshis once lived in harmony with Mario, providing aid and companionship in his many quests. But after Bowser’s last attack, most of the Yoshi species have mysteriously vanished. The last Yoshi egg, hidden deep within the perilous, ever-changing Yoshi Island, is said to be the only hope for restoring the Yoshi race.<br>\r\n<br>\r\nMario learns of this egg's location from a distressed Toad, who reveals Bowser's evil plan to destroy it and rid the world of the Yoshis forever. Now, Mario must travel through uncharted lands, from volcanic mountains to underwater caves, and face off against new and old enemies to secure the egg and bring the last Yoshi back into the world.<br>\r\n<br>\r\nMain Objective:<br>\r\n<br>\r\nFind the Yoshi egg before Bowser and his army can destroy it.<br>\r\n<br>\r\nFinally my hack is ready! For C3<br>\r\nEnjoy my latest romhack! <br>\r\n<br>\r\n<br>\r\nFOR SNES CONSOLE GAMERS NOTE:<br>\r\nTHIS HACK HAS A SAVERAM ON 128 KB, MAKE SURE YOU HAVE A SNES EVERDRIVE THAT SUPPORTS 128 KB SAVERAM FILES"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 77,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "Super Mario 16: The Fall of Yoshi 1.54\r\n\r\nPlot Overview:\r\nThe peaceful world of the Yoshis is in grave danger. Bowser has discovered the secret location of the last Yoshi egg, which contains the final Yoshi capable of saving their species from extinction. To prevent this, Mario must embark on a daring adventure across new lands, battling Bowser’s minions and solving puzzles to retrieve the egg before it’s too late.\r\n\r\nStory Setup:\r\nThe Yoshis once lived in harmony with Mario, providing aid and companionship in his many quests. But after Bowser’s last attack, most of the Yoshi species have mysteriously vanished. The last Yoshi egg, hidden deep within the perilous, ever-changing Yoshi Island, is said to be the only hope for restoring the Yoshi race.\r\n\r\nMario learns of this egg's location from a distressed Toad, who reveals Bowser's evil plan to destroy it and rid the world of the Yoshis forever. Now, Mario must travel through uncharted lands, from volcanic mountains to underwater caves, and face off against new and old enemies to secure the egg and bring the last Yoshi back into the world.\r\n\r\nMain Objective:\r\n\r\nFind the Yoshi egg before Bowser and his army can destroy it.\r\n\r\nFinally my hack is ready! For C3\r\nEnjoy my latest romhack! \r\n\r\n\r\nFOR SNES CONSOLE GAMERS NOTE:\r\nTHIS HACK HAS A SAVERAM ON 128 KB, MAKE SURE YOU HAVE A SNES EVERDRIVE THAT SUPPORTS 128 KB SAVERAM FILES"
+            }
+        },
+        {
+            "id": 39798,
+            "section": "smwhacks",
+            "name": "Oops,Trials Mario",
+            "time": 1746218424,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": null,
+                    "name": "Anonymous"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "exgfx",
+                "music",
+                "no boss",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/115588.png",
+                "https://dl.smwcentral.net/image/115589.png",
+                "https://dl.smwcentral.net/image/115590.png",
+                "https://dl.smwcentral.net/image/115591.png"
+            ],
+            "rating": 4,
+            "size": 323777,
+            "downloads": 419,
+            "download_url": "https://dl.smwcentral.net/39798/Oops%2CTrials%20Mario.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "7 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Advanced",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "Initial production hack in 2025<br>\r\nFull of Mario, now there is only one dig speed pass lonely fast<br>\r\nThe day when the cunning Mario collapsed, full of abilities Kaizo<br>\r\nHave a nice day"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 7,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_4",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "Initial production hack in 2025\r\nFull of Mario, now there is only one dig speed pass lonely fast\r\nThe day when the cunning Mario collapsed, full of abilities Kaizo\r\nHave a nice day"
+            }
+        },
+        {
+            "id": 39793,
+            "section": "smwhacks",
+            "name": "Super Mario Yggdrasil",
+            "time": 1746130327,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 70301,
+                    "name": "Inventalgames"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "custom gfx",
+                "custom graphics",
+                "cutscene",
+                "music",
+                "needs remoderation",
+                "npc",
+                "rpg"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/115553.png",
+                "https://dl.smwcentral.net/image/115554.png",
+                "https://dl.smwcentral.net/image/115555.png",
+                "https://dl.smwcentral.net/image/115556.png",
+                "https://dl.smwcentral.net/image/115557.png",
+                "https://dl.smwcentral.net/image/115558.png",
+                "https://dl.smwcentral.net/image/115559.png",
+                "https://dl.smwcentral.net/image/115560.png",
+                "https://dl.smwcentral.net/image/115561.png",
+                "https://dl.smwcentral.net/image/115562.png",
+                "https://dl.smwcentral.net/image/115563.png",
+                "https://dl.smwcentral.net/image/115564.png",
+                "https://dl.smwcentral.net/image/115565.png",
+                "https://dl.smwcentral.net/image/115566.png",
+                "https://dl.smwcentral.net/image/115567.png",
+                "https://dl.smwcentral.net/image/115568.png",
+                "https://dl.smwcentral.net/image/115569.png",
+                "https://dl.smwcentral.net/image/115570.png"
+            ],
+            "rating": 4.6667,
+            "size": 1974405,
+            "downloads": 1457,
+            "download_url": "https://dl.smwcentral.net/39793/Super%20Mario%20Yggdrasil.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "30 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "Super Mario Yggdrasil is a SMW hack with the soul of an RPG<br>\r\nJoin Mario and his allies on a journey to save the kingdom of Midgard from the Fimbulwinter. Face bosses, solve puzzles, and uncover the personal stories of each team member.<br>\r\n<br>\r\nWhat you need to know before playing:<br>\r\n1 - This hack is story-focused, much like classic RPGs, so there’s a lot of dialogue — but 98% of the story is optional, for those who prefer to focus on gameplay.<br>\r\n2 - The stages are quite long, so you might die near a save point and have to backtrack a good distance.<br>\r\n3 - If those two points aren’t an issue for you, you’re sure to enjoy this journey through Midgard. For the best experience, visit Midgard Castle in-game — there you'll find important information about the hack.<br>\r\n<br>\r\nThe ZIP file includes both English (ENG) and Portuguese (PT-BR) versions.<br>\r\nIf you make a gameplay video or a post, use the hashtag: #SuperMarioYggdrasil"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 30,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "Super Mario Yggdrasil is a SMW hack with the soul of an RPG\r\nJoin Mario and his allies on a journey to save the kingdom of Midgard from the Fimbulwinter. Face bosses, solve puzzles, and uncover the personal stories of each team member.\r\n\r\nWhat you need to know before playing:\r\n1 - This hack is story-focused, much like classic RPGs, so there’s a lot of dialogue — but 98% of the story is optional, for those who prefer to focus on gameplay.\r\n2 - The stages are quite long, so you might die near a save point and have to backtrack a good distance.\r\n3 - If those two points aren’t an issue for you, you’re sure to enjoy this journey through Midgard. For the best experience, visit Midgard Castle in-game — there you'll find important information about the hack.\r\n\r\nThe ZIP file includes both English (ENG) and Portuguese (PT-BR) versions.\r\nIf you make a gameplay video or a post, use the hashtag: #SuperMarioYggdrasil"
+            }
+        },
+        {
+            "id": 39482,
+            "section": "smwhacks",
+            "name": "Super Mario World 2025",
+            "time": 1744585997,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 50948,
+                    "name": "Hamilton64"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "hacks",
+                "super mario world",
+                "super mario world 2025"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/114427.png",
+                "https://dl.smwcentral.net/image/114428.png",
+                "https://dl.smwcentral.net/image/114429.png",
+                "https://dl.smwcentral.net/image/114430.png"
+            ],
+            "rating": 4.4444,
+            "size": 1674921,
+            "downloads": 7844,
+            "download_url": "https://dl.smwcentral.net/39482/Super%20Mario%20World%202025.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "93 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "This chocolate hack has LX5's powerups and Vitor Vilela's SA-1 pack. Note: Does not work on Zsnes. Now it is in English. Fixed some bugs like before it was possible to cheat by going under the ground and staying inside the ledge as if they were not solid (mainly in water levels or tidal levels), now the blocks are solid and now Mario/Luigi hit under the ledges, and I also fixed the red switch palette in the overworld and also corrected my name on the title screen. Any changes to the hack without my permission are prohibited."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 93,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "This chocolate hack has LX5's powerups and Vitor Vilela's SA-1 pack. Note: Does not work on Zsnes. Now it is in English. Fixed some bugs like before it was possible to cheat by going under the ground and staying inside the ledge as if they were not solid (mainly in water levels or tidal levels), now the blocks are solid and now Mario/Luigi hit under the ledges, and I also fixed the red switch palette in the overworld and also corrected my name on the title screen. Any changes to the hack without my permission are prohibited."
+            }
+        },
+        {
+            "id": 39635,
+            "section": "smwhacks",
+            "name": "Mario's Dying Simulator",
+            "time": 1743037500,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 11960,
+                    "name": "Sokobansolver"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "gimmick",
+                "music",
+                "powers",
+                "variety"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/115070.png",
+                "https://dl.smwcentral.net/image/115071.png",
+                "https://dl.smwcentral.net/image/115072.png",
+                "https://dl.smwcentral.net/image/115073.png",
+                "https://dl.smwcentral.net/image/115074.png",
+                "https://dl.smwcentral.net/image/115075.png",
+                "https://dl.smwcentral.net/image/115076.png",
+                "https://dl.smwcentral.net/image/115077.png",
+                "https://dl.smwcentral.net/image/115078.png",
+                "https://dl.smwcentral.net/image/115079.png",
+                "https://dl.smwcentral.net/image/115080.png",
+                "https://dl.smwcentral.net/image/115081.png",
+                "https://dl.smwcentral.net/image/115082.png",
+                "https://dl.smwcentral.net/image/115083.png",
+                "https://dl.smwcentral.net/image/115084.png",
+                "https://dl.smwcentral.net/image/115085.png",
+                "https://dl.smwcentral.net/image/115086.png",
+                "https://dl.smwcentral.net/image/115087.png"
+            ],
+            "rating": 0,
+            "size": 741919,
+            "downloads": 404,
+            "download_url": "https://dl.smwcentral.net/39635/MariosDyingSimulator.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "15 exit(s)",
+                "demo": "Yes",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Advanced",
+                "type": "Kaizo, Tool-Assisted",
+                "warnings": "",
+                "description": "Back when the first BLDC came out, I thought I'd use the BLDC baseROM to make something Kaizo, which proved kinda restrictive in some ways. It makes use of the various custom power-ups and resources used in this baseROM (tho I have not used all of them even tho earlier on I was kinda thinking about it).<br>\r\nDifficulty and design philosophy kinda feels to me like a transition period between the design style I used to usually prefer that is played and tested with slowdown and savestates with consecutive precise mini-puzzles, and embracing tool-less ideology (I had started MMDLite/Zero/Remix during the home stretch of this hack's development). I got to a point where I just wanted to finish what I started and not look back."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 15,
+                "demo": true,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_4",
+                "type": [
+                    "kaizo",
+                    "tool_assisted"
+                ],
+                "warnings": [],
+                "description": "Back when the first BLDC came out, I thought I'd use the BLDC baseROM to make something Kaizo, which proved kinda restrictive in some ways. It makes use of the various custom power-ups and resources used in this baseROM (tho I have not used all of them even tho earlier on I was kinda thinking about it).\r\nDifficulty and design philosophy kinda feels to me like a transition period between the design style I used to usually prefer that is played and tested with slowdown and savestates with consecutive precise mini-puzzles, and embracing tool-less ideology (I had started MMDLite/Zero/Remix during the home stretch of this hack's development). I got to a point where I just wanted to finish what I started and not look back."
+            }
+        },
+        {
+            "id": 39488,
+            "section": "smwhacks",
+            "name": "Mario And The Diamond Moon",
+            "time": 1741547668,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 35062,
+                    "name": "Enan63"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "needs remoderation",
+                "traditional",
+                "vanilla"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/114467.png",
+                "https://dl.smwcentral.net/image/114468.png",
+                "https://dl.smwcentral.net/image/114469.png"
+            ],
+            "rating": 0,
+            "size": 166356,
+            "downloads": 793,
+            "download_url": "https://dl.smwcentral.net/39488/Mario%27s%20And%20The%20Diamond%20Moon.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "8 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Standard",
+                "warnings": "",
+                "description": "Mario is watching TV then he sees an ad that shows the Diamond Moon the richest and powerful moon in the universe! Mario must get it by going off to Star Universe to obtain it!!<br>\r\n<br>\r\nMARCH 1ST, 2025 UPDATE: Fixed stage 5's sprite glitch issue in blueribbonhighlife audit log."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 8,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "Mario is watching TV then he sees an ad that shows the Diamond Moon the richest and powerful moon in the universe! Mario must get it by going off to Star Universe to obtain it!!\r\n\r\nMARCH 1ST, 2025 UPDATE: Fixed stage 5's sprite glitch issue in blueribbonhighlife audit log."
+            }
+        },
+        {
+            "id": 38882,
+            "section": "smwhacks",
+            "name": "Vengeful Mario",
+            "time": 1741466720,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 51716,
+                    "name": "Easy Difficulty"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "bosses",
+                "exgfx",
+                "music"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/112670.png",
+                "https://dl.smwcentral.net/image/112671.png",
+                "https://dl.smwcentral.net/image/112672.png"
+            ],
+            "rating": 4,
+            "size": 2707818,
+            "downloads": 1010,
+            "download_url": "https://dl.smwcentral.net/38882/reasonably%20long%20kaizo%20game%20but%20it%27s%20version%201.1.1%20now.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "72 exit(s)",
+                "demo": "No",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Master",
+                "type": "Standard, Kaizo",
+                "warnings": "",
+                "description": "Since his previous adventure, Mario no longer sees koopas and goombas wandering the lands. He now only sees obstacles in his way.<br>\r\n<br>\r\nThus quoth Bowser \"Mario is wracked with a perverted sentimentality\", as he denounced Mario and his arbitrary goals.<br>\r\nUnfortunately though, the plumber can not hear any of these words, as there is only one thing he sees ahead. \"72 left\".<br>\r\nFearful of Mario's determination, the koopa king found another volcano to build a stronghold that no plumber \"could possibly conquer\" due to the lack of checkpoints.<br>\r\nThough one with unlimited lives won't give up so easily.<br>\r\n<br>\r\nUpdate v1.1 (2025-02-06)<br>\r\nread the changelog.txt<br>\r\nUpdate v1.1.1 (2025-02-22)<br>\r\nread the changelog.txt"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 72,
+                "demo": false,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_6",
+                "type": [
+                    "standard",
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "Since his previous adventure, Mario no longer sees koopas and goombas wandering the lands. He now only sees obstacles in his way.\r\n\r\nThus quoth Bowser \"Mario is wracked with a perverted sentimentality\", as he denounced Mario and his arbitrary goals.\r\nUnfortunately though, the plumber can not hear any of these words, as there is only one thing he sees ahead. \"72 left\".\r\nFearful of Mario's determination, the koopa king found another volcano to build a stronghold that no plumber \"could possibly conquer\" due to the lack of checkpoints.\r\nThough one with unlimited lives won't give up so easily.\r\n\r\nUpdate v1.1 (2025-02-06)\r\nread the changelog.txt\r\nUpdate v1.1.1 (2025-02-22)\r\nread the changelog.txt"
+            }
+        },
+        {
+            "id": 39168,
+            "section": "smwhacks",
+            "name": "⏱︎ Slow Motion Mario",
+            "time": 1740787834,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 67340,
+                    "name": "TheSpreee333"
+                }
+            ],
+            "submitter": null,
+            "tags": [],
+            "images": [
+                "https://dl.smwcentral.net/image/113651.gif",
+                "https://dl.smwcentral.net/image/113652.gif",
+                "https://dl.smwcentral.net/image/113654.gif",
+                "https://dl.smwcentral.net/image/113950.gif",
+                "https://dl.smwcentral.net/image/113952.gif",
+                "https://dl.smwcentral.net/image/113953.gif",
+                "https://dl.smwcentral.net/image/113954.gif",
+                "https://dl.smwcentral.net/image/113955.gif",
+                "https://dl.smwcentral.net/image/113956.gif",
+                "https://dl.smwcentral.net/image/113957.gif",
+                "https://dl.smwcentral.net/image/113958.gif",
+                "https://dl.smwcentral.net/image/114235.gif",
+                "https://dl.smwcentral.net/image/114236.gif",
+                "https://dl.smwcentral.net/image/114238.gif",
+                "https://dl.smwcentral.net/image/114239.gif",
+                "https://dl.smwcentral.net/image/114240.gif",
+                "https://dl.smwcentral.net/image/114241.gif",
+                "https://dl.smwcentral.net/image/114242.gif",
+                "https://dl.smwcentral.net/image/114255.gif",
+                "https://dl.smwcentral.net/image/114256.gif",
+                "https://dl.smwcentral.net/image/114257.gif",
+                "https://dl.smwcentral.net/image/114258.gif",
+                "https://dl.smwcentral.net/image/114260.gif",
+                "https://dl.smwcentral.net/image/114264.gif",
+                "https://dl.smwcentral.net/image/114267.gif"
+            ],
+            "rating": 0,
+            "size": 878082,
+            "downloads": 446,
+            "download_url": "https://dl.smwcentral.net/39168/%E2%8F%B1%EF%B8%8E%20Slow%20Motion%20Mario.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "4 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Expert",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "This project started as a mashup of Lush50's Nightmare Cafe with Nixkillsmyth's Absentia of Knowing and developed into a full slow motion precision hack with 34 single screen rooms.   Thanks to Fernap's bullet time asm, players can toggle the in game speed with the shoulder buttons.<br>\r\n<br>\r\nClear videos<br>\r\nhttps://youtu.be/9YKWV1escEo<br>\r\nhttps://youtu.be/S1consrijY4<br>\r\n"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 4,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_5",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "This project started as a mashup of Lush50's Nightmare Cafe with Nixkillsmyth's Absentia of Knowing and developed into a full slow motion precision hack with 34 single screen rooms.   Thanks to Fernap's bullet time asm, players can toggle the in game speed with the shoulder buttons.\r\n\r\nClear videos\r\nhttps://youtu.be/9YKWV1escEo\r\nhttps://youtu.be/S1consrijY4\r\n"
+            }
+        },
+        {
+            "id": 39350,
+            "section": "smwhacks",
+            "name": "Mario No Kumorizora",
+            "time": 1739841065,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 48186,
+                    "name": "Azula16"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "traditional",
+                "vanilla"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/114099.png",
+                "https://dl.smwcentral.net/image/114100.png",
+                "https://dl.smwcentral.net/image/114101.png",
+                "https://dl.smwcentral.net/image/114102.png",
+                "https://dl.smwcentral.net/image/114103.png",
+                "https://dl.smwcentral.net/image/114104.png",
+                "https://dl.smwcentral.net/image/114105.png",
+                "https://dl.smwcentral.net/image/114106.png",
+                "https://dl.smwcentral.net/image/114107.png",
+                "https://dl.smwcentral.net/image/114108.png",
+                "https://dl.smwcentral.net/image/114109.png",
+                "https://dl.smwcentral.net/image/114110.png",
+                "https://dl.smwcentral.net/image/114111.png",
+                "https://dl.smwcentral.net/image/114112.png",
+                "https://dl.smwcentral.net/image/114113.png"
+            ],
+            "rating": 4.5,
+            "size": 153604,
+            "downloads": 474,
+            "download_url": "https://dl.smwcentral.net/39350/Kumorizora.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "18 exit(s)",
+                "demo": "Yes",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Master",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "I just flipped some munchers.<br>\r\n<br>\r\nIt doesn't have custom music. (For the moment)<br>\r\nI'll change the boss fights in the updates.<br>\r\nI'll add more levels.<br>\r\n<br>\r\nThis one is dedicated to wir4lor.<br>\r\nThanks for everything! &lt;3"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 18,
+                "demo": true,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_6",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "I just flipped some munchers.\r\n\r\nIt doesn't have custom music. (For the moment)\r\nI'll change the boss fights in the updates.\r\nI'll add more levels.\r\n\r\nThis one is dedicated to wir4lor.\r\nThanks for everything! <3"
+            }
+        },
+        {
+            "id": 39208,
+            "section": "smwhacks",
+            "name": "Super Mario World: The 4 Magic Wands",
+            "time": 1739758941,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 27645,
+                    "name": "Green Jerry"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "bosses",
+                "hdma",
+                "less exgfx",
+                "music",
+                "needs remoderation",
+                "portuguese",
+                "traditional",
+                "vanilla"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/113831.png",
+                "https://dl.smwcentral.net/image/113832.png",
+                "https://dl.smwcentral.net/image/113833.png",
+                "https://dl.smwcentral.net/image/113834.png",
+                "https://dl.smwcentral.net/image/113835.png",
+                "https://dl.smwcentral.net/image/113836.png",
+                "https://dl.smwcentral.net/image/113837.png",
+                "https://dl.smwcentral.net/image/113838.png",
+                "https://dl.smwcentral.net/image/113839.png",
+                "https://dl.smwcentral.net/image/113840.png",
+                "https://dl.smwcentral.net/image/113841.png",
+                "https://dl.smwcentral.net/image/113842.png",
+                "https://dl.smwcentral.net/image/113843.png",
+                "https://dl.smwcentral.net/image/113844.png",
+                "https://dl.smwcentral.net/image/113845.png",
+                "https://dl.smwcentral.net/image/113846.png",
+                "https://dl.smwcentral.net/image/113847.png"
+            ],
+            "rating": 4.8,
+            "size": 524372,
+            "downloads": 2093,
+            "download_url": "https://dl.smwcentral.net/39208/Super%20Mario%20World%20-%20The%204%20Magic%20Wands%20V1.0.2.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "24 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "This is a new hack that I felt like working on, after not working on any new adventure hacks for a while. There are 24 exits, spread across 4 worlds.<br>\r\n<br>\r\n<b>Story:</b><br>\r\nThe 4 magic wands have been stolen by Bowser and his 3 Koopalings! They plan on using them to destroy the island! Mario must retrieve them!<br>\r\n<br>\r\nThe hack has 2 versions: an English version and a Portuguese version."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 24,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "This is a new hack that I felt like working on, after not working on any new adventure hacks for a while. There are 24 exits, spread across 4 worlds.\r\n\r\n[b]Story:[/b]\r\nThe 4 magic wands have been stolen by Bowser and his 3 Koopalings! They plan on using them to destroy the island! Mario must retrieve them!\r\n\r\nThe hack has 2 versions: an English version and a Portuguese version."
+            }
+        },
+        {
+            "id": 38949,
+            "section": "smwhacks",
+            "name": "Super Mario's Wacky Worlds SD",
+            "time": 1737068948,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 60358,
+                    "name": "figuiDOS"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "epilepsy warning",
+                "exgfx",
+                "hdma",
+                "msu-1",
+                "music",
+                "needs remoderation",
+                "original soundtrack",
+                "philips cdi",
+                "remake",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/112913.png",
+                "https://dl.smwcentral.net/image/112914.png",
+                "https://dl.smwcentral.net/image/112915.png",
+                "https://dl.smwcentral.net/image/112916.png",
+                "https://dl.smwcentral.net/image/112917.png",
+                "https://dl.smwcentral.net/image/112918.png"
+            ],
+            "rating": 5,
+            "size": 2101521,
+            "downloads": 1500,
+            "download_url": "https://dl.smwcentral.net/38949/Super%20Mario%27s%20Wacky%20Worlds%20SD.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "22 exit(s)",
+                "demo": "Yes",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "!warning this hack may contain scenarios that cause nausea and photosensitivity!<br>\r\n<br>\r\nIMPORTANT: This hack uses the MSU-1 and Sa-1 chip, so not all emulators will work correctly. Recommended emulators are snes9x, bsnes, higan (not sure if I spelled higan correctly)<br>\r\n<br>\r\n<br>\r\n!Compile Instructions!<br>\r\n<br>\r\nStep (1): Download the MSU-1 music zip file from this link: <a href=\"https://drive.google.com/file/d/1rfPc2UOWYdO3JyNogtDoqW2YMaOjIYUw/view?usp=sharing\" rel=\"nofollow\">https://drive.google.com/file/d/1rfPc2UOWYdO3JyNogtDoqW2YMaOjIYUw/view?usp=sharing</a><br>\r\n<br>\r\nOtherwise, the game may have no sound or play super mario world music.<br>\r\n<br>\r\n(Note that this file is 700MB in memory because of the pcm audios, a standard in hacks that use the MSU-1 chip).<br>\r\n<br>\r\n<br>\r\nStep(2): After downloading the zip file, extract it and move the Super Mario's Wacky Worlds SD.smc hack to the SMWWSD folder along with the .pcm and .msu files"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 22,
+                "demo": true,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "!warning this hack may contain scenarios that cause nausea and photosensitivity!\r\n\r\nIMPORTANT: This hack uses the MSU-1 and Sa-1 chip, so not all emulators will work correctly. Recommended emulators are snes9x, bsnes, higan (not sure if I spelled higan correctly)\r\n\r\n\r\n!Compile Instructions!\r\n\r\nStep (1): Download the MSU-1 music zip file from this link: [url]https://drive.google.com/file/d/1rfPc2UOWYdO3JyNogtDoqW2YMaOjIYUw/view?usp=sharing[/url]\r\n\r\nOtherwise, the game may have no sound or play super mario world music.\r\n\r\n(Note that this file is 700MB in memory because of the pcm audios, a standard in hacks that use the MSU-1 chip).\r\n\r\n\r\nStep(2): After downloading the zip file, extract it and move the Super Mario's Wacky Worlds SD.smc hack to the SMWWSD folder along with the .pcm and .msu files"
+            }
+        },
+        {
+            "id": 38649,
+            "section": "smwhacks",
+            "name": "Super Mario World - Mario's Expedition",
+            "time": 1736509187,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 35824,
+                    "name": "Domokun007"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "bosses",
+                "exgfx",
+                "exploration",
+                "health",
+                "huge level",
+                "music",
+                "powers"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/111800.png",
+                "https://dl.smwcentral.net/image/111801.png",
+                "https://dl.smwcentral.net/image/111802.png",
+                "https://dl.smwcentral.net/image/111803.png",
+                "https://dl.smwcentral.net/image/111804.png",
+                "https://dl.smwcentral.net/image/111805.png",
+                "https://dl.smwcentral.net/image/111806.png",
+                "https://dl.smwcentral.net/image/111807.png"
+            ],
+            "rating": 5,
+            "size": 1230650,
+            "downloads": 8017,
+            "download_url": "https://dl.smwcentral.net/38649/Super%20Mario%20World%20-%20Mario%27s%20Expedition%20v1.4.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "1 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Advanced",
+                "type": "Standard",
+                "warnings": "",
+                "description": "In this metroidvania style hack, Peach has been kidnapped once again, but this time, not by Bowser. To be strong enough to rescue her, you'll need to explore the world to find some powerful power-ups, use those new skills to travel through dangerous paths and find hidden areas to reveal secret passwords.<br>\r\n<br>\r\nFeaturing:<br>\r\n- Health system<br>\r\n- Permanent power-ups<br>\r\n- Many custom graphics, music and sprites<br>\r\n- Every level is connected so there are 0 exits<br>\r\n- The equivalent of approximately 20 levels<br>\r\n- Lots of secret rooms<br>\r\n- One bonus room with a light kaizo level challenge<br>\r\n<br>\r\n<br>\r\nUPDATES:<br>\r\nV1.4<br>\r\nI wasn't planning to make any more changes, but since a section was frequently causing a softlock, I felt it was important to address it. While I was at it, I also took the opportunity to make a number of small improvements across various sections.  See Changelog.txt for more info..<br>\r\nThis will likely be my final update on this hack.<br>\r\n<br>\r\n-------------------<br>\r\n<br>\r\nV1.3<br>\r\nThe main reason for this update was to rework the last level that was a little bit too hard and had a glitch that kills Mario for no reason.<br>\r\nI also fix a few other things that were bothering me. <br>\r\n<br>\r\n-------------------<br>\r\n<br>\r\nV1.2:<br>\r\n<br>\r\nFollowing many comments received, I modified the end to make it a little less anticlimactic by adding NPCs and a whole new level.<br>\r\n<br>\r\nFor more details, check Changelog.txt"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 1,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_4",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "In this metroidvania style hack, Peach has been kidnapped once again, but this time, not by Bowser. To be strong enough to rescue her, you'll need to explore the world to find some powerful power-ups, use those new skills to travel through dangerous paths and find hidden areas to reveal secret passwords.\r\n\r\nFeaturing:\r\n- Health system\r\n- Permanent power-ups\r\n- Many custom graphics, music and sprites\r\n- Every level is connected so there are 0 exits\r\n- The equivalent of approximately 20 levels\r\n- Lots of secret rooms\r\n- One bonus room with a light kaizo level challenge\r\n\r\n\r\nUPDATES:\r\nV1.4\r\nI wasn't planning to make any more changes, but since a section was frequently causing a softlock, I felt it was important to address it. While I was at it, I also took the opportunity to make a number of small improvements across various sections.  See Changelog.txt for more info..\r\nThis will likely be my final update on this hack.\r\n\r\n-------------------\r\n\r\nV1.3\r\nThe main reason for this update was to rework the last level that was a little bit too hard and had a glitch that kills Mario for no reason.\r\nI also fix a few other things that were bothering me. \r\n\r\n-------------------\r\n\r\nV1.2:\r\n\r\nFollowing many comments received, I modified the end to make it a little less anticlimactic by adding NPCs and a whole new level.\r\n\r\nFor more details, check Changelog.txt"
+            }
+        },
+        {
+            "id": 38969,
+            "section": "smwhacks",
+            "name": "Marios Christmas Adventure",
+            "time": 1735424105,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 55551,
+                    "name": "Saphros"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "christmas",
+                "exgfx",
+                "holiday",
+                "music",
+                "traditional",
+                "xmas"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/112980.png",
+                "https://dl.smwcentral.net/image/112981.png",
+                "https://dl.smwcentral.net/image/112982.png",
+                "https://dl.smwcentral.net/image/112983.png",
+                "https://dl.smwcentral.net/image/112984.png",
+                "https://dl.smwcentral.net/image/112985.png"
+            ],
+            "rating": 4.8,
+            "size": 882127,
+            "downloads": 2354,
+            "download_url": "https://dl.smwcentral.net/38969/Marios_Christmas_Adventure.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "5 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "Mario has always wanted to meet Santa Claus and sets off on a journey to the North Pole. Play 5 Beginner Kaizo level and enjoy snowy landscapes.<br>\r\n<br>\r\nThe Zip also includes an easy edition with an easier version of the last level.<br>\r\n<br>\r\nMerry Christmas!<br>\r\n"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 5,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "Mario has always wanted to meet Santa Claus and sets off on a journey to the North Pole. Play 5 Beginner Kaizo level and enjoy snowy landscapes.\r\n\r\nThe Zip also includes an easy edition with an easier version of the last level.\r\n\r\nMerry Christmas!\r\n"
+            }
+        },
+        {
+            "id": 38765,
+            "section": "smwhacks",
+            "name": "Jigoku Mario World 3",
+            "time": 1735324628,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 32207,
+                    "name": "Nowieso"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "bosses",
+                "item tech",
+                "less exgfx",
+                "music",
+                "precision",
+                "vanilla"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/112203.png",
+                "https://dl.smwcentral.net/image/112204.png",
+                "https://dl.smwcentral.net/image/112205.png",
+                "https://dl.smwcentral.net/image/112206.png",
+                "https://dl.smwcentral.net/image/112207.png",
+                "https://dl.smwcentral.net/image/112208.png",
+                "https://dl.smwcentral.net/image/112209.png",
+                "https://dl.smwcentral.net/image/112210.png",
+                "https://dl.smwcentral.net/image/112211.png",
+                "https://dl.smwcentral.net/image/112212.png"
+            ],
+            "rating": 5,
+            "size": 1132130,
+            "downloads": 1262,
+            "download_url": "https://dl.smwcentral.net/38765/Jigoku%20Mario%20World%203.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "25 exit(s)",
+                "demo": "No",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Grandmaster",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "Jigoku Mario World 3 is the final entry of the Jigoku series, a series that started 10 years ago. It features 25 exits of some of my hardest challenges of all time in a semi-open overworld that allows you to play the 4 main worlds in any order.<br>\r\n<br>\r\nRegarding the difficulty, I am not holding back with this one. That doesn't mean that every level is as hard as possible, but that I'm not removing any setups just because they could be too hard for some people, which I've always done in my previous hacks.<br>\r\n<br>\r\nDespite the very high difficulty, I hope you'll have a ton of fun playing it.<br>\r\n<br>\r\nYou can find Videos of the levels here: <a href=\"https://www.youtube.com/playlist?list=PLlXdZrV9Ur-2pyCM4Ax1uVrzZYqRNDvIp\" rel=\"nofollow\">https://www.youtube.com/playlist?list=PLlXdZrV9Ur-2pyCM4Ax1uVrzZYqRNDvIp</a>"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 25,
+                "demo": false,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_7",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "Jigoku Mario World 3 is the final entry of the Jigoku series, a series that started 10 years ago. It features 25 exits of some of my hardest challenges of all time in a semi-open overworld that allows you to play the 4 main worlds in any order.\r\n\r\nRegarding the difficulty, I am not holding back with this one. That doesn't mean that every level is as hard as possible, but that I'm not removing any setups just because they could be too hard for some people, which I've always done in my previous hacks.\r\n\r\nDespite the very high difficulty, I hope you'll have a ton of fun playing it.\r\n\r\nYou can find Videos of the levels here: [url]https://www.youtube.com/playlist?list=PLlXdZrV9Ur-2pyCM4Ax1uVrzZYqRNDvIp[/url]"
+            }
+        },
+        {
+            "id": 38927,
+            "section": "smwhacks",
+            "name": "Mario & Friends in: Volcanic Panic",
+            "time": 1734849608,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 49634,
+                    "name": "CircleFriendo"
+                },
+                {
+                    "id": 41481,
+                    "name": "HamOfJustice"
+                },
+                {
+                    "id": 34841,
+                    "name": "sio-kedelic"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "m and f",
+                "mario",
+                "mario and friends",
+                "new character",
+                "standard"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/112819.png",
+                "https://dl.smwcentral.net/image/112820.png",
+                "https://dl.smwcentral.net/image/112821.png",
+                "https://dl.smwcentral.net/image/112822.png",
+                "https://dl.smwcentral.net/image/112823.png",
+                "https://dl.smwcentral.net/image/112824.png",
+                "https://dl.smwcentral.net/image/112825.png",
+                "https://dl.smwcentral.net/image/112826.png",
+                "https://dl.smwcentral.net/image/112827.png"
+            ],
+            "rating": 4.5,
+            "size": 762745,
+            "downloads": 3543,
+            "download_url": "https://dl.smwcentral.net/38927/marioandfriends2.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "21 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "Yes",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "Welcome to Mario & Friends' new adventure! Play as Mario, Luigi, Peach, Daisy, Wario, and Waluigi, each with their own special jumps and physics! Try to save the day before Kamek can complete his plans to erupt the Volcano!<br>\r\n<br>\r\n- Each character has their own jump physics and special A-button jump/input: Mario spin jumps, Luigi ground pounds, Peach floats, Daisy flutters, Wario dashes, and Waluigi boosts!<br>\r\n- Each level has unique switching rules, designated by the signs at the start of each level. Some levels are solo adventures, some are free switching with the L and R button, and some are controlled by Kamek's switching bars!<br>\r\n<br>\r\nThis hack is a 21-exit standard adventure designed and completed in about a month and a half for Hackjam 2024. The first M&F hack was created during Hackjam 2021 (see it <a href=\"https://www.smwcentral.net/?p=section&a=details&id=29048\">here</a> if you'd like to check it out), and we were able to use that baserom as the basis for a full-scale adventure this time around!<br>\r\n<br>\r\nThis one is also a bit more difficult than the first, but still aimed to be beatable by very casual players :)"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 21,
+                "demo": false,
+                "sa1": false,
+                "collab": true,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "Welcome to Mario & Friends' new adventure! Play as Mario, Luigi, Peach, Daisy, Wario, and Waluigi, each with their own special jumps and physics! Try to save the day before Kamek can complete his plans to erupt the Volcano!\r\n\r\n- Each character has their own jump physics and special A-button jump/input: Mario spin jumps, Luigi ground pounds, Peach floats, Daisy flutters, Wario dashes, and Waluigi boosts!\r\n- Each level has unique switching rules, designated by the signs at the start of each level. Some levels are solo adventures, some are free switching with the L and R button, and some are controlled by Kamek's switching bars!\r\n\r\nThis hack is a 21-exit standard adventure designed and completed in about a month and a half for Hackjam 2024. The first M&F hack was created during Hackjam 2021 (see it [url=https://www.smwcentral.net/?p=section&a=details&id=29048]here[/url] if you'd like to check it out), and we were able to use that baserom as the basis for a full-scale adventure this time around!\r\n\r\nThis one is also a bit more difficult than the first, but still aimed to be beatable by very casual players :)"
+            }
+        },
+        {
+            "id": 38777,
+            "section": "smwhacks",
+            "name": "Jumping Over It with Super Mario",
+            "time": 1732337367,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 2997,
+                    "name": "TheGremlin"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "gimmick",
+                "hdma",
+                "huge level",
+                "less exgfx",
+                "music",
+                "needs remoderation"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/112246.png",
+                "https://dl.smwcentral.net/image/112247.png",
+                "https://dl.smwcentral.net/image/112248.png",
+                "https://dl.smwcentral.net/image/112249.png",
+                "https://dl.smwcentral.net/image/112250.png",
+                "https://dl.smwcentral.net/image/112251.png"
+            ],
+            "rating": 5,
+            "size": 389156,
+            "downloads": 755,
+            "download_url": "https://dl.smwcentral.net/38777/Jumping%20Over%20It%20With%20Super%20Mario%20v.1.0.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "3 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Expert",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "Jumping Over It with Super Mario is a \"Getting Over It\"-style experience. There's 3 levels<br>\r\nthat you can play in any order, just beating any of the three means unlocking the<br>\r\ncredits and beating the game:<br>\r\n<br>\r\njumping over it:<br>\r\n    the main attraction of the hack and the most challenging level. highly inspired by <br>\r\n    classics such as Carl Is Such A Nice Guy and Ultra Slope Muncher. You climb a<br>\r\n\tmountain and try to surmount the insurmountable. requires kaizo precision/knowledge<br>\r\n\tand a lot of patience<br>\r\n<br>\r\n9 hole challenge:<br>\r\n    a fun simple golfing challenge in super mario world. using the MOLF asm by<br>\r\n    dtothefourth, mario turns into a golfball! saves after every hole. can you stay<br>\r\n    under par?<br>\r\n<br>\r\nnotVANILLA SECRET 3:<br>\r\n\tmario has gained the power of commitment: he is committed to every single jump<br>\r\n\tand once he is in the air he is steadfast on keeping his trajectory. can you<br>\r\n\tovercome a somewhat familiar seeming breezy sea of dolphins?<br>\r\n<br>\r\nI hope you enjoy this hack! Just make sure to bring a lot of patience.<br>\r\nGood Climbing!"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 3,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_5",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "Jumping Over It with Super Mario is a \"Getting Over It\"-style experience. There's 3 levels\r\nthat you can play in any order, just beating any of the three means unlocking the\r\ncredits and beating the game:\r\n\r\njumping over it:\r\n    the main attraction of the hack and the most challenging level. highly inspired by \r\n    classics such as Carl Is Such A Nice Guy and Ultra Slope Muncher. You climb a\r\n\tmountain and try to surmount the insurmountable. requires kaizo precision/knowledge\r\n\tand a lot of patience\r\n\r\n9 hole challenge:\r\n    a fun simple golfing challenge in super mario world. using the MOLF asm by\r\n    dtothefourth, mario turns into a golfball! saves after every hole. can you stay\r\n    under par?\r\n\r\nnotVANILLA SECRET 3:\r\n\tmario has gained the power of commitment: he is committed to every single jump\r\n\tand once he is in the air he is steadfast on keeping his trajectory. can you\r\n\tovercome a somewhat familiar seeming breezy sea of dolphins?\r\n\r\nI hope you enjoy this hack! Just make sure to bring a lot of patience.\r\nGood Climbing!"
+            }
+        },
+        {
+            "id": 38510,
+            "section": "smwhacks",
+            "name": "Retro Marioland",
+            "time": 1728332640,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 46350,
+                    "name": "LocoFuzzyPants"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "exgfx",
+                "music",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/111390.png",
+                "https://dl.smwcentral.net/image/111391.png",
+                "https://dl.smwcentral.net/image/111392.png",
+                "https://dl.smwcentral.net/image/111393.png",
+                "https://dl.smwcentral.net/image/111394.png",
+                "https://dl.smwcentral.net/image/111395.png",
+                "https://dl.smwcentral.net/image/111396.png",
+                "https://dl.smwcentral.net/image/111397.png",
+                "https://dl.smwcentral.net/image/111398.png"
+            ],
+            "rating": 5,
+            "size": 426168,
+            "downloads": 1236,
+            "download_url": "https://dl.smwcentral.net/38510/Retro%20Marioland%20v1.2.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "10 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Advanced",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "A short 9 level (10 exit, with credits) hack that I made because I got fed up with messing around with my larger hack and had ideas for levels I didn't want to include in it. The hack is a mixture of vanilla and chocolate mechanics. While the focus was on platforming, there are shell and item tricks in many of the levels. I believe the hack sits squarely in the middle of intermediate difficulty but the creator is rarely able to tell how hard their creation is, so take that with a grain of salt!<br>\r\n<br>\r\nThere are a total of 3 block/key jumps, for people that hate those, and 4 unmarked kaizo blocks, for people who hate those. There are no secret exits or puzzles. There might be a few trolls as well... <br>\r\n<br>\r\nHopefully you enjoy playing the hack!<br>\r\n<br>\r\nVersion 1.1:<br>\r\n- Replaced some fish/dolphins in level 2 to remove some sporadic instances of lag.<br>\r\n- Updated a section of level 3 to make the intended path much more clear.<br>\r\n- Changed the second half of level 6 so that the setup at the very beginning is more intuitive.<br>\r\n- Fixed some aesthetic issues in level 8.<br>\r\n- Made what was intended in the first half of level 9 more clear.<br>\r\n- Removed some cheese in the second half of level 9 and made a setup more consistent.<br>\r\n<br>\r\nVersion 1.2:<br>\r\n- Added a message box in level 2 to explain how to stay on a disco shell in water.<br>\r\n- Added a muncher at the end of level 3 to remove some cheese.<br>\r\n- Disabled the down button in level 4 to prevent unintended duck jumps. <br>\r\n- Added some indication to level 8 and made some timings more lenient. <br>\r\n- Fixed some cheese in level 9 and prevented some strange sprite interactions. "
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 10,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_4",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "A short 9 level (10 exit, with credits) hack that I made because I got fed up with messing around with my larger hack and had ideas for levels I didn't want to include in it. The hack is a mixture of vanilla and chocolate mechanics. While the focus was on platforming, there are shell and item tricks in many of the levels. I believe the hack sits squarely in the middle of intermediate difficulty but the creator is rarely able to tell how hard their creation is, so take that with a grain of salt!\r\n\r\nThere are a total of 3 block/key jumps, for people that hate those, and 4 unmarked kaizo blocks, for people who hate those. There are no secret exits or puzzles. There might be a few trolls as well... \r\n\r\nHopefully you enjoy playing the hack!\r\n\r\nVersion 1.1:\r\n- Replaced some fish/dolphins in level 2 to remove some sporadic instances of lag.\r\n- Updated a section of level 3 to make the intended path much more clear.\r\n- Changed the second half of level 6 so that the setup at the very beginning is more intuitive.\r\n- Fixed some aesthetic issues in level 8.\r\n- Made what was intended in the first half of level 9 more clear.\r\n- Removed some cheese in the second half of level 9 and made a setup more consistent.\r\n\r\nVersion 1.2:\r\n- Added a message box in level 2 to explain how to stay on a disco shell in water.\r\n- Added a muncher at the end of level 3 to remove some cheese.\r\n- Disabled the down button in level 4 to prevent unintended duck jumps. \r\n- Added some indication to level 8 and made some timings more lenient. \r\n- Fixed some cheese in level 9 and prevented some strange sprite interactions. "
+            }
+        },
+        {
+            "id": 38576,
+            "section": "smwhacks",
+            "name": "Marios Pizza Party 2",
+            "time": 1728022509,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 55551,
+                    "name": "Saphros"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "exgfx",
+                "music",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/111661.png",
+                "https://dl.smwcentral.net/image/111662.png",
+                "https://dl.smwcentral.net/image/111663.png",
+                "https://dl.smwcentral.net/image/111664.png",
+                "https://dl.smwcentral.net/image/111665.png",
+                "https://dl.smwcentral.net/image/111666.png",
+                "https://dl.smwcentral.net/image/111667.png",
+                "https://dl.smwcentral.net/image/111668.png"
+            ],
+            "rating": 5,
+            "size": 1212790,
+            "downloads": 2072,
+            "download_url": "https://dl.smwcentral.net/38576/Marios_Pizza_Party_2.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "16 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "Mario and his friends need new pizza for the next party. So Mario sets off on an adventure to get new pizza. Join Mario on his Mid - High Beginner Kaizo adventure and experience a variety of different mechanics. <br>\r\nThis hack is aimed at players who have already played through at least 1-2 hacks."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 16,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "Mario and his friends need new pizza for the next party. So Mario sets off on an adventure to get new pizza. Join Mario on his Mid - High Beginner Kaizo adventure and experience a variety of different mechanics. \r\nThis hack is aimed at players who have already played through at least 1-2 hacks."
+            }
+        },
+        {
+            "id": 38285,
+            "section": "smwhacks",
+            "name": "What did Mario do?",
+            "time": 1727143782,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 35207,
+                    "name": "eltiolavara9"
+                },
+                {
+                    "id": null,
+                    "name": "woop"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "hdma",
+                "horror",
+                "less exgfx",
+                "music",
+                "variety"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/110722.png",
+                "https://dl.smwcentral.net/image/110723.png",
+                "https://dl.smwcentral.net/image/110724.png",
+                "https://dl.smwcentral.net/image/110725.png",
+                "https://dl.smwcentral.net/image/110726.png",
+                "https://dl.smwcentral.net/image/110727.png",
+                "https://dl.smwcentral.net/image/110728.png",
+                "https://dl.smwcentral.net/image/110729.png",
+                "https://dl.smwcentral.net/image/110730.png",
+                "https://dl.smwcentral.net/image/110731.png",
+                "https://dl.smwcentral.net/image/110732.png",
+                "https://dl.smwcentral.net/image/110733.png",
+                "https://dl.smwcentral.net/image/110734.png",
+                "https://dl.smwcentral.net/image/110735.png",
+                "https://dl.smwcentral.net/image/110736.png"
+            ],
+            "rating": 4.6667,
+            "size": 1576642,
+            "downloads": 3991,
+            "download_url": "https://dl.smwcentral.net/38285/WDMD.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "69 exit(s)",
+                "demo": "No",
+                "sa1": "Yes",
+                "collab": "Yes",
+                "difficulty": "Intermediate",
+                "type": "Standard, Kaizo",
+                "warnings": "",
+                "description": "(1.3: a whole bunch of misc. changes, mainly towards the end)<br>\r\n<br>\r\nthis is the hack that i've been working on for the past year. it's a bit like \"test.smc\" in the sense that it's mainly built out of my and woop's unreleased and/or unfinished levels made over mutiple years (i think the earliest ones are from 2018), homever the changes vary to \"touched up a bit\" to \"completely new level\". despite this, there is an overarching story<br>\r\n<br>\r\ni had a lot of fun making this thing, (most of the time, anyway) and it rekindled my interest in smw hacking... maybe it might even be fun to play<br>\r\nalso, the difficulty is aimed at people who are already familiar with smw hacks, but it should be beatable even if you've only played the original<br>\r\n<br>\r\n- PLOT -<br>\r\n<br>\r\nSomething is happening."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 69,
+                "demo": false,
+                "sa1": true,
+                "collab": true,
+                "difficulty": "diff_3",
+                "type": [
+                    "standard",
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "(1.3: a whole bunch of misc. changes, mainly towards the end)\r\n\r\nthis is the hack that i've been working on for the past year. it's a bit like \"test.smc\" in the sense that it's mainly built out of my and woop's unreleased and/or unfinished levels made over mutiple years (i think the earliest ones are from 2018), homever the changes vary to \"touched up a bit\" to \"completely new level\". despite this, there is an overarching story\r\n\r\ni had a lot of fun making this thing, (most of the time, anyway) and it rekindled my interest in smw hacking... maybe it might even be fun to play\r\nalso, the difficulty is aimed at people who are already familiar with smw hacks, but it should be beatable even if you've only played the original\r\n\r\n- PLOT -\r\n\r\nSomething is happening."
+            }
+        },
+        {
+            "id": 38080,
+            "section": "smwhacks",
+            "name": "Mario's Low-Budget Adventure",
+            "time": 1726776297,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 23901,
+                    "name": "tranvucam"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "gimmick",
+                "needs remoderation",
+                "traditional",
+                "vanilla"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/109869.png",
+                "https://dl.smwcentral.net/image/109870.png",
+                "https://dl.smwcentral.net/image/109871.png",
+                "https://dl.smwcentral.net/image/109872.png",
+                "https://dl.smwcentral.net/image/109873.png",
+                "https://dl.smwcentral.net/image/109874.png"
+            ],
+            "rating": 3,
+            "size": 149567,
+            "downloads": 1441,
+            "download_url": "https://dl.smwcentral.net/38080/Mario%27s%20Low-Budget%20Adventure%20v1.2.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "50 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Standard",
+                "warnings": "",
+                "description": "This is my first standard ROM hack<br>\r\n<br>\r\nVersion 1.2:<br>\r\nThe goal tape returned to back now<br>\r\nVersion 1.1:<br>\r\nNew overworld decorations<br>\r\nYellow and Blue Switch Palace levels have been revamped<br>\r\nThe Ending Credits added"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 50,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "This is my first standard ROM hack\r\n\r\nVersion 1.2:\r\nThe goal tape returned to back now\r\nVersion 1.1:\r\nNew overworld decorations\r\nYellow and Blue Switch Palace levels have been revamped\r\nThe Ending Credits added"
+            }
+        },
+        {
+            "id": 38322,
+            "section": "smwhacks",
+            "name": "Mario In Mushroom Rix Land 5",
+            "time": 1725581893,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 35062,
+                    "name": "Enan63"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "chocolate",
+                "demo",
+                "exgfx",
+                "fake hdma",
+                "gimmick",
+                "music",
+                "needs remoderation",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/110891.png",
+                "https://dl.smwcentral.net/image/110892.png",
+                "https://dl.smwcentral.net/image/110893.png",
+                "https://dl.smwcentral.net/image/110894.png"
+            ],
+            "rating": 4,
+            "size": 675067,
+            "downloads": 897,
+            "download_url": "https://dl.smwcentral.net/38322/Mario%20In%20Mushroom%20Rix%20Land%205%20C3%20Summer%202024%20Demo%20%28Version%201.1%20Update%21%29.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "4 exit(s)",
+                "demo": "Yes",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Standard",
+                "warnings": "",
+                "description": "Hello everyone, it's me Enan63! <br>\r\nAfter 1 long year....<br>\r\n Mario In Mushroom Rix Land series is back!!!!!<br>\r\n<br>\r\nMario In Mushroom Rix Land 5 Demo for C3 Summer 2024 is the newest entry in the Mario In Mushroom Rix Land series! <br>\r\nI hope you all enjoy the demo! <br>\r\n<br>\r\n-Features-<br>\r\n4 Long Stages With Their Own Unique Identity. <br>\r\nVanilla/Chocolate Mixing Original And Custom Graphics.<br>\r\nCustom ASM.<br>\r\nCustom Music.<br>\r\n<br>\r\nThings I Fixed And Polish From Blueribbonhighlife Hack Moderate Removal Log.<br>\r\n<br>\r\n-Fixed The Upside Down Inside The Ground Dirt Issue. By Changing The Upside Down Inside The Ground Into Spikes Instead Of Regular Dirt. So, Now You Will No Longer Pass Through And Get Hurt And Die-<br>\r\n<br>\r\n-Fixed Opening Cutscene Issue Where You Press B To End Getting Teleport To A Empty Message Box. It Has Been Fixed Now Where You If You Press B Again You Won't Be Teleported To The Empty Message Box Room.-<br>\r\n<br>\r\n-Fixed The Difficulty Settings From Standard: Normal to Standard: Hard Now.-<br>\r\n<br>\r\n-Fixed The Level Saving After You Complete. So Now, It Marks As A Exit Now.-<br>\r\n<br>\r\n-Fixed The Broken Midpoint In Grass Origin Stage.-"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 4,
+                "demo": true,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "Hello everyone, it's me Enan63! \r\nAfter 1 long year....\r\n Mario In Mushroom Rix Land series is back!!!!!\r\n\r\nMario In Mushroom Rix Land 5 Demo for C3 Summer 2024 is the newest entry in the Mario In Mushroom Rix Land series! \r\nI hope you all enjoy the demo! \r\n\r\n-Features-\r\n4 Long Stages With Their Own Unique Identity. \r\nVanilla/Chocolate Mixing Original And Custom Graphics.\r\nCustom ASM.\r\nCustom Music.\r\n\r\nThings I Fixed And Polish From Blueribbonhighlife Hack Moderate Removal Log.\r\n\r\n-Fixed The Upside Down Inside The Ground Dirt Issue. By Changing The Upside Down Inside The Ground Into Spikes Instead Of Regular Dirt. So, Now You Will No Longer Pass Through And Get Hurt And Die-\r\n\r\n-Fixed Opening Cutscene Issue Where You Press B To End Getting Teleport To A Empty Message Box. It Has Been Fixed Now Where You If You Press B Again You Won't Be Teleported To The Empty Message Box Room.-\r\n\r\n-Fixed The Difficulty Settings From Standard: Normal to Standard: Hard Now.-\r\n\r\n-Fixed The Level Saving After You Complete. So Now, It Marks As A Exit Now.-\r\n\r\n-Fixed The Broken Midpoint In Grass Origin Stage.-"
+            }
+        },
+        {
+            "id": 38239,
+            "section": "smwhacks",
+            "name": "Awful Mario World",
+            "time": 1724689568,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 29570,
+                    "name": "KoJi"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "glitch",
+                "traditional",
+                "vanilla"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/110578.png",
+                "https://dl.smwcentral.net/image/110579.png",
+                "https://dl.smwcentral.net/image/110580.png",
+                "https://dl.smwcentral.net/image/110581.png",
+                "https://dl.smwcentral.net/image/110582.png",
+                "https://dl.smwcentral.net/image/110583.png"
+            ],
+            "rating": 4.5,
+            "size": 45579,
+            "downloads": 744,
+            "download_url": "https://dl.smwcentral.net/38239/awfulmarioworld.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "12 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Expert",
+                "type": "Kaizo",
+                "warnings": "",
+                "description": "Awful Mario World won't appeal to everyone, and that's fine.<br>\r\n<br>\r\nIt's been a side project for a while now, and a challenge I wanted to achieve.<br>\r\nInspired by the original Kaizo Mario world, my goal isn't to mimic it, but rather deal with similar limitations and make something playable.<br>\r\n<br>\r\nthis hack continent: <br>\r\n-no fast retry<br>\r\n-no custom music<br>\r\n-no custom palette<br>\r\n-no map16 edits<br>\r\n-no infinite lives (there's something to compensate)<br>\r\n-no 1F0<br>\r\n-levels with slower pacing<br>\r\n<br>\r\nHave Fun!<br>\r\n<br>\r\nupdate: fixes an issue with the overworld."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 12,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_5",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "Awful Mario World won't appeal to everyone, and that's fine.\r\n\r\nIt's been a side project for a while now, and a challenge I wanted to achieve.\r\nInspired by the original Kaizo Mario world, my goal isn't to mimic it, but rather deal with similar limitations and make something playable.\r\n\r\nthis hack continent: \r\n-no fast retry\r\n-no custom music\r\n-no custom palette\r\n-no map16 edits\r\n-no infinite lives (there's something to compensate)\r\n-no 1F0\r\n-levels with slower pacing\r\n\r\nHave Fun!\r\n\r\nupdate: fixes an issue with the overworld."
+            }
+        },
+        {
+            "id": 38128,
+            "section": "smwhacks",
+            "name": "Spiteful Mario",
+            "time": 1723155305,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 51716,
+                    "name": "Easy Difficulty"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "bosses",
+                "epilepsy warning",
+                "exgfx",
+                "gimmick",
+                "music",
+                "variety"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/110162.png",
+                "https://dl.smwcentral.net/image/110163.png",
+                "https://dl.smwcentral.net/image/110164.png",
+                "https://dl.smwcentral.net/image/110165.png",
+                "https://dl.smwcentral.net/image/110166.png",
+                "https://dl.smwcentral.net/image/110167.png",
+                "https://dl.smwcentral.net/image/110168.png",
+                "https://dl.smwcentral.net/image/110169.png",
+                "https://dl.smwcentral.net/image/110170.png",
+                "https://dl.smwcentral.net/image/110171.png",
+                "https://dl.smwcentral.net/image/110172.png",
+                "https://dl.smwcentral.net/image/110173.png",
+                "https://dl.smwcentral.net/image/110174.png",
+                "https://dl.smwcentral.net/image/110175.png",
+                "https://dl.smwcentral.net/image/110176.png",
+                "https://dl.smwcentral.net/image/110177.png",
+                "https://dl.smwcentral.net/image/110178.png",
+                "https://dl.smwcentral.net/image/110179.png",
+                "https://dl.smwcentral.net/image/110180.png",
+                "https://dl.smwcentral.net/image/110181.png",
+                "https://dl.smwcentral.net/image/110182.png",
+                "https://dl.smwcentral.net/image/110183.png",
+                "https://dl.smwcentral.net/image/110184.png",
+                "https://dl.smwcentral.net/image/110185.png",
+                "https://dl.smwcentral.net/image/110186.png",
+                "https://dl.smwcentral.net/image/110187.png"
+            ],
+            "rating": 0,
+            "size": 1778186,
+            "downloads": 1588,
+            "download_url": "https://dl.smwcentral.net/38128/Spitefulmarioupdate.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "69 exit(s)",
+                "demo": "No",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Expert",
+                "type": "Standard, Kaizo",
+                "warnings": "",
+                "description": "- This hack has a non-linear structure, meaning you can play it in almost any order you want. Though, this does not mean you can skip immediately to the final level.<br>\r\n<br>\r\n- There are both Standard and Kaizo levels, though some levels may blur the line. Difficulty ranges from Standard: Normal to Standard: Very Hard and Kaizo: Expert. This means that some levels are completable by beginners, while some levels will be a challenge even for the best players.<br>\r\n<br>\r\n- There will be a lot of custom gimmicks and custom ASM in general.<br>\r\n<br>\r\nVersion 1.1: I apologise for updating this so soon, but<br>\r\nSignificant Changes<br>\r\n-Fixed a bug at the end of The Moving Hills, where the layer 2 would move in strange ways.<br>\r\n-Fixed a janky jump at the end of Bullet Jumps of Absurdity.<br>\r\n-Fixed jank in Ice Barrier Tower by making koopas near the end immune to fireballs.<br>\r\n-Removed side exit in the fourth room in Bowser's Castle, where you could lose progress by reaching the autoscroll deathless.<br>\r\n-Fixed two mistakes in the in-game credits.<br>\r\n-Made first half of Cape Fusion slightly easier, and the second half somewhat more difficult to balance the difficulty, as the second half was trivial in comparison to the first.<br>\r\n-Improved indicators after the first checkpoint in Professional Platforming, and moved some saws after the second checkpoint.<br>\r\n-Added better indicators in the second room of Reflex, and added some sprite solid blocks to fix \"jank\".<br>\r\n-Balanced difficulty in the final level.<br>\r\n-Changed difficulty indicator graphics on the overworld to avoid confusion.<br>\r\n-Checkpoints before the final boss and postgame final boss will save to SRAM as long as you save on the overworld."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 69,
+                "demo": false,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_5",
+                "type": [
+                    "standard",
+                    "kaizo"
+                ],
+                "warnings": [],
+                "description": "- This hack has a non-linear structure, meaning you can play it in almost any order you want. Though, this does not mean you can skip immediately to the final level.\r\n\r\n- There are both Standard and Kaizo levels, though some levels may blur the line. Difficulty ranges from Standard: Normal to Standard: Very Hard and Kaizo: Expert. This means that some levels are completable by beginners, while some levels will be a challenge even for the best players.\r\n\r\n- There will be a lot of custom gimmicks and custom ASM in general.\r\n\r\nVersion 1.1: I apologise for updating this so soon, but\r\nSignificant Changes\r\n-Fixed a bug at the end of The Moving Hills, where the layer 2 would move in strange ways.\r\n-Fixed a janky jump at the end of Bullet Jumps of Absurdity.\r\n-Fixed jank in Ice Barrier Tower by making koopas near the end immune to fireballs.\r\n-Removed side exit in the fourth room in Bowser's Castle, where you could lose progress by reaching the autoscroll deathless.\r\n-Fixed two mistakes in the in-game credits.\r\n-Made first half of Cape Fusion slightly easier, and the second half somewhat more difficult to balance the difficulty, as the second half was trivial in comparison to the first.\r\n-Improved indicators after the first checkpoint in Professional Platforming, and moved some saws after the second checkpoint.\r\n-Added better indicators in the second room of Reflex, and added some sprite solid blocks to fix \"jank\".\r\n-Balanced difficulty in the final level.\r\n-Changed difficulty indicator graphics on the overworld to avoid confusion.\r\n-Checkpoints before the final boss and postgame final boss will save to SRAM as long as you save on the overworld."
+            }
+        },
+        {
+            "id": 37694,
+            "section": "smwhacks",
+            "name": "Mario In Lucid Dream",
+            "time": 1722974082,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 49175,
+                    "name": "TS_N"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "glitch",
+                "music",
+                "puzzle",
+                "script recommended",
+                "vanilla"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/108136.png",
+                "https://dl.smwcentral.net/image/108137.png",
+                "https://dl.smwcentral.net/image/108138.png",
+                "https://dl.smwcentral.net/image/108139.png",
+                "https://dl.smwcentral.net/image/108140.png",
+                "https://dl.smwcentral.net/image/108141.png",
+                "https://dl.smwcentral.net/image/108142.png",
+                "https://dl.smwcentral.net/image/108143.png",
+                "https://dl.smwcentral.net/image/108144.png"
+            ],
+            "rating": 5,
+            "size": 557790,
+            "downloads": 948,
+            "download_url": "https://dl.smwcentral.net/37694/Mario%20In%20Lucid%20Dream.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "Yes",
+                "length": "20 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Master",
+                "type": "Kaizo, Tool-Assisted",
+                "warnings": "",
+                "description": "Mario led his tired body to sleep after rescuing Princess.<br>\r\nThen Mario realized he was in a dream.<br>\r\nSo Mario tries to explore his dream.<br>\r\n<br>\r\nA kaizo hack based on glitch puzzle with 17 kaizo levels.<br>\r\nTo go next world, you must complete all stages in that world.<br>\r\nAlso all stages have a single exit. So you can be softlock when clear level in wrong way.<br>\r\n<br>\r\nClear videos playlist : https://youtube.com/playlist?list=PLV0aOL0NvRQJRJDdno-3fDrvdw4ORlbjS&si=ZaD9zC3SSU7soPac"
+            },
+            "raw_fields": {
+                "hof": true,
+                "length": 20,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_6",
+                "type": [
+                    "kaizo",
+                    "tool_assisted"
+                ],
+                "warnings": [],
+                "description": "Mario led his tired body to sleep after rescuing Princess.\r\nThen Mario realized he was in a dream.\r\nSo Mario tries to explore his dream.\r\n\r\nA kaizo hack based on glitch puzzle with 17 kaizo levels.\r\nTo go next world, you must complete all stages in that world.\r\nAlso all stages have a single exit. So you can be softlock when clear level in wrong way.\r\n\r\nClear videos playlist : https://youtube.com/playlist?list=PLV0aOL0NvRQJRJDdno-3fDrvdw4ORlbjS&si=ZaD9zC3SSU7soPac"
+            }
+        },
+        {
+            "id": 38098,
+            "section": "smwhacks",
+            "name": "Mario's Misadventures: The Secret of The 11 Gems",
+            "time": 1722813971,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 58714,
+                    "name": "signature_steve"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "less exgfx",
+                "music",
+                "story",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/109930.png",
+                "https://dl.smwcentral.net/image/109931.png",
+                "https://dl.smwcentral.net/image/109932.png",
+                "https://dl.smwcentral.net/image/109933.png",
+                "https://dl.smwcentral.net/image/109934.png",
+                "https://dl.smwcentral.net/image/109935.png",
+                "https://dl.smwcentral.net/image/109936.png",
+                "https://dl.smwcentral.net/image/109937.png",
+                "https://dl.smwcentral.net/image/109938.png",
+                "https://dl.smwcentral.net/image/109939.png",
+                "https://dl.smwcentral.net/image/109940.png"
+            ],
+            "rating": 4.9091,
+            "size": 559723,
+            "downloads": 6949,
+            "download_url": "https://dl.smwcentral.net/38098/MariosMisadventures1.4.3.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "98 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "The Aquarian Archipelago is a group of islands home to a strange secret involving 11 mystical gems held sacred by the native people. Mario receives a letter inviting him to this strange place, only to find it in disarray. What could be going on here? Is Bowser up to is dirty tricks again? As he explores the archipelago, he begins uncovering information about the gems and the fate of the natives. Can our hero solve the mysteries surrounding this place, learn the fate and allure of the gems, and restore peace and stability to the archipelago?<br>\r\n<br>\r\nv1.1:<br>\r\n. Fixed the cutoff in the bonus game and the goal in Peaceful Plains 3<br>\r\n. Resolved the blind drops in Twisted Tundra 4, Lemmy's Castle, and Heavenly Heights 3<br>\r\n. Fixed the dragon coin issue in Haunted Shipwreck<br>\r\n. Fixed a potential softlock in Desert Secret 1<br>\r\n. Made a few level design changes in various levels<br>\r\n<br>\r\nv1.2:<br>\r\n. Changed the background in Desolate Desert 5<br>\r\n. Fixed the dragon coin issue in Desolate Desert 4<br>\r\n. Changed the number of powerups and the powerups themselves in some levels<br>\r\n. General changes and bug fixes<br>\r\n<br>\r\nv1.3:<br>\r\n. Resolved an issue with the cutscenes in Roy's Castle and Lemmy's Castle<br>\r\n. Fixed a spelling error in the message box in Larry's Castle<br>\r\n. Fixed a graphical cutoff in Gem Palace<br>\r\n. Rebalanced the difficulty of various levels in Peaceful Plains, Desolate Desert, and Sunny Seas<br>\r\n. Added dragon coins to Wendy's Castle and Gem Palace<br>\r\n. Accidentally violated the laws of physics<br>\r\n<br>\r\nv1.3.2:<br>\r\n. Fixed the bug with the entrance to Sunny Seas 3<br>\r\n. Fixed the issue with certain sound effects not playing<br>\r\n. Resolved a potential softlock in Forest Ghost House<br>\r\n. Fixed an issue with a custom sprite in Bowser's Bastion 3<br>\r\n<br>\r\nv1.4:<br>\r\n. Resolved a potential softlock in Chemical Caverns 2<br>\r\n. Fixed an issue with Desolate Desert 1 on the overworld map<br>\r\n. Removed some unnecessary feathers and 1-ups<br>\r\n<br>\r\nv1.4.2:<br>\r\n. Fixed a problem with the toxic water in Chemical Caverns<br>\r\n. Resolved a graphical glitch with the entrance to Chemical Caverns and Twisted Tundra on the world map<br>\r\n. Fixed a graphical cutoff in Treasure Island<br>\r\n. Removed an unnecessary moon in Gem Gateway 1<br>\r\n. Made the secret exit in Chemical Caverns 4 and Twisted Tundra 1 more difficult to access<br>\r\n. Fixed a graphical error with the background in Heavenly Heights 1<br>\r\n. Fixed a potential softlock in the Red Switch Palace<br>\r\n. Resolved a slowdown in Sunny Seas 2 due to sprite overload"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 98,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "The Aquarian Archipelago is a group of islands home to a strange secret involving 11 mystical gems held sacred by the native people. Mario receives a letter inviting him to this strange place, only to find it in disarray. What could be going on here? Is Bowser up to is dirty tricks again? As he explores the archipelago, he begins uncovering information about the gems and the fate of the natives. Can our hero solve the mysteries surrounding this place, learn the fate and allure of the gems, and restore peace and stability to the archipelago?\r\n\r\nv1.1:\r\n. Fixed the cutoff in the bonus game and the goal in Peaceful Plains 3\r\n. Resolved the blind drops in Twisted Tundra 4, Lemmy's Castle, and Heavenly Heights 3\r\n. Fixed the dragon coin issue in Haunted Shipwreck\r\n. Fixed a potential softlock in Desert Secret 1\r\n. Made a few level design changes in various levels\r\n\r\nv1.2:\r\n. Changed the background in Desolate Desert 5\r\n. Fixed the dragon coin issue in Desolate Desert 4\r\n. Changed the number of powerups and the powerups themselves in some levels\r\n. General changes and bug fixes\r\n\r\nv1.3:\r\n. Resolved an issue with the cutscenes in Roy's Castle and Lemmy's Castle\r\n. Fixed a spelling error in the message box in Larry's Castle\r\n. Fixed a graphical cutoff in Gem Palace\r\n. Rebalanced the difficulty of various levels in Peaceful Plains, Desolate Desert, and Sunny Seas\r\n. Added dragon coins to Wendy's Castle and Gem Palace\r\n. Accidentally violated the laws of physics\r\n\r\nv1.3.2:\r\n. Fixed the bug with the entrance to Sunny Seas 3\r\n. Fixed the issue with certain sound effects not playing\r\n. Resolved a potential softlock in Forest Ghost House\r\n. Fixed an issue with a custom sprite in Bowser's Bastion 3\r\n\r\nv1.4:\r\n. Resolved a potential softlock in Chemical Caverns 2\r\n. Fixed an issue with Desolate Desert 1 on the overworld map\r\n. Removed some unnecessary feathers and 1-ups\r\n\r\nv1.4.2:\r\n. Fixed a problem with the toxic water in Chemical Caverns\r\n. Resolved a graphical glitch with the entrance to Chemical Caverns and Twisted Tundra on the world map\r\n. Fixed a graphical cutoff in Treasure Island\r\n. Removed an unnecessary moon in Gem Gateway 1\r\n. Made the secret exit in Chemical Caverns 4 and Twisted Tundra 1 more difficult to access\r\n. Fixed a graphical error with the background in Heavenly Heights 1\r\n. Fixed a potential softlock in the Red Switch Palace\r\n. Resolved a slowdown in Sunny Seas 2 due to sprite overload"
+            }
+        },
+        {
+            "id": 38127,
+            "section": "smwhacks",
+            "name": "Super Mario Land World",
+            "time": 1721853930,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 46333,
+                    "name": "Lush_50"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "all-stars",
+                "fun",
+                "mario land",
+                "normal difficulty",
+                "standard"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/110157.png",
+                "https://dl.smwcentral.net/image/110158.png",
+                "https://dl.smwcentral.net/image/110159.png",
+                "https://dl.smwcentral.net/image/110160.png",
+                "https://dl.smwcentral.net/image/110161.png"
+            ],
+            "rating": 5,
+            "size": 1905709,
+            "downloads": 2659,
+            "download_url": "https://dl.smwcentral.net/38127/Super%20Mario%20Land%20World%20V1.1%20%28%202024%20%29.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "13 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "Welcome to SUPER MARIO LAND WORLD!<br>\r\n<br>\r\n-STORY-<br>\r\n<br>\r\nMario has consumed a Subcon potion and fell into a deep slumber, where sarasaland has been invaded by the powers of subcon and the mushroom kingdom combined! <br>\r\nSave the day? Or perish in the land of dreams? the fate of the world is in the players hands. <br>\r\n<br>\r\n- THINGS TO NOTE! PLEASE READ THIS BEFORE PLAYING! -<br>\r\n*Mario has different physics and speed in general, a floating higher spin jump and regular altered jump. <br>\r\n*Spikes are insta-death.<br>\r\n*13 Exits, based off of Mario land GB levels! <br>\r\n*Start with 10 lives, NO SAVES or Re-entering levels just like Mario land GB, the only save in the game is at the end of the quest. Thus making every moment count!<br>\r\n*This game is styled in black, white and shades of grey.<br>\r\n*The Yoshi coins are a collectible for earning your extra lives.<br>\r\n*There are secrets in SOME pipes, will you find them?<br>\r\n*The hack aims to mesh gb Mario land, SMW and all-stars style together. <br>\r\n<br>\r\n-One final note- <br>\r\nThis hack was submitted in 2023 and was rejected due to many reasons large and small.<br>\r\nI ended up not keeping the original base files and built off of the remaining rom that I had.<br>\r\nIf I had the base files I could do tonnes more in the game itself, but at this point it wasn't worth backtracking, I hope what is here is good enough to have an enjoyable Mario experience! <br>\r\n<br>\r\nWith that said, thank you for playing and checking out my work, this is my first standard hack, I normally create beginner/lower intermediate kaizo! click on my name and browse for my work! check em out if you're wanting some wacky experiences.<br>\r\nIf you want to report any major bugs or game breaking problems (In the unlucky event this happens) feel free to let me know in the comments!<br>\r\n<br>\r\n*The current version is V1.1<br>\r\n<br>\r\nAnyway, enjoy!<br>\r\n<br>\r\n- Lush_50"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 13,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "Welcome to SUPER MARIO LAND WORLD!\r\n\r\n-STORY-\r\n\r\nMario has consumed a Subcon potion and fell into a deep slumber, where sarasaland has been invaded by the powers of subcon and the mushroom kingdom combined! \r\nSave the day? Or perish in the land of dreams? the fate of the world is in the players hands. \r\n\r\n- THINGS TO NOTE! PLEASE READ THIS BEFORE PLAYING! -\r\n*Mario has different physics and speed in general, a floating higher spin jump and regular altered jump. \r\n*Spikes are insta-death.\r\n*13 Exits, based off of Mario land GB levels! \r\n*Start with 10 lives, NO SAVES or Re-entering levels just like Mario land GB, the only save in the game is at the end of the quest. Thus making every moment count!\r\n*This game is styled in black, white and shades of grey.\r\n*The Yoshi coins are a collectible for earning your extra lives.\r\n*There are secrets in SOME pipes, will you find them?\r\n*The hack aims to mesh gb Mario land, SMW and all-stars style together. \r\n\r\n-One final note- \r\nThis hack was submitted in 2023 and was rejected due to many reasons large and small.\r\nI ended up not keeping the original base files and built off of the remaining rom that I had.\r\nIf I had the base files I could do tonnes more in the game itself, but at this point it wasn't worth backtracking, I hope what is here is good enough to have an enjoyable Mario experience! \r\n\r\nWith that said, thank you for playing and checking out my work, this is my first standard hack, I normally create beginner/lower intermediate kaizo! click on my name and browse for my work! check em out if you're wanting some wacky experiences.\r\nIf you want to report any major bugs or game breaking problems (In the unlucky event this happens) feel free to let me know in the comments!\r\n\r\n*The current version is V1.1\r\n\r\nAnyway, enjoy!\r\n\r\n- Lush_50"
+            }
+        },
+        {
+            "id": 37830,
+            "section": "smwhacks",
+            "name": "Super Mario World-2",
+            "time": 1721360384,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 51716,
+                    "name": "Easy Difficulty"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "bosses",
+                "epilepsy warning",
+                "hdma",
+                "less exgfx",
+                "music",
+                "needs remoderation",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/108684.png",
+                "https://dl.smwcentral.net/image/108685.png",
+                "https://dl.smwcentral.net/image/108686.png",
+                "https://dl.smwcentral.net/image/108687.png",
+                "https://dl.smwcentral.net/image/108688.png",
+                "https://dl.smwcentral.net/image/108689.png",
+                "https://dl.smwcentral.net/image/108690.png",
+                "https://dl.smwcentral.net/image/108691.png",
+                "https://dl.smwcentral.net/image/108692.png",
+                "https://dl.smwcentral.net/image/108693.png",
+                "https://dl.smwcentral.net/image/108694.png",
+                "https://dl.smwcentral.net/image/108695.png",
+                "https://dl.smwcentral.net/image/108696.png",
+                "https://dl.smwcentral.net/image/108697.png",
+                "https://dl.smwcentral.net/image/108698.png",
+                "https://dl.smwcentral.net/image/108699.png",
+                "https://dl.smwcentral.net/image/108700.png",
+                "https://dl.smwcentral.net/image/108701.png",
+                "https://dl.smwcentral.net/image/108702.png",
+                "https://dl.smwcentral.net/image/108703.png",
+                "https://dl.smwcentral.net/image/108704.png",
+                "https://dl.smwcentral.net/image/108705.png",
+                "https://dl.smwcentral.net/image/108706.png",
+                "https://dl.smwcentral.net/image/108707.png",
+                "https://dl.smwcentral.net/image/108708.png",
+                "https://dl.smwcentral.net/image/108709.png",
+                "https://dl.smwcentral.net/image/108710.png",
+                "https://dl.smwcentral.net/image/108711.png",
+                "https://dl.smwcentral.net/image/108712.png",
+                "https://dl.smwcentral.net/image/108713.png"
+            ],
+            "rating": 4.2857,
+            "size": 1564671,
+            "downloads": 4333,
+            "download_url": "https://dl.smwcentral.net/37830/SMW-2.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "90 exit(s)",
+                "demo": "No",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Advanced",
+                "type": "Standard",
+                "warnings": "",
+                "description": "So this hack has 8 Worlds and a Special World, and it's by far the biggest project I've made. There is a lot of custom ASM, sprites, bosses and such, just to keep it interesting. As for the difficulty, this hack is mainly recommended for experienced players. Nothing in the first worlds should be too difficult, but in later worlds and especially the Special World, some may struggle.<br>\r\n<br>\r\nThe original aim for this hack was to be what a harder, more gimmicky sequel to SMW could've looked like, though that became less of a focus as development progressed. The earlier worlds are most similar to vanilla. Obviously, however, the graphics rarely stray too far from the original SMW graphics.<br>\r\n<br>\r\nUpdate v1.1<br>\r\nIn this update we have<br>\r\nchangelog.txt &lt;---- read it"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 90,
+                "demo": false,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_4",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "So this hack has 8 Worlds and a Special World, and it's by far the biggest project I've made. There is a lot of custom ASM, sprites, bosses and such, just to keep it interesting. As for the difficulty, this hack is mainly recommended for experienced players. Nothing in the first worlds should be too difficult, but in later worlds and especially the Special World, some may struggle.\r\n\r\nThe original aim for this hack was to be what a harder, more gimmicky sequel to SMW could've looked like, though that became less of a focus as development progressed. The earlier worlds are most similar to vanilla. Obviously, however, the graphics rarely stray too far from the original SMW graphics.\r\n\r\nUpdate v1.1\r\nIn this update we have\r\nchangelog.txt <---- read it"
+            }
+        },
+        {
+            "id": 38051,
+            "section": "smwhacks",
+            "name": "Super Mario Stole the Souls of the Innocent and Now Must Climb a Tower to Reclaim his Humanity World",
+            "time": 1721010656,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 36349,
+                    "name": "Jamie"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "huge level",
+                "less exgfx",
+                "music",
+                "needs remoderation",
+                "no boss"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/109757.png",
+                "https://dl.smwcentral.net/image/109758.png",
+                "https://dl.smwcentral.net/image/109759.png",
+                "https://dl.smwcentral.net/image/109760.png"
+            ],
+            "rating": 5,
+            "size": 369828,
+            "downloads": 348,
+            "download_url": "https://dl.smwcentral.net/38051/Mario%20Climbs%20A%20Tower.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "1 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Master",
+                "type": "Kaizo",
+                "warnings": "Crude Content or Language, Violence",
+                "description": "Mario did inconceivable acts upon humanity and was sent to some weird offshoot of hell as a result. Get him out of there! ᵒʳ ⁿᵒᵗ<br>\r\n<br>\r\n1 Exit, 8 sections, 99 s̶o̶u̶l̶s̶ lives."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 1,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_6",
+                "type": [
+                    "kaizo"
+                ],
+                "warnings": [
+                    "crude_content",
+                    "violence"
+                ],
+                "description": "Mario did inconceivable acts upon humanity and was sent to some weird offshoot of hell as a result. Get him out of there! ᵒʳ ⁿᵒᵗ\r\n\r\n1 Exit, 8 sections, 99 s̶o̶u̶l̶s̶ lives."
+            }
+        },
+        {
+            "id": 37998,
+            "section": "smwhacks",
+            "name": "New Super Mario World 2: Luigi's Quest",
+            "time": 1720964180,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 40670,
+                    "name": "Bullymario"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "cutscenes",
+                "exgfx",
+                "hdma",
+                "music",
+                "needs remoderation"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/109475.png",
+                "https://dl.smwcentral.net/image/109476.png",
+                "https://dl.smwcentral.net/image/109477.png",
+                "https://dl.smwcentral.net/image/109478.png",
+                "https://dl.smwcentral.net/image/109479.png",
+                "https://dl.smwcentral.net/image/109480.png",
+                "https://dl.smwcentral.net/image/109481.png",
+                "https://dl.smwcentral.net/image/109482.png",
+                "https://dl.smwcentral.net/image/109483.png",
+                "https://dl.smwcentral.net/image/109484.png",
+                "https://dl.smwcentral.net/image/109485.png",
+                "https://dl.smwcentral.net/image/109486.png",
+                "https://dl.smwcentral.net/image/109487.png",
+                "https://dl.smwcentral.net/image/109488.png",
+                "https://dl.smwcentral.net/image/109489.png",
+                "https://dl.smwcentral.net/image/109490.png",
+                "https://dl.smwcentral.net/image/109491.png",
+                "https://dl.smwcentral.net/image/109492.png",
+                "https://dl.smwcentral.net/image/109493.png",
+                "https://dl.smwcentral.net/image/109494.png",
+                "https://dl.smwcentral.net/image/109495.png",
+                "https://dl.smwcentral.net/image/109496.png",
+                "https://dl.smwcentral.net/image/109497.png",
+                "https://dl.smwcentral.net/image/109498.png",
+                "https://dl.smwcentral.net/image/109499.png",
+                "https://dl.smwcentral.net/image/109500.png"
+            ],
+            "rating": 4.2857,
+            "size": 1487510,
+            "downloads": 10515,
+            "download_url": "https://dl.smwcentral.net/37998/NSMW2%20v2.2.1%20%28update%29.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "100 exit(s)",
+                "demo": "No",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "Previous on NSMW1 Bowser was defeated by the Mario Bros., So later after that, Bowser hired K. Rool to help him to take over the World and Kidnap Mario. So Luigi and Peach takes a Adventure to rescue Mario and stop the villains.<br>\r\n<br>\r\nVersion 2.2.1<br>\r\n<br>\r\n~70 Exits for Any% without getting all the 'S. Coins (Dragon Coins)', 100 Exits for 100%<br>\r\n<br>\r\nPlay Tested on Snes9x, Bsnes, SNES Console, and Super NT.<br>\r\n<br>\r\nMore Info in the Readme.txt"
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 100,
+                "demo": false,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "Previous on NSMW1 Bowser was defeated by the Mario Bros., So later after that, Bowser hired K. Rool to help him to take over the World and Kidnap Mario. So Luigi and Peach takes a Adventure to rescue Mario and stop the villains.\r\n\r\nVersion 2.2.1\r\n\r\n~70 Exits for Any% without getting all the 'S. Coins (Dragon Coins)', 100 Exits for 100%\r\n\r\nPlay Tested on Snes9x, Bsnes, SNES Console, and Super NT.\r\n\r\nMore Info in the Readme.txt"
+            }
+        },
+        {
+            "id": 37997,
+            "section": "smwhacks",
+            "name": "[Demo] Mario Adventure Land",
+            "time": 1720144627,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 65993,
+                    "name": "Ennui Goldfeld"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "needs remoderation"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/109472.png",
+                "https://dl.smwcentral.net/image/109473.png",
+                "https://dl.smwcentral.net/image/109474.png"
+            ],
+            "rating": 3.6667,
+            "size": 143728,
+            "downloads": 709,
+            "download_url": "https://dl.smwcentral.net/37997/Mario%20Adventure%20Land.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "5 exit(s)",
+                "demo": "Yes",
+                "sa1": "No",
+                "collab": "No",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "",
+                "description": "This is a demo to a rom hack that I am working on. I would like feedback on improving levels for the future."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 5,
+                "demo": true,
+                "sa1": false,
+                "collab": false,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "This is a demo to a rom hack that I am working on. I would like feedback on improving levels for the future."
+            }
+        },
+        {
+            "id": 37877,
+            "section": "smwhacks",
+            "name": "Mario Saves Summer Break 2024",
+            "time": 1718857165,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 35288,
+                    "name": "El Cuh Fermin"
+                }
+            ],
+            "submitter": null,
+            "tags": [
+                "asm",
+                "boss",
+                "chocolate",
+                "custom graphics",
+                "exgfx",
+                "hdma",
+                "music",
+                "needs remoderation",
+                "traditional"
+            ],
+            "images": [
+                "https://dl.smwcentral.net/image/109032.png",
+                "https://dl.smwcentral.net/image/109033.png",
+                "https://dl.smwcentral.net/image/109034.png",
+                "https://dl.smwcentral.net/image/109035.png",
+                "https://dl.smwcentral.net/image/109036.png",
+                "https://dl.smwcentral.net/image/109037.png",
+                "https://dl.smwcentral.net/image/109038.png",
+                "https://dl.smwcentral.net/image/109039.png",
+                "https://dl.smwcentral.net/image/109040.png",
+                "https://dl.smwcentral.net/image/109041.png",
+                "https://dl.smwcentral.net/image/109042.png",
+                "https://dl.smwcentral.net/image/109043.png",
+                "https://dl.smwcentral.net/image/109044.png",
+                "https://dl.smwcentral.net/image/109045.png",
+                "https://dl.smwcentral.net/image/109046.png"
+            ],
+            "rating": 4.2,
+            "size": 324514,
+            "downloads": 1549,
+            "download_url": "https://dl.smwcentral.net/37877/Mario%20Saves%20Summer%20Break%202024.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "14 exit(s)",
+                "demo": "No",
+                "sa1": "Yes",
+                "collab": "No",
+                "difficulty": "Intermediate",
+                "type": "Standard",
+                "warnings": "",
+                "description": "In this hack, Fry Guy just officially ruined for the summer season of this year. Mario needs to save before was too late."
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 14,
+                "demo": false,
+                "sa1": true,
+                "collab": false,
+                "difficulty": "diff_3",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [],
+                "description": "In this hack, Fry Guy just officially ruined for the summer season of this year. Mario needs to save before was too late."
+            }
+        }
+    ]
+}

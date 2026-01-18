@@ -1,0 +1,65 @@
+{
+    "total": 1,
+    "per_page": 50,
+    "current_page": 1,
+    "last_page": 1,
+    "first_page_url": "https://www.smwcentral.net/ajax.php?a=getsectionlist&s=smwhacks&u=0&f%5Bname%5D=silly&n=1&o=date&d=desc",
+    "last_page_url": "https://www.smwcentral.net/ajax.php?a=getsectionlist&s=smwhacks&u=0&f%5Bname%5D=silly&n=1&o=date&d=desc",
+    "next_page_url": null,
+    "prev_page_url": null,
+    "from": 1,
+    "to": 1,
+    "data": [
+        {
+            "id": 41390,
+            "section": "smwhacks",
+            "name": "Tis A Silly Place",
+            "time": 1768371160,
+            "moderated": true,
+            "authors": [
+                {
+                    "id": 36167,
+                    "name": "CarlSagan42"
+                }
+            ],
+            "submitter": null,
+            "tags": [],
+            "images": [
+                "https://dl.smwcentral.net/image/120756.png",
+                "https://dl.smwcentral.net/image/120757.png",
+                "https://dl.smwcentral.net/image/120758.png"
+            ],
+            "rating": 0,
+            "size": 514455,
+            "downloads": 246,
+            "download_url": "https://dl.smwcentral.net/41390/TisASillyPlace.zip",
+            "obsoleted_by": null,
+            "fields": {
+                "hof": "No",
+                "length": "1 exit(s)",
+                "demo": "No",
+                "sa1": "Yes",
+                "collab": "Yes",
+                "difficulty": "Casual",
+                "type": "Standard",
+                "warnings": "Suggestive Content or Language",
+                "description": "This is a troll hack designed to be enjoyed by players of all experience levels! Laugh at the silly things that happen to Mario in this wacky version of the mushroom kingdom. "
+            },
+            "raw_fields": {
+                "hof": false,
+                "length": 1,
+                "demo": false,
+                "sa1": true,
+                "collab": true,
+                "difficulty": "diff_2",
+                "type": [
+                    "standard"
+                ],
+                "warnings": [
+                    "suggestive_content"
+                ],
+                "description": "This is a troll hack designed to be enjoyed by players of all experience levels! Laugh at the silly things that happen to Mario in this wacky version of the mushroom kingdom. "
+            }
+        }
+    ]
+}
